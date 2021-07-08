@@ -5,7 +5,17 @@
 {% block body %}
     <h1>Register</h1>
 
+    {% if error is not empty %}
+        <p>{{ error }}</p>
+    {% endif %}
+
     {{ form_start(registrationForm) }}
+        {{ form_row(registrationForm.surname) }}
+        {{ form_row(registrationForm.name) }}
+        {{ form_row(registrationForm.patronymic) }}
+        {{ form_row(registrationForm.gender ) }}
+        {{ form_row(registrationForm.phoneNumber) }}
+        {{ form_row(registrationForm.address) }}
         {{ form_row(registrationForm.email) }}
         {{ form_row(registrationForm.plainPassword, {
             label: 'Password'

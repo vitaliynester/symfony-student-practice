@@ -2,20 +2,19 @@
 
 namespace App\Form;
 
-use App\Entity\User;
-use phpDocumentor\Reflection\Type;
-use RetailCrm\Api\Model\Entity\Customers\Customer;
+//use MongoDB\BSON\Regex;
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\BirthdayType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
+use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\IsTrue;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
-use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Validator\Constraints\Regex;
+use Symfony\Component\Validator\Constraints\Email;
 
 class RegistrationFormType extends AbstractType
 {
@@ -26,8 +25,14 @@ class RegistrationFormType extends AbstractType
                 'required'=>true,
                 'constraints'=>[
                     new Length([
-                        'maxMessage'=>'Максимальное число символов 255',
+                        'min'=>3,
+                        'minMessage'=>'Минимальное число символов - 3',
                         'max'=>255,
+                    ]),
+                    new Regex([
+                        'match' => true,
+                        'pattern' => '/^[а-яё -]+$/ui',
+                        'message' => 'Допустимо написание русскими буквами,пробелами и дефисами',
                     ]),
                 ],
                 'label'=>'Фамилия',
@@ -35,12 +40,19 @@ class RegistrationFormType extends AbstractType
                     'class'=>'validate',
                 ],
             ])
+
             ->add('name',null,[
                 'required'=>true,
                 'constraints'=>[
                     new Length([
-                        'maxMessage'=>'Максимальное число символов 255',
+                        'min'=>3,
+                        'minMessage'=>'Минимальное число символов - 3',
                         'max'=>255,
+                    ]),
+                    new Regex([
+                        'match'=>true,
+                        'pattern'=>'/^[а-яё -]+$/ui',
+                        'message'=>'Допустимо написание русскими буквами,пробелами и дефисами'
                     ]),
                 ],
                 'label'=>'Имя',
@@ -48,12 +60,18 @@ class RegistrationFormType extends AbstractType
                     'class'=>'validate',
                 ],
             ])
+
             ->add('patronymic',null,[
                 'required'=>false,
                 'constraints'=>[
                     new Length([
-                        'maxMessage'=>'Максимальное число символов 255',
+                        'maxMessage'=>'Максимальное число символов - 255',
                         'max'=>255,
+                    ]),
+                    new Regex([
+                        'match'=>true,
+                        'pattern'=>'/^[а-яё -]+$/ui',
+                        'message'=>'Допустимо написание русскими буквами,пробелами и дефисами'
                     ]),
                 ],
                 'label'=>'Отчество',
@@ -61,6 +79,7 @@ class RegistrationFormType extends AbstractType
                     'class'=>'validate',
                 ],
             ])
+
             ->add('phoneNumber',null,[
                 'required'=>true,
                 'constraints'=>[
@@ -68,19 +87,26 @@ class RegistrationFormType extends AbstractType
                         'maxMessage'=>'Максимальное число символов 20',
                         'max'=>20,
                     ]),
+                    new Regex([
+                        'match'=>true,
+                        'pattern'=>'/^(\\+7|7|8)?[\\s\\-]?\\(?[489][0-9]{2}\\)?[\\s\\-]?[0-9]{3}[\\s\\-]?[0-9]{2}[\\s\\-]?[0-9]{2}$/',
+                        'message'=>'Недопустимое написание номера телефона'
+                    ]),
                 ],
                 'label'=>'Номер телефона',
                 'attr'=>[
                     'class'=>'validate',
                 ],
             ])
+
             ->add('gender', ChoiceType::class,[
                 'label'=>'Выберите пол',
                 'choices'=>[
-                    'Мужской'=>'Мужской',
-                    'Женский'=>'Женский',
+                    'Мужской'=>'male',
+                    'Женский'=>'female',
                 ],
             ])
+
             ->add('address',null,[
                 'required'=>true,
                 'constraints'=>[
@@ -94,18 +120,33 @@ class RegistrationFormType extends AbstractType
                     'class'=>'validate',
                 ],
             ])
-            ->add('email',null,[
+            ->add('email',EmailType::class,[
                 'required'=>true,
+                'constraints' => [
+                    new Email([
+                        'message' => 'Email введен не корректно!',
+                    ]),
+                    new Length([
+                        'max' => 255,
+                    ]),
+                ],
+                'label' => 'Электронная почта',
+                'attr' => [
+                    'class' => 'validate',
+                ],
             ])
 
             ->add('agreeTerms', CheckboxType::class, [
+                'required'=>true,
                 'mapped' => false,
                 'constraints' => [
                     new IsTrue([
-                        'message' => 'You should agree to our terms.',
+                        'message' => 'Необходимо ваше соглашение с использованием персональных данных',
                     ]),
                 ],
+                'label'=>'Согласен с использованием моих персональных данных'
             ])
+
             ->add('plainPassword', PasswordType::class, [
                 // instead of being set onto the object directly,
                 // this is read and encoded in the controller
@@ -123,13 +164,6 @@ class RegistrationFormType extends AbstractType
                     ]),
                 ],
             ])
-            ->add('birthday', BirthdayType::class, [
-                'label' => 'День рождения',
-                'required' => true,
-                'widget'=>'single_text',
-                'format'=>'yyyy-MM-dd'
-            ])
-
         ;
     }
 
