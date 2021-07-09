@@ -3,7 +3,7 @@ volumes:
   postgres: ~
 services:
   nginx:
-    container_name: pract_nginx
+    container_name: pract_nginx_dev
     image: nginx:alpine
     working_dir: /app
     volumes:
@@ -15,17 +15,17 @@ services:
     links:
       - php
   postgres:
-    container_name: pract_postgres
+    container_name: pract_postgres_dev
     image: postgres:alpine
     volumes:
       - postgres:/var/lib/postgresql/data
     ports:
-      - 5432:5432
+      - 5434:5432
     environment:
       POSTGRES_USER: pguser
       POSTGRES_PASSWORD: pguser
   php:
-    container_name: pract_php
+    container_name: pract_php_dev
     build: docker/images/php
     working_dir: /app
     user: ${UID:-1000}:${GID:-1000}
