@@ -26,7 +26,7 @@ class RegistrationFormType extends AbstractType
                 'constraints'=>[
                     new Length([
                         'min'=>3,
-                        'minMessage'=>'Минимальное число символов - 3',
+                        'minMessage'=>'Минимальное число символов - {{ limit }}',
                         'max'=>255,
                     ]),
                     new Regex([
@@ -46,7 +46,7 @@ class RegistrationFormType extends AbstractType
                 'constraints'=>[
                     new Length([
                         'min'=>3,
-                        'minMessage'=>'Минимальное число символов - 3',
+                        'minMessage'=>'Минимальное число символов - {{ limit }}',
                         'max'=>255,
                     ]),
                     new Regex([
@@ -65,7 +65,7 @@ class RegistrationFormType extends AbstractType
                 'required'=>false,
                 'constraints'=>[
                     new Length([
-                        'maxMessage'=>'Максимальное число символов - 255',
+                        'maxMessage'=>'Максимальное число символов - {{ limit }}',
                         'max'=>255,
                     ]),
                     new Regex([
@@ -84,7 +84,7 @@ class RegistrationFormType extends AbstractType
                 'required'=>true,
                 'constraints'=>[
                     new Length([
-                        'maxMessage'=>'Максимальное число символов 20',
+                        'maxMessage'=>'Максимальное число символов {{ limit }}',
                         'max'=>20,
                     ]),
                     new Regex([
@@ -111,7 +111,7 @@ class RegistrationFormType extends AbstractType
                 'required'=>true,
                 'constraints'=>[
                     new Length([
-                        'maxMessage'=>'Максимальное число символов 512',
+                        'maxMessage'=>'Максимальное число символов {{ limit }}',
                         'max'=>512,
                     ]),
                 ],
@@ -148,8 +148,6 @@ class RegistrationFormType extends AbstractType
             ])
 
             ->add('plainPassword', PasswordType::class, [
-                // instead of being set onto the object directly,
-                // this is read and encoded in the controller
                 'mapped' => false,
                 'attr' => ['autocomplete' => 'new-password'],
                 'constraints' => [
@@ -159,7 +157,6 @@ class RegistrationFormType extends AbstractType
                     new Length([
                         'min' => 6,
                         'minMessage' => 'Ваш пароль должен быть не менее {{ limit }} символов',
-                        // max length allowed by Symfony for security reasons
                         'max' => 4096,
                     ]),
                 ],
@@ -169,8 +166,8 @@ class RegistrationFormType extends AbstractType
 
     public function configureOptions(OptionsResolver $resolver)
     {
-        /*$resolver->setDefaults([
-            'data_class' => User::class,
-        ]);*/
+        $resolver->setDefaults([
+
+        ]);
     }
 }
