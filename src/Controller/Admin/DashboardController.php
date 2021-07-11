@@ -33,16 +33,15 @@ class DashboardController extends AbstractDashboardController
 
     public function configureMenuItems(): iterable
     {
-//         TODO: update when completed home controller
-//        yield MenuItem::linkToUrl(
-//            'Вернуться на сайт',
-//            'fas fa-angle-double-left',
-//            $this->generateUrl('app', [], true)
-//        );
-        yield MenuItem::linkToCrud('Предложения', 'fas fa-user-circle', Offer::class);
-        yield MenuItem::linkToCrud('Товары', 'fas fa-chart-bar', Product::class);
+        yield MenuItem::linkToRoute('Вернуться на сайт', 'fas fa-angle-double-left', 'admin');
+        yield MenuItem::section('Объекты');
+        yield MenuItem::linkToCrud('Предложения', 'fas fa-tags', Offer::class);
+        yield MenuItem::linkToCrud('Товары', 'fas fa-shopping-bag', Product::class);
         yield MenuItem::linkToCrud('Список доступных свойств', 'fas fa-chart-bar', Property::class);
-        yield MenuItem::linkToCrud('Значение свойств', 'fas fa-chart-bar', PropertyValue::class);
-        yield MenuItem::linkToCrud('Разделы', 'fas fa-chart-bar', Section::class);
+        yield MenuItem::linkToCrud('Значение свойств', 'far fa-clipboard', PropertyValue::class);
+        yield MenuItem::linkToCrud('Разделы', 'far fa-folder-open', Section::class);
+        yield MenuItem::section('Каталог');
+        yield MenuItem::linkToRoute('Экспортировать в XML', 'fas fa-file-export', 'admin');
+        yield MenuItem::linkToRoute('Импортировать из XML', 'far fa-file-code', 'admin');
     }
 }
