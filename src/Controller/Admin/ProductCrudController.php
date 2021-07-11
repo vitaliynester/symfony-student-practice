@@ -5,6 +5,7 @@ namespace App\Controller\Admin;
 use App\Entity\Product;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
+use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\BooleanField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IdField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\NumberField;
@@ -31,6 +32,8 @@ class ProductCrudController extends AbstractCrudController
         yield BooleanField::new('active')->setLabel('Доступность')->setRequired(true);
         yield TextField::new('vendor')->setLabel('Производитель');
         yield NumberField::new('vatRate')->setLabel('Ставка НДС')->setRequired(true);
+        yield AssociationField::new('sections')->setLabel('Разделы');
+        yield AssociationField::new('offers')->setLabel('Предложения');
         yield IdField::new('xmlId')->setLabel('Идентификатор XML');
     }
 }
