@@ -26,6 +26,7 @@ class SectionCrudController extends AbstractCrudController
     public function configureFields(string $pageName): iterable
     {
         yield IdField::new('id')->hideOnForm();
+        yield AssociationField::new('products')->setLabel('Товары');
         yield AssociationField::new('parent')->setLabel('Родитель');
         yield TextField::new('name')->setLabel('Название')->setRequired(true);
         yield IdField::new('xmlId')->setLabel('Идентификатор XML');
