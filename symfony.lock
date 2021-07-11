@@ -3,7 +3,7 @@
         "version": "3.2.5"
     },
     "composer/xdebug-handler": {
-        "version": "2.0.1"
+        "version": "1.4.6"
     },
     "doctrine/annotations": {
         "version": "1.0",
@@ -115,15 +115,15 @@
         "version": "2.1.18"
     },
     "friendsofphp/php-cs-fixer": {
-        "version": "3.0",
+        "version": "2.17",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "master",
-            "version": "3.0",
-            "ref": "be2103eb4a20942e28a6dd87736669b757132435"
+            "version": "2.17",
+            "ref": "f0d4b4ddb4e2bb73b227e3987b6ecc53cd8be431"
         },
         "files": [
-            ".php-cs-fixer.dist.php"
+            ".php_cs.dist"
         ]
     },
     "friendsofphp/proxy-manager-lts": {
@@ -166,7 +166,7 @@
         "version": "7.2"
     },
     "php-cs-fixer/diff": {
-        "version": "v2.0.2"
+        "version": "v1.3.1"
     },
     "phpdocumentor/reflection-common": {
         "version": "2.2.0"
