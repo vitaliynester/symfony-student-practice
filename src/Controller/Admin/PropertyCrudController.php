@@ -5,12 +5,9 @@ namespace App\Controller\Admin;
 use App\Entity\Property;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
-use EasyCorp\Bundle\EasyAdminBundle\Field\BooleanField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IdField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IntegerField;
-use EasyCorp\Bundle\EasyAdminBundle\Field\NumberField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
-use phpDocumentor\Reflection\Types\Integer;
 
 class PropertyCrudController extends AbstractCrudController
 {
@@ -23,8 +20,7 @@ class PropertyCrudController extends AbstractCrudController
     {
         return $crud
             ->setEntityLabelInPlural('Определение свойств')
-            ->setEntityLabelInSingular('Определение свойства')
-            ;
+            ->setEntityLabelInSingular('Определение свойства');
     }
 
     public function configureFields(string $pageName): iterable
