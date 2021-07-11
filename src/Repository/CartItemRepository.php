@@ -36,15 +36,16 @@ class CartItemRepository extends ServiceEntityRepository
     }
     */
 
-    /*
-    public function findOneBySomeField($value): ?CartItem
+
+    public function deleteCustomerCart($customer)
     {
-        return $this->createQueryBuilder('c')
-            ->andWhere('c.exampleField = :val')
-            ->setParameter('val', $value)
+        $builder = $this->createQueryBuilder('c')
+            ->delete()
+            ->andWhere('c.customer = :val')
+            ->setParameter('val', $customer)
             ->getQuery()
-            ->getOneOrNullResult()
+            ->execute()
         ;
+        dd($builder);
     }
-    */
 }
