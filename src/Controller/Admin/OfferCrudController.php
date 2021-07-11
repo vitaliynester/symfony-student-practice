@@ -55,10 +55,13 @@ class OfferCrudController extends AbstractCrudController
         yield BooleanField::new('active')
             ->setLabel('Доступность')
             ->setRequired(true);
+        yield AssociationField::new('propertyValues')
+            ->setLabel('Свойства предложения')
+            ->setRequired(true);
         yield ImageField::new('picture')
             ->setLabel('Изображение товара')
             ->setBasePath('uploads/')
-            ->setUploadDir('uploads/')
+            ->setUploadDir('public/uploads/pictures/custom')
             ->setFormType(FileUploadType::class)
             ->setUploadedFileNamePattern('[randomhash].[extension]')
             ->setRequired(false)
