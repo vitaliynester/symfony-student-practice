@@ -61,7 +61,7 @@ class OfferCrudController extends AbstractCrudController
         yield ImageField::new('picture')
             ->setLabel('Изображение товара')
             ->setBasePath('uploads/')
-            ->setUploadDir('public/uploads/pictures/custom')
+            ->setUploadDir('public/upload/pictures')
             ->setFormType(FileUploadType::class)
             ->setUploadedFileNamePattern('[randomhash].[extension]')
             ->setRequired(false)
