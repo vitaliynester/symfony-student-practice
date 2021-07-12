@@ -1,0 +1,4921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2021-07-12 14:23:44">
+	<shop>
+		<name>Интернет-магазин одежды</name>
+		<company>Интернет-магазин одежды</company>
+		<categories>
+			<category id="1">category</category>
+			<category id="2" parentId="1">category</category>
+			<category id="3" parentId="1">category</category>
+			<category id="4" parentId="1">category</category>
+			<category id="5" parentId="4">category</category>
+			<category id="6" parentId="4">category</category>
+			<category id="7">category</category>
+			<category id="8">category</category>
+			<category id="9">category</category>
+			<category id="10">category</category>
+			<category id="11">category</category>
+			<category id="12">category</category>
+			<category id="13" parentId="12">category</category>
+			<category id="14" parentId="13">category</category>
+			<category id="15" parentId="13">category</category>
+		</categories>
+		<offers>
+			<offer id="2" productId="2" quantity="100">
+				<url></url>
+				<price>715</price>
+				<categoryId>15</categoryId>
+				<picture>d8/d863b8fe5c5ffced4853a52274d8c84ef7b8d27e.jpeg</picture>
+				<name>Ремень Грубая Кожа</name>
+				<xmlId>312</xmlId>
+				<param name="article" code="article">188-16-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="3" productId="2" quantity="100">
+				<url></url>
+				<price>715</price>
+				<categoryId>15</categoryId>
+				<picture>a6/a6bdfcaa73e84734d9788b6276549fd02740d584.jpeg</picture>
+				<name>Ремень Грубая Кожа</name>
+				<xmlId>313</xmlId>
+				<param name="article" code="article">188-16-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="4" productId="2" quantity="100">
+				<url></url>
+				<price>715</price>
+				<categoryId>15</categoryId>
+				<picture>ec/ecd30994b43635a8a04e611184cab5e8ac5e35dc.jpeg</picture>
+				<name>Ремень Грубая Кожа</name>
+				<xmlId>314</xmlId>
+				<param name="article" code="article">188-16-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="5" productId="2" quantity="100">
+				<url></url>
+				<price>715</price>
+				<categoryId>15</categoryId>
+				<picture>61/611ad4d974b20ceefc00968b09a2cba2e107a638.jpeg</picture>
+				<name>Ремень Грубая Кожа</name>
+				<xmlId>315</xmlId>
+				<param name="article" code="article">188-16-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="6" productId="2" quantity="99">
+				<url></url>
+				<price>715</price>
+				<categoryId>15</categoryId>
+				<picture>0f/0fc6cf6e7c245ea56b50b160e580939dc4a091e6.jpeg</picture>
+				<name>Ремень Грубая Кожа</name>
+				<xmlId>316</xmlId>
+				<param name="article" code="article">188-16-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="7" productId="3" quantity="100">
+				<url></url>
+				<price>750</price>
+				<categoryId>14</categoryId>
+				<picture>3b/3b8ae959ea98fa0b473ede6def68d52e6073b201.jpeg</picture>
+				<name>Ремень Плетение</name>
+				<xmlId>307</xmlId>
+				<param name="article" code="article">188-15-xx</param>
+				<param name="Цвет" code="color">красный</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="8" productId="3" quantity="100">
+				<url></url>
+				<price>750</price>
+				<categoryId>14</categoryId>
+				<picture>7e/7e55af5c1beddf00106cf4fb850702156f1dc34d.jpeg</picture>
+				<name>Ремень Плетение</name>
+				<xmlId>308</xmlId>
+				<param name="article" code="article">188-15-xx</param>
+				<param name="Цвет" code="color">красный</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="9" productId="3" quantity="100">
+				<url></url>
+				<price>750</price>
+				<categoryId>14</categoryId>
+				<picture>29/299382473c4e75f7fbc767f798237665c263b603.jpeg</picture>
+				<name>Ремень Плетение</name>
+				<xmlId>309</xmlId>
+				<param name="article" code="article">188-15-xx</param>
+				<param name="Цвет" code="color">красный</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="10" productId="3" quantity="100">
+				<url></url>
+				<price>750</price>
+				<categoryId>14</categoryId>
+				<picture>8f/8fb8522ff8b9a24e2b156c377e3ae6099930aa69.jpeg</picture>
+				<name>Ремень Плетение</name>
+				<xmlId>310</xmlId>
+				<param name="article" code="article">188-15-xx</param>
+				<param name="Цвет" code="color">красный</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="11" productId="3" quantity="100">
+				<url></url>
+				<price>750</price>
+				<categoryId>14</categoryId>
+				<picture>0a/0a595dbd96c6e19a57e38bdea42f36c489ba1bcb.jpeg</picture>
+				<name>Ремень Плетение</name>
+				<xmlId>311</xmlId>
+				<param name="article" code="article">188-15-xx</param>
+				<param name="Цвет" code="color">красный</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="12" productId="4" quantity="100">
+				<url></url>
+				<price>799</price>
+				<categoryId>15</categoryId>
+				<picture>b9/b97b2bd63ce8255bf63d6612be17fcf847d48d09.jpeg</picture>
+				<name>Ремень Строчка</name>
+				<xmlId>302</xmlId>
+				<param name="article" code="article">188-14-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Италия &quot;Фирстиль&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="13" productId="4" quantity="100">
+				<url></url>
+				<price>799</price>
+				<categoryId>15</categoryId>
+				<picture>71/71cc21322082eb24ee2ce7e4c6c89e8ea1feca0c.jpeg</picture>
+				<name>Ремень Строчка</name>
+				<xmlId>303</xmlId>
+				<param name="article" code="article">188-14-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Италия &quot;Фирстиль&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="14" productId="4" quantity="100">
+				<url></url>
+				<price>799</price>
+				<categoryId>15</categoryId>
+				<picture>db/db9ce491b642cdf84b5b685bdc8c1f9702764b86.jpeg</picture>
+				<name>Ремень Строчка</name>
+				<xmlId>304</xmlId>
+				<param name="article" code="article">188-14-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Италия &quot;Фирстиль&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="15" productId="4" quantity="100">
+				<url></url>
+				<price>799</price>
+				<categoryId>15</categoryId>
+				<picture>c4/c44f9b704f0d8890dbfd05c83776c0c525bf7806.jpeg</picture>
+				<name>Ремень Строчка</name>
+				<xmlId>305</xmlId>
+				<param name="article" code="article">188-14-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Италия &quot;Фирстиль&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="16" productId="4" quantity="100">
+				<url></url>
+				<price>799</price>
+				<categoryId>15</categoryId>
+				<picture>90/9053c94791a1ccfb35bce089f2fae476febe5c64.jpeg</picture>
+				<name>Ремень Строчка</name>
+				<xmlId>306</xmlId>
+				<param name="article" code="article">188-14-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Италия &quot;Фирстиль&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="17" productId="5" quantity="100">
+				<url></url>
+				<price>730</price>
+				<categoryId>14</categoryId>
+				<picture>8d/8de74a50faf68b04faab7f6bac2a8e65fea28ac2.jpeg</picture>
+				<name>Ремень Элегантность</name>
+				<xmlId>297</xmlId>
+				<param name="article" code="article">188-13-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="18" productId="5" quantity="100">
+				<url></url>
+				<price>730</price>
+				<categoryId>14</categoryId>
+				<picture>70/703364a507b136f8f4317a70b4538160fda6b40e.jpeg</picture>
+				<name>Ремень Элегантность</name>
+				<xmlId>298</xmlId>
+				<param name="article" code="article">188-13-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="19" productId="5" quantity="100">
+				<url></url>
+				<price>730</price>
+				<categoryId>14</categoryId>
+				<picture>ea/eab6aa93e40bdf30eda142beb35d24894e2beb45.jpeg</picture>
+				<name>Ремень Элегантность</name>
+				<xmlId>299</xmlId>
+				<param name="article" code="article">188-13-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="20" productId="5" quantity="100">
+				<url></url>
+				<price>730</price>
+				<categoryId>14</categoryId>
+				<picture>bc/bcbc430df51190bda0a6a73b3c3f05b12572a5e9.jpeg</picture>
+				<name>Ремень Элегантность</name>
+				<xmlId>300</xmlId>
+				<param name="article" code="article">188-13-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="21" productId="5" quantity="100">
+				<url></url>
+				<price>730</price>
+				<categoryId>14</categoryId>
+				<picture>37/37a0706a7d5196a22d8c48a5f55e2a1d16b5d790.jpeg</picture>
+				<name>Ремень Элегантность</name>
+				<xmlId>301</xmlId>
+				<param name="article" code="article">188-13-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="22" productId="6" quantity="100">
+				<url></url>
+				<price>1190</price>
+				<categoryId>15</categoryId>
+				<picture>92/92270c4c6df310fdf20c163ca234418ea652767d.jpeg</picture>
+				<name>Ремень Класика</name>
+				<xmlId>292</xmlId>
+				<param name="article" code="article">188-12-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Италия &quot;Фирстиль&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="23" productId="6" quantity="100">
+				<url></url>
+				<price>1190</price>
+				<categoryId>15</categoryId>
+				<picture>50/50fc7f3496252e5b54e71881f831f9c0131298a6.jpeg</picture>
+				<name>Ремень Класика</name>
+				<xmlId>293</xmlId>
+				<param name="article" code="article">188-12-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Италия &quot;Фирстиль&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="24" productId="6" quantity="100">
+				<url></url>
+				<price>1190</price>
+				<categoryId>15</categoryId>
+				<picture>cc/ccaabf6bd7e948ac7b68525f13c264a52114ae11.jpeg</picture>
+				<name>Ремень Класика</name>
+				<xmlId>294</xmlId>
+				<param name="article" code="article">188-12-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Италия &quot;Фирстиль&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="25" productId="6" quantity="100">
+				<url></url>
+				<price>1190</price>
+				<categoryId>15</categoryId>
+				<picture>32/328052881911eea7fbe4e8a7be11539226eef748.jpeg</picture>
+				<name>Ремень Класика</name>
+				<xmlId>295</xmlId>
+				<param name="article" code="article">188-12-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Италия &quot;Фирстиль&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="26" productId="6" quantity="100">
+				<url></url>
+				<price>1190</price>
+				<categoryId>15</categoryId>
+				<picture>55/55c39fb7842dcd929bc27566f59796c573a7f4c1.jpeg</picture>
+				<name>Ремень Класика</name>
+				<xmlId>296</xmlId>
+				<param name="article" code="article">188-12-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Италия &quot;Фирстиль&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="27" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>a5/a5c23c5e67401bb7dbf4dbe91ed4c0cfd9d918da.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>262</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="28" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>19/19b300f4439f1e6a3467bdf1bb647239856729a5.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>263</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="29" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>52/52f5647c9def06d0f8de4c92f68ce4412bf23b9a.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>264</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="30" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>f8/f8744a5870cb2aa52a09975e7cc27890797338de.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>265</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="31" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>c1/c14d61b8cbf0f69f81de6a0e378495ae3374e470.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>266</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="32" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>2e/2e4ab56d3ee8c81befe87bbc1f7fadef1f9b74f9.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>267</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">морской волны</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="33" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>1c/1cec2be1526f9f167cd5ad73ed938181ee3ef86c.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>268</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">морской волны</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="34" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>6b/6b13b75560a4003c3bf3696f6c57064acbace674.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>269</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">морской волны</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="35" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>a2/a208f516c1026003e9c3a35fd785bd6d3cb2dba3.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>270</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">морской волны</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="36" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>73/731ac76c9718150562cf0a7c2ca9843fac5cea62.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>271</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">морской волны</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="37" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>5b/5beec2e89fc97bb5e9273fd8bd6dc457c3fccbef.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>272</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">розовый</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="38" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>e4/e4b608186f9c49f8a5c583a88842eb6fcfd3c853.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>273</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">розовый</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="39" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>1d/1d1aa4a70fa9f21f59f581cb28ee501fdf15bf20.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>274</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">розовый</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="40" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>58/589b5a5d00d41d15cf8ea40d92dd602769418186.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>275</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">розовый</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="41" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>6a/6af6af1c48a717deaf82c15b6b48143b8537c331.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>276</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">розовый</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="42" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>6d/6d2c467867ea8a031ca39a4e22db78e4533fbfab.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>277</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">синий</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="43" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>29/290540a191d93418155506ae2807a32c755f38df.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>278</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">синий</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="44" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>c4/c43cafd41a72e574dc17f632e7aaa44e0d55cfdf.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>279</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">синий</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="45" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>f1/f1f09fc0e6906f6ea14c4c38aa89f87c903ff1f2.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>280</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">синий</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="46" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>dd/dd18f60e4307483a7b7a3f8072c0884aae9972bd.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>281</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">синий</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="47" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>98/986c11ae5e866c718d7f30ff977b889cc34457f7.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>282</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="48" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>bc/bccecefe7baf765d84c736c84feaffd255192828.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>283</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="49" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>0d/0d231f83a778327112945c9c06034cb7bb6256bd.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>284</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="50" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>7c/7c27ea91fa0abb499a43795cf0b86c48b82de73f.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>285</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="51" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>b2/b256589fc58f72e0fe1f42dad6d3618713670198.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>286</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="52" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>9e/9ed463526c5f48a2330194811f6ce0ce53e1110c.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>287</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">зеленый</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="53" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>5c/5cfd5598a5e79142e7d0cad5c1bc8e6e7dcdc15f.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>288</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">зеленый</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="54" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>8f/8f3b10ec42f482658ed841640151ec8c585b58a2.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>289</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">зеленый</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="55" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>f7/f793f346f3a5624eb12a2670287ad06c42364365.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>290</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">зеленый</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="56" productId="7" quantity="100">
+				<url></url>
+				<price>390</price>
+				<categoryId>14</categoryId>
+				<picture>0a/0a2e7d8acba6eafc3992c5b462091565eca8d596.jpeg</picture>
+				<name>Ремень Радуга</name>
+				<xmlId>291</xmlId>
+				<param name="article" code="article">188-11-xx</param>
+				<param name="Цвет" code="color">зеленый</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Румыния &quot;Радужный Вэй&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="57" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>3b/3bec43fb78e6b5a8557115f8a4ccb37501941f14.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>237</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">джинсовый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="58" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>7f/7f7fb512fa034057b325cbcb82113a4939d7c700.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>238</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">джинсовый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="59" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>b7/b7a9b7bf23c7176883c7c1b00be6103414c0d76a.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>239</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">джинсовый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="60" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>e9/e9690a69a0c03d6575658f42b255a2a5f78107e0.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>240</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">джинсовый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="61" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>c7/c7f1168295cde7fdca664c2321c5fb96dcbcd7af.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>241</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">джинсовый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="62" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>5a/5a4bf59fbde447899ae0b94ee26cb53d8dee452a.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>242</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">белый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="63" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>b5/b5dd7ac57c4d56d647ad03cf8b72aafa812613e5.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>243</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">белый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="64" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>44/4437c99d3c31f300bc01c1e139e1bc80987962fe.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>244</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">белый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="65" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>e5/e5b25bedaf0e4b8eb628659136c0d68ea73166e0.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>245</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">белый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="66" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>c9/c943cc0daaf59f0e8e00f9f78b3504953eda23bd.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>246</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">белый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="67" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>fa/fa62b5ce31974ae4046266a14e035b912d1a3242.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>247</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">красный</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="68" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>d4/d4ee0dc7e8364b232f0c521252950ef75d881649.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>248</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">красный</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="69" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>a4/a481d14305d27922e01b2d34c30703657ba6c985.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>249</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">красный</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="70" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>ed/ede952304c467fe7d03aa0721b679092cc439152.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>250</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">красный</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="71" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>2b/2b8a97516cb1d44fdc9ac172fe78d1107bb4b1b0.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>251</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">красный</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="72" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>23/23c08fefec9cb975f957414dea3125d582c3485c.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>252</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">пестрый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="73" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>79/793d7f308067be38f4540b7f5b255bd53e8ac0b4.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>253</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">пестрый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="74" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>fb/fb0d5740fba9b600caa56bb00e8eac82da660b42.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>254</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">пестрый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="75" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>8e/8e1e39df126fbb318ca801f40813b2cdb499ebb7.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>255</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">пестрый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="76" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>f5/f523bba8ab60456cc75aaeb0720d44a517fec0dd.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>256</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">пестрый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="77" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>3e/3e22ef5a610cc99e96c2301d64634155d5352dd3.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>257</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="78" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>58/587fc29592dce6f2c93cd3f9a9e751d0d8327c5c.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>258</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="79" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>e6/e64aa5eac8de09b4e48c87576f2dc0c396c8483e.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>259</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="80" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>7d/7d94f7318e768f7e2275df5a4ee1c1ac0614bba8.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>260</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="81" productId="8" quantity="100">
+				<url></url>
+				<price>2799</price>
+				<categoryId>5</categoryId>
+				<picture>88/880a2f265b9af4efb741cbaa7a4427e4e9a0bb88.jpeg</picture>
+				<name>Туфли Ультра Лайн</name>
+				<xmlId>261</xmlId>
+				<param name="article" code="article">174-21-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="82" productId="9" quantity="100">
+				<url></url>
+				<price>2499</price>
+				<categoryId>5</categoryId>
+				<picture>d8/d8ce2ddb97d2bc2423c098b1a6074b15f0b2b589.jpeg</picture>
+				<name>Туфли Полет Валькирии</name>
+				<xmlId>232</xmlId>
+				<param name="article" code="article">174-20-xx</param>
+				<param name="Цвет" code="color">синий</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="83" productId="9" quantity="100">
+				<url></url>
+				<price>2499</price>
+				<categoryId>5</categoryId>
+				<picture>b6/b62dcf6a05c7f2d16b9f8c4f2fc9d0633e2ab631.jpeg</picture>
+				<name>Туфли Полет Валькирии</name>
+				<xmlId>233</xmlId>
+				<param name="article" code="article">174-20-xx</param>
+				<param name="Цвет" code="color">синий</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="84" productId="9" quantity="100">
+				<url></url>
+				<price>2499</price>
+				<categoryId>5</categoryId>
+				<picture>e2/e2f1915d7220fd98935ef6ee19ba4737b44c57be.jpeg</picture>
+				<name>Туфли Полет Валькирии</name>
+				<xmlId>234</xmlId>
+				<param name="article" code="article">174-20-xx</param>
+				<param name="Цвет" code="color">синий</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="85" productId="9" quantity="100">
+				<url></url>
+				<price>2499</price>
+				<categoryId>5</categoryId>
+				<picture>52/52cffa16d1e87638f2ded9ceece797f602cacaa1.jpeg</picture>
+				<name>Туфли Полет Валькирии</name>
+				<xmlId>235</xmlId>
+				<param name="article" code="article">174-20-xx</param>
+				<param name="Цвет" code="color">синий</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="86" productId="9" quantity="100">
+				<url></url>
+				<price>2499</price>
+				<categoryId>5</categoryId>
+				<picture>d9/d9969e3a0462351452931aca2ead2e5671bc649b.jpeg</picture>
+				<name>Туфли Полет Валькирии</name>
+				<xmlId>236</xmlId>
+				<param name="article" code="article">174-20-xx</param>
+				<param name="Цвет" code="color">синий</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="87" productId="10" quantity="100">
+				<url></url>
+				<price>10</price>
+				<categoryId>2</categoryId>
+				<picture>e7/e767c19ea1b3c82b0da9ad425c9ad1aed08e9d82.jpeg</picture>
+				<name>Пантолеты Кости на Пляже</name>
+				<xmlId>227</xmlId>
+				<param name="article" code="article">174-19-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<vendor>Франция &quot;Айли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="88" productId="10" quantity="100">
+				<url></url>
+				<price>899</price>
+				<categoryId>2</categoryId>
+				<picture>5d/5df6bf1d89d0e4ff895bc57e1a5f91160e8e6c86.jpeg</picture>
+				<name>Пантолеты Кости на Пляже</name>
+				<xmlId>228</xmlId>
+				<param name="article" code="article">174-19-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<vendor>Франция &quot;Айли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="89" productId="10" quantity="100">
+				<url></url>
+				<price>899</price>
+				<categoryId>2</categoryId>
+				<picture>f8/f81b9941ea03e4b42eb86be640a9a486299fa1e3.jpeg</picture>
+				<name>Пантолеты Кости на Пляже</name>
+				<xmlId>229</xmlId>
+				<param name="article" code="article">174-19-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<vendor>Франция &quot;Айли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="90" productId="10" quantity="100">
+				<url></url>
+				<price>899</price>
+				<categoryId>2</categoryId>
+				<picture>b6/b65694d1ed288fb19d8764d33acace70933f3b44.jpeg</picture>
+				<name>Пантолеты Кости на Пляже</name>
+				<xmlId>230</xmlId>
+				<param name="article" code="article">174-19-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<vendor>Франция &quot;Айли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="91" productId="10" quantity="100">
+				<url></url>
+				<price>899</price>
+				<categoryId>2</categoryId>
+				<picture>79/798cd1e982954cee7cec487a1394aa56cdbe1113.jpeg</picture>
+				<name>Пантолеты Кости на Пляже</name>
+				<xmlId>231</xmlId>
+				<param name="article" code="article">174-19-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<vendor>Франция &quot;Айли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="92" productId="11" quantity="100">
+				<url></url>
+				<price>2999</price>
+				<categoryId>5</categoryId>
+				<picture>1d/1d968741a82da4927d0a197f621872081c928129.jpeg</picture>
+				<name>Туфли Вечерняя Бабочка</name>
+				<xmlId>222</xmlId>
+				<param name="article" code="article">174-18-xx</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="93" productId="11" quantity="100">
+				<url></url>
+				<price>2999</price>
+				<categoryId>5</categoryId>
+				<picture>23/23ebbd91991fbe8998db9ec75215feb0428c307e.jpeg</picture>
+				<name>Туфли Вечерняя Бабочка</name>
+				<xmlId>223</xmlId>
+				<param name="article" code="article">174-18-xx</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="94" productId="11" quantity="100">
+				<url></url>
+				<price>2999</price>
+				<categoryId>5</categoryId>
+				<picture>12/12375bbff59ecaf6b9e36ba69f71057cf6119b9d.jpeg</picture>
+				<name>Туфли Вечерняя Бабочка</name>
+				<xmlId>224</xmlId>
+				<param name="article" code="article">174-18-xx</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="95" productId="11" quantity="100">
+				<url></url>
+				<price>2999</price>
+				<categoryId>5</categoryId>
+				<picture>f3/f30ec22d3d42550d60bf4fa296867f4f5f894787.jpeg</picture>
+				<name>Туфли Вечерняя Бабочка</name>
+				<xmlId>225</xmlId>
+				<param name="article" code="article">174-18-xx</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="96" productId="11" quantity="100">
+				<url></url>
+				<price>2999</price>
+				<categoryId>5</categoryId>
+				<picture>b4/b4902057bf3bfb370b439068d12a2db576f4bacd.jpeg</picture>
+				<name>Туфли Вечерняя Бабочка</name>
+				<xmlId>226</xmlId>
+				<param name="article" code="article">174-18-xx</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="97" productId="12" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>6</categoryId>
+				<picture>fe/fe1d6013e457669db828a8c8a78b9786313c7814.jpeg</picture>
+				<name>Туфли Летняя Легкость</name>
+				<xmlId>217</xmlId>
+				<param name="article" code="article">174-17-xx</param>
+				<param name="Цвет" code="color">белый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="98" productId="12" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>6</categoryId>
+				<picture>1e/1e309cc0a5bbb0077853e44bee873424275ded73.jpeg</picture>
+				<name>Туфли Летняя Легкость</name>
+				<xmlId>218</xmlId>
+				<param name="article" code="article">174-17-xx</param>
+				<param name="Цвет" code="color">белый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="99" productId="12" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>6</categoryId>
+				<picture>72/7256bec9b5dd48dd1941259f1d02110d0eb63da4.jpeg</picture>
+				<name>Туфли Летняя Легкость</name>
+				<xmlId>219</xmlId>
+				<param name="article" code="article">174-17-xx</param>
+				<param name="Цвет" code="color">белый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="100" productId="12" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>6</categoryId>
+				<picture>ff/ff23cbe0fc5da788af548b44090f385bc01f30f8.jpeg</picture>
+				<name>Туфли Летняя Легкость</name>
+				<xmlId>220</xmlId>
+				<param name="article" code="article">174-17-xx</param>
+				<param name="Цвет" code="color">белый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="101" productId="12" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>6</categoryId>
+				<picture>ef/efeae1b8ecd13a80639ba45064d538fbdcfca859.jpeg</picture>
+				<name>Туфли Летняя Легкость</name>
+				<xmlId>221</xmlId>
+				<param name="article" code="article">174-17-xx</param>
+				<param name="Цвет" code="color">белый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="102" productId="13" quantity="100">
+				<url></url>
+				<price>999</price>
+				<categoryId>3</categoryId>
+				<picture>d1/d13eb80083eb3380c9a10a3e69b9b2d4916bed3a.jpeg</picture>
+				<name>Домашние Тапочки Любимый Спорт</name>
+				<xmlId>212</xmlId>
+				<param name="article" code="article">174-16-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="103" productId="13" quantity="100">
+				<url></url>
+				<price>999</price>
+				<categoryId>3</categoryId>
+				<picture>8b/8b6519a81dcf242866b29e89e5ed151711aaad85.jpeg</picture>
+				<name>Домашние Тапочки Любимый Спорт</name>
+				<xmlId>213</xmlId>
+				<param name="article" code="article">174-16-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="104" productId="13" quantity="100">
+				<url></url>
+				<price>999</price>
+				<categoryId>3</categoryId>
+				<picture>ef/ef8733da8713d323cb7316eb728dffdabe367b74.jpeg</picture>
+				<name>Домашние Тапочки Любимый Спорт</name>
+				<xmlId>214</xmlId>
+				<param name="article" code="article">174-16-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="105" productId="13" quantity="100">
+				<url></url>
+				<price>999</price>
+				<categoryId>3</categoryId>
+				<picture>d6/d6ba7a3f1dfde58f4c90d931b4446957788efca9.jpeg</picture>
+				<name>Домашние Тапочки Любимый Спорт</name>
+				<xmlId>215</xmlId>
+				<param name="article" code="article">174-16-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="106" productId="13" quantity="100">
+				<url></url>
+				<price>999</price>
+				<categoryId>3</categoryId>
+				<picture>f0/f00a46156f4bd9bc81b9cc58af177be0ba43c40f.jpeg</picture>
+				<name>Домашние Тапочки Любимый Спорт</name>
+				<xmlId>216</xmlId>
+				<param name="article" code="article">174-16-xx</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="107" productId="14" quantity="100">
+				<url></url>
+				<price>1199</price>
+				<categoryId>3</categoryId>
+				<picture>86/861cc8f3eb818cefadbeb7fdb6e399e4a1e65093.jpeg</picture>
+				<name>Домашние Тапочки Розовый Рай</name>
+				<xmlId>207</xmlId>
+				<param name="article" code="article">174-15-xx</param>
+				<param name="Цвет" code="color">розовый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="108" productId="14" quantity="100">
+				<url></url>
+				<price>1199</price>
+				<categoryId>3</categoryId>
+				<picture>05/0510514565e4773e11895f28648dedfddcbe3814.jpeg</picture>
+				<name>Домашние Тапочки Розовый Рай</name>
+				<xmlId>208</xmlId>
+				<param name="article" code="article">174-15-xx</param>
+				<param name="Цвет" code="color">розовый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="109" productId="14" quantity="100">
+				<url></url>
+				<price>1199</price>
+				<categoryId>3</categoryId>
+				<picture>ac/acdcec0d97e7329ed8201a164e82a429749c2700.jpeg</picture>
+				<name>Домашние Тапочки Розовый Рай</name>
+				<xmlId>209</xmlId>
+				<param name="article" code="article">174-15-xx</param>
+				<param name="Цвет" code="color">розовый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="110" productId="14" quantity="100">
+				<url></url>
+				<price>1199</price>
+				<categoryId>3</categoryId>
+				<picture>a4/a4205b5cc940d1ecd29eeeecf9cc0972cc4fbd4c.jpeg</picture>
+				<name>Домашние Тапочки Розовый Рай</name>
+				<xmlId>210</xmlId>
+				<param name="article" code="article">174-15-xx</param>
+				<param name="Цвет" code="color">розовый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="111" productId="14" quantity="100">
+				<url></url>
+				<price>1199</price>
+				<categoryId>3</categoryId>
+				<picture>f2/f22123d9307395fa65a7e7c553e740fa00bf97e0.jpeg</picture>
+				<name>Домашние Тапочки Розовый Рай</name>
+				<xmlId>211</xmlId>
+				<param name="article" code="article">174-15-xx</param>
+				<param name="Цвет" code="color">розовый</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="112" productId="15" quantity="100">
+				<url></url>
+				<price>2699</price>
+				<categoryId>11</categoryId>
+				<picture>f0/f0c244548091f46aea074a2ad825812bea89632e.jpeg</picture>
+				<name>Спортивный Костюм Вечерний Спорт</name>
+				<xmlId>202</xmlId>
+				<param name="article" code="article">189-06-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="113" productId="15" quantity="100">
+				<url></url>
+				<price>2699</price>
+				<categoryId>11</categoryId>
+				<picture>dc/dcfa5dc49f9b102eea41cb1d7dae234c14c6fbeb.jpeg</picture>
+				<name>Спортивный Костюм Вечерний Спорт</name>
+				<xmlId>203</xmlId>
+				<param name="article" code="article">189-06-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="114" productId="15" quantity="100">
+				<url></url>
+				<price>2699</price>
+				<categoryId>11</categoryId>
+				<picture>9e/9e2da37ba6f0b4772cff175c868d7523c5804c51.jpeg</picture>
+				<name>Спортивный Костюм Вечерний Спорт</name>
+				<xmlId>204</xmlId>
+				<param name="article" code="article">189-06-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="115" productId="15" quantity="100">
+				<url></url>
+				<price>2699</price>
+				<categoryId>11</categoryId>
+				<picture>dd/dd8cfb2355b47856473f5424b25bf70f4d240879.jpeg</picture>
+				<name>Спортивный Костюм Вечерний Спорт</name>
+				<xmlId>205</xmlId>
+				<param name="article" code="article">189-06-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="116" productId="15" quantity="100">
+				<url></url>
+				<price>2699</price>
+				<categoryId>11</categoryId>
+				<picture>56/562eb4787c160b1aab5db9e7cd4e2b1e85d66a12.jpeg</picture>
+				<name>Спортивный Костюм Вечерний Спорт</name>
+				<xmlId>206</xmlId>
+				<param name="article" code="article">189-06-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="117" productId="16" quantity="100">
+				<url></url>
+				<price>2630</price>
+				<categoryId>11</categoryId>
+				<picture>f4/f48fc7f5bdf654147c5c930660cdcdd44c89c2ef.jpeg</picture>
+				<name>Спортивный Костюм Дыхание Спорта</name>
+				<xmlId>197</xmlId>
+				<param name="article" code="article">189-05-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="118" productId="16" quantity="100">
+				<url></url>
+				<price>2630</price>
+				<categoryId>11</categoryId>
+				<picture>be/be48947060ba1e13c72306091301f2de26d2b45e.jpeg</picture>
+				<name>Спортивный Костюм Дыхание Спорта</name>
+				<xmlId>198</xmlId>
+				<param name="article" code="article">189-05-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="119" productId="16" quantity="100">
+				<url></url>
+				<price>2630</price>
+				<categoryId>11</categoryId>
+				<picture>3b/3b9ae3713f2714fc0011cad84bb49172466eca89.jpeg</picture>
+				<name>Спортивный Костюм Дыхание Спорта</name>
+				<xmlId>199</xmlId>
+				<param name="article" code="article">189-05-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="120" productId="16" quantity="100">
+				<url></url>
+				<price>2630</price>
+				<categoryId>11</categoryId>
+				<picture>93/93b99492f9dec434998498c0a949374b4aedc86b.jpeg</picture>
+				<name>Спортивный Костюм Дыхание Спорта</name>
+				<xmlId>200</xmlId>
+				<param name="article" code="article">189-05-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="121" productId="16" quantity="100">
+				<url></url>
+				<price>2630</price>
+				<categoryId>11</categoryId>
+				<picture>ad/ad38bd50924029c99d9e8380201edb44fd995f6a.jpeg</picture>
+				<name>Спортивный Костюм Дыхание Спорта</name>
+				<xmlId>201</xmlId>
+				<param name="article" code="article">189-05-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="122" productId="17" quantity="100">
+				<url></url>
+				<price>2570</price>
+				<categoryId>11</categoryId>
+				<picture>10/10fea5352a278017ca38f7976433ce6e7ad32c45.jpeg</picture>
+				<name>Спортивный Костюм Розовый Вихрь</name>
+				<xmlId>192</xmlId>
+				<param name="article" code="article">189-04-хх</param>
+				<param name="Цвет" code="color">розовый</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="123" productId="17" quantity="100">
+				<url></url>
+				<price>2570</price>
+				<categoryId>11</categoryId>
+				<picture>ba/ba5487994ad758a1a2bd1aea85c30f51b97952e1.jpeg</picture>
+				<name>Спортивный Костюм Розовый Вихрь</name>
+				<xmlId>193</xmlId>
+				<param name="article" code="article">189-04-хх</param>
+				<param name="Цвет" code="color">розовый</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="124" productId="17" quantity="100">
+				<url></url>
+				<price>2570</price>
+				<categoryId>11</categoryId>
+				<picture>3d/3d14e3f4323ded09e3e8be62bc30619584774a16.jpeg</picture>
+				<name>Спортивный Костюм Розовый Вихрь</name>
+				<xmlId>194</xmlId>
+				<param name="article" code="article">189-04-хх</param>
+				<param name="Цвет" code="color">розовый</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="125" productId="17" quantity="100">
+				<url></url>
+				<price>2570</price>
+				<categoryId>11</categoryId>
+				<picture>cd/cdd01bf6931ae7dc2e3fc52ac496f2b0019cee31.jpeg</picture>
+				<name>Спортивный Костюм Розовый Вихрь</name>
+				<xmlId>195</xmlId>
+				<param name="article" code="article">189-04-хх</param>
+				<param name="Цвет" code="color">розовый</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="126" productId="17" quantity="100">
+				<url></url>
+				<price>2570</price>
+				<categoryId>11</categoryId>
+				<picture>05/0572bcacd32025a8335355a865a89bb25787f4e3.jpeg</picture>
+				<name>Спортивный Костюм Розовый Вихрь</name>
+				<xmlId>196</xmlId>
+				<param name="article" code="article">189-04-хх</param>
+				<param name="Цвет" code="color">розовый</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="127" productId="18" quantity="100">
+				<url></url>
+				<price>2530</price>
+				<categoryId>11</categoryId>
+				<picture>f8/f8f036aeb7f16613f5dee608a46b8a1fdf42fe8e.jpeg</picture>
+				<name>Спортивный Костюм Элегантность в Ночи</name>
+				<xmlId>187</xmlId>
+				<param name="article" code="article">189-03-хх</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="128" productId="18" quantity="100">
+				<url></url>
+				<price>2530</price>
+				<categoryId>11</categoryId>
+				<picture>20/206e90703c286e6ec340030e9e0673b0ab3332d5.jpeg</picture>
+				<name>Спортивный Костюм Элегантность в Ночи</name>
+				<xmlId>188</xmlId>
+				<param name="article" code="article">189-03-хх</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="129" productId="18" quantity="100">
+				<url></url>
+				<price>2530</price>
+				<categoryId>11</categoryId>
+				<picture>5f/5fd981f17ee7e204ac4f5843e0d3b092c9b8b500.jpeg</picture>
+				<name>Спортивный Костюм Элегантность в Ночи</name>
+				<xmlId>189</xmlId>
+				<param name="article" code="article">189-03-хх</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="130" productId="18" quantity="100">
+				<url></url>
+				<price>2530</price>
+				<categoryId>11</categoryId>
+				<picture>5f/5ffbac1aee71d7cf4dfff8ae98c4a2edaa0855f6.jpeg</picture>
+				<name>Спортивный Костюм Элегантность в Ночи</name>
+				<xmlId>190</xmlId>
+				<param name="article" code="article">189-03-хх</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="131" productId="18" quantity="100">
+				<url></url>
+				<price>2530</price>
+				<categoryId>11</categoryId>
+				<picture>ec/ec91dfe0cfdc96d44e47b96672b82ffb4fac0caa.jpeg</picture>
+				<name>Спортивный Костюм Элегантность в Ночи</name>
+				<xmlId>191</xmlId>
+				<param name="article" code="article">189-03-хх</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="132" productId="19" quantity="100">
+				<url></url>
+				<price>2499</price>
+				<categoryId>11</categoryId>
+				<picture>b9/b9bc7fae47d668a4a22b4b749094999badc7e508.jpeg</picture>
+				<name>Спортивный Костюм Огонь в Ночи</name>
+				<xmlId>182</xmlId>
+				<param name="article" code="article">189-02-хх</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="133" productId="19" quantity="100">
+				<url></url>
+				<price>2499</price>
+				<categoryId>11</categoryId>
+				<picture>9e/9e7061a2e5074d8480d5c8acde58b695610ad121.jpeg</picture>
+				<name>Спортивный Костюм Огонь в Ночи</name>
+				<xmlId>183</xmlId>
+				<param name="article" code="article">189-02-хх</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="134" productId="19" quantity="100">
+				<url></url>
+				<price>2499</price>
+				<categoryId>11</categoryId>
+				<picture>41/41b7e64f6afee261b8cd7475dba1f56a12285fa3.jpeg</picture>
+				<name>Спортивный Костюм Огонь в Ночи</name>
+				<xmlId>184</xmlId>
+				<param name="article" code="article">189-02-хх</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="135" productId="19" quantity="100">
+				<url></url>
+				<price>2499</price>
+				<categoryId>11</categoryId>
+				<picture>e9/e9831558a2eec8816e9719533ed1018db602aa4b.jpeg</picture>
+				<name>Спортивный Костюм Огонь в Ночи</name>
+				<xmlId>185</xmlId>
+				<param name="article" code="article">189-02-хх</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="136" productId="19" quantity="100">
+				<url></url>
+				<price>2499</price>
+				<categoryId>11</categoryId>
+				<picture>57/57fe0f6f0c19926ab9d014026724bfa3c09adba2.jpeg</picture>
+				<name>Спортивный Костюм Огонь в Ночи</name>
+				<xmlId>186</xmlId>
+				<param name="article" code="article">189-02-хх</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="137" productId="20" quantity="100">
+				<url></url>
+				<price>2330</price>
+				<categoryId>11</categoryId>
+				<picture>d3/d3855d7433cbd9db7d853be51fa2e83d1f6b3f33.jpeg</picture>
+				<name>Спортивный Костюм Нежная Теплота</name>
+				<xmlId>177</xmlId>
+				<param name="article" code="article">189-01-хх</param>
+				<param name="Цвет" code="color">лазурь</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="138" productId="20" quantity="100">
+				<url></url>
+				<price>2330</price>
+				<categoryId>11</categoryId>
+				<picture>99/99ed27ef96bac05bdcfb61c516438728c31fabc9.jpeg</picture>
+				<name>Спортивный Костюм Нежная Теплота</name>
+				<xmlId>178</xmlId>
+				<param name="article" code="article">189-01-хх</param>
+				<param name="Цвет" code="color">лазурь</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="139" productId="20" quantity="100">
+				<url></url>
+				<price>2330</price>
+				<categoryId>11</categoryId>
+				<picture>db/db7d3db2e6e40883b2b23b714c7db2dba930f18f.jpeg</picture>
+				<name>Спортивный Костюм Нежная Теплота</name>
+				<xmlId>179</xmlId>
+				<param name="article" code="article">189-01-хх</param>
+				<param name="Цвет" code="color">лазурь</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="140" productId="20" quantity="100">
+				<url></url>
+				<price>2330</price>
+				<categoryId>11</categoryId>
+				<picture>be/bee37ace24b652ebc86a3a5cedc8a1cb2da0c98d.jpeg</picture>
+				<name>Спортивный Костюм Нежная Теплота</name>
+				<xmlId>180</xmlId>
+				<param name="article" code="article">189-01-хх</param>
+				<param name="Цвет" code="color">лазурь</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="141" productId="20" quantity="100">
+				<url></url>
+				<price>2330</price>
+				<categoryId>11</categoryId>
+				<picture>94/945d9133308cb8ee26f31a36f6d2de7bbf6ea772.jpeg</picture>
+				<name>Спортивный Костюм Нежная Теплота</name>
+				<xmlId>181</xmlId>
+				<param name="article" code="article">189-01-хх</param>
+				<param name="Цвет" code="color">лазурь</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Китай &quot;Гун Джой Ли&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="142" productId="21" quantity="100">
+				<url></url>
+				<price>849</price>
+				<categoryId>10</categoryId>
+				<picture>0c/0c88f5248a794b9f7529a817ed51a0ec8ba41b92.jpeg</picture>
+				<name>Футболка Женский Соблазн</name>
+				<xmlId>172</xmlId>
+				<param name="article" code="article">137-15-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="143" productId="21" quantity="100">
+				<url></url>
+				<price>849</price>
+				<categoryId>10</categoryId>
+				<picture>b4/b42cb0282a8d2ba1544ddfb05c0ecfc383a57079.jpeg</picture>
+				<name>Футболка Женский Соблазн</name>
+				<xmlId>173</xmlId>
+				<param name="article" code="article">137-15-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="144" productId="21" quantity="100">
+				<url></url>
+				<price>849</price>
+				<categoryId>10</categoryId>
+				<picture>6f/6f31c54c13182a752937f6bc94edff8081c78f59.jpeg</picture>
+				<name>Футболка Женский Соблазн</name>
+				<xmlId>174</xmlId>
+				<param name="article" code="article">137-15-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="145" productId="21" quantity="100">
+				<url></url>
+				<price>849</price>
+				<categoryId>10</categoryId>
+				<picture>7d/7db83bbd2ab2c7834f4ad305c7421e215469542b.jpeg</picture>
+				<name>Футболка Женский Соблазн</name>
+				<xmlId>175</xmlId>
+				<param name="article" code="article">137-15-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="146" productId="21" quantity="100">
+				<url></url>
+				<price>849</price>
+				<categoryId>10</categoryId>
+				<picture>6f/6fbff2a7f1d45717c441b337b30ade3e96b6dca8.jpeg</picture>
+				<name>Футболка Женский Соблазн</name>
+				<xmlId>176</xmlId>
+				<param name="article" code="article">137-15-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="147" productId="22" quantity="100">
+				<url></url>
+				<price>779</price>
+				<categoryId>10</categoryId>
+				<picture>2f/2f2a6f19a8539f512708d76ce3a69b5ea70d2cd9.jpeg</picture>
+				<name>Футболка Мужской Огонь</name>
+				<xmlId>167</xmlId>
+				<param name="article" code="article">137-14-хх</param>
+				<param name="Цвет" code="color">красный</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="148" productId="22" quantity="100">
+				<url></url>
+				<price>779</price>
+				<categoryId>10</categoryId>
+				<picture>30/30482e48f64ca01578c78c828f063de01eb01b07.jpeg</picture>
+				<name>Футболка Мужской Огонь</name>
+				<xmlId>168</xmlId>
+				<param name="article" code="article">137-14-хх</param>
+				<param name="Цвет" code="color">красный</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="149" productId="22" quantity="100">
+				<url></url>
+				<price>779</price>
+				<categoryId>10</categoryId>
+				<picture>fc/fcef4c4dc88c3b2b2acdd886780f8cee789c42b3.jpeg</picture>
+				<name>Футболка Мужской Огонь</name>
+				<xmlId>169</xmlId>
+				<param name="article" code="article">137-14-хх</param>
+				<param name="Цвет" code="color">красный</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="150" productId="22" quantity="100">
+				<url></url>
+				<price>779</price>
+				<categoryId>10</categoryId>
+				<picture>cd/cd2dd9933c44b5d8e4697c5b8f3398d75a2fac79.jpeg</picture>
+				<name>Футболка Мужской Огонь</name>
+				<xmlId>170</xmlId>
+				<param name="article" code="article">137-14-хх</param>
+				<param name="Цвет" code="color">красный</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="151" productId="22" quantity="100">
+				<url></url>
+				<price>779</price>
+				<categoryId>10</categoryId>
+				<picture>41/417ca48be55b389b104259405f5f8957ee1ab43c.jpeg</picture>
+				<name>Футболка Мужской Огонь</name>
+				<xmlId>171</xmlId>
+				<param name="article" code="article">137-14-хх</param>
+				<param name="Цвет" code="color">красный</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="152" productId="23" quantity="100">
+				<url></url>
+				<price>759</price>
+				<categoryId>10</categoryId>
+				<picture>b5/b5b33ab33b07992f5a7a921a2a32cd6a2a3a0eeb.jpeg</picture>
+				<name>Футболка Женская Ночь</name>
+				<xmlId>162</xmlId>
+				<param name="article" code="article">137-13-хх</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Бангладеш &quot;Уфиням&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="153" productId="23" quantity="100">
+				<url></url>
+				<price>759</price>
+				<categoryId>10</categoryId>
+				<picture>19/19a2a8a71bf1777f594ad22ad60df392a72d1616.jpeg</picture>
+				<name>Футболка Женская Ночь</name>
+				<xmlId>163</xmlId>
+				<param name="article" code="article">137-13-хх</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Бангладеш &quot;Уфиням&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="154" productId="23" quantity="100">
+				<url></url>
+				<price>759</price>
+				<categoryId>10</categoryId>
+				<picture>7a/7acbe2d064d9b83c1e8e5ea5a9583287ad100323.jpeg</picture>
+				<name>Футболка Женская Ночь</name>
+				<xmlId>164</xmlId>
+				<param name="article" code="article">137-13-хх</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Бангладеш &quot;Уфиням&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="155" productId="23" quantity="100">
+				<url></url>
+				<price>759</price>
+				<categoryId>10</categoryId>
+				<picture>4f/4f0c5d7ecb12e7ef8d5c5416d8d375340297d066.jpeg</picture>
+				<name>Футболка Женская Ночь</name>
+				<xmlId>165</xmlId>
+				<param name="article" code="article">137-13-хх</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Бангладеш &quot;Уфиням&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="156" productId="23" quantity="100">
+				<url></url>
+				<price>759</price>
+				<categoryId>10</categoryId>
+				<picture>16/16b84ad59324e211129387f858bce7a584709eb0.jpeg</picture>
+				<name>Футболка Женская Ночь</name>
+				<xmlId>166</xmlId>
+				<param name="article" code="article">137-13-хх</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Бангладеш &quot;Уфиням&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="157" productId="24" quantity="100">
+				<url></url>
+				<price>749</price>
+				<categoryId>10</categoryId>
+				<picture>79/7964e9b1e687fc5eecdcc7fb8d8f79f6b84be796.jpeg</picture>
+				<name>Футболка Женская Чистота</name>
+				<xmlId>157</xmlId>
+				<param name="article" code="article">137-12-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="158" productId="24" quantity="100">
+				<url></url>
+				<price>749</price>
+				<categoryId>10</categoryId>
+				<picture>f9/f995afeb1b709e3df0066ebc37dc42ad30c12dcd.jpeg</picture>
+				<name>Футболка Женская Чистота</name>
+				<xmlId>158</xmlId>
+				<param name="article" code="article">137-12-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="159" productId="24" quantity="100">
+				<url></url>
+				<price>749</price>
+				<categoryId>10</categoryId>
+				<picture>3c/3c98da780f56cfcba1bd214cafc956e3676bfdfe.jpeg</picture>
+				<name>Футболка Женская Чистота</name>
+				<xmlId>159</xmlId>
+				<param name="article" code="article">137-12-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="160" productId="24" quantity="100">
+				<url></url>
+				<price>749</price>
+				<categoryId>10</categoryId>
+				<picture>af/af7214b2c8cf5605e01f224d25989a894af2a722.jpeg</picture>
+				<name>Футболка Женская Чистота</name>
+				<xmlId>160</xmlId>
+				<param name="article" code="article">137-12-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="161" productId="24" quantity="100">
+				<url></url>
+				<price>749</price>
+				<categoryId>10</categoryId>
+				<picture>7f/7f60dfd807eeec9c3e848e7cb1aae48a004c5033.jpeg</picture>
+				<name>Футболка Женская Чистота</name>
+				<xmlId>161</xmlId>
+				<param name="article" code="article">137-12-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="162" productId="25" quantity="100">
+				<url></url>
+				<price>799</price>
+				<categoryId>10</categoryId>
+				<picture>07/07c65cc7b9f1b64e9f2e3f8acfdde005263094f1.jpeg</picture>
+				<name>Футболка Мужская Чистота</name>
+				<xmlId>152</xmlId>
+				<param name="article" code="article">137-11-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Бангладеш &quot;Уфиням&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="163" productId="25" quantity="100">
+				<url></url>
+				<price>799</price>
+				<categoryId>10</categoryId>
+				<picture>64/6454d58d3fd4f0a67be5fa23c17deab48f84d312.jpeg</picture>
+				<name>Футболка Мужская Чистота</name>
+				<xmlId>153</xmlId>
+				<param name="article" code="article">137-11-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Бангладеш &quot;Уфиням&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="164" productId="25" quantity="100">
+				<url></url>
+				<price>799</price>
+				<categoryId>10</categoryId>
+				<picture>cc/cc130191b1320a7d774b59e3829294fc847a3df3.jpeg</picture>
+				<name>Футболка Мужская Чистота</name>
+				<xmlId>154</xmlId>
+				<param name="article" code="article">137-11-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Бангладеш &quot;Уфиням&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="165" productId="25" quantity="100">
+				<url></url>
+				<price>799</price>
+				<categoryId>10</categoryId>
+				<picture>53/5322924bae1f8ef0a37a81e192ebba11f3aece10.jpeg</picture>
+				<name>Футболка Мужская Чистота</name>
+				<xmlId>155</xmlId>
+				<param name="article" code="article">137-11-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Бангладеш &quot;Уфиням&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="166" productId="25" quantity="100">
+				<url></url>
+				<price>799</price>
+				<categoryId>10</categoryId>
+				<picture>7e/7ee1df4222f6d4a647b1ab2438c1c63983fb6603.jpeg</picture>
+				<name>Футболка Мужская Чистота</name>
+				<xmlId>156</xmlId>
+				<param name="article" code="article">137-11-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Бангладеш &quot;Уфиням&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="167" productId="26" quantity="100">
+				<url></url>
+				<price>1559</price>
+				<categoryId>9</categoryId>
+				<picture>52/5252fab219fda3c2f8c2cd2b2fc5e426099b2f91.jpeg</picture>
+				<name>Нижнее белье Ночь наступает</name>
+				<xmlId>147</xmlId>
+				<param name="article" code="article">235-83-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="168" productId="26" quantity="100">
+				<url></url>
+				<price>1559</price>
+				<categoryId>9</categoryId>
+				<picture>01/0154a10cc94fbe9d70ef5545ade01a93d75060e0.jpeg</picture>
+				<name>Нижнее белье Ночь наступает</name>
+				<xmlId>148</xmlId>
+				<param name="article" code="article">235-83-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="169" productId="26" quantity="100">
+				<url></url>
+				<price>1559</price>
+				<categoryId>9</categoryId>
+				<picture>ce/ce413321153285d2f9c3247e8313dfe7cef6c82e.jpeg</picture>
+				<name>Нижнее белье Ночь наступает</name>
+				<xmlId>149</xmlId>
+				<param name="article" code="article">235-83-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="170" productId="26" quantity="100">
+				<url></url>
+				<price>1559</price>
+				<categoryId>9</categoryId>
+				<picture>70/707e447d04fafc08beb39132a9d4336cef9070aa.jpeg</picture>
+				<name>Нижнее белье Ночь наступает</name>
+				<xmlId>150</xmlId>
+				<param name="article" code="article">235-83-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="171" productId="26" quantity="100">
+				<url></url>
+				<price>1559</price>
+				<categoryId>9</categoryId>
+				<picture>6e/6e2671b60ffa840923df44291361ee7d911c9b6e.jpeg</picture>
+				<name>Нижнее белье Ночь наступает</name>
+				<xmlId>151</xmlId>
+				<param name="article" code="article">235-83-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="172" productId="27" quantity="100">
+				<url></url>
+				<price>1199</price>
+				<categoryId>9</categoryId>
+				<picture>c2/c2e7cbf3970bdf060009eca25f0e5ab5c36b96d4.jpeg</picture>
+				<name>Нижнее белье Розовое Смущенье</name>
+				<xmlId>142</xmlId>
+				<param name="article" code="article">235-82-xx</param>
+				<param name="Цвет" code="color">розовый</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Соединенные Штаты &quot;USAGREY&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="173" productId="27" quantity="100">
+				<url></url>
+				<price>1199</price>
+				<categoryId>9</categoryId>
+				<picture>6f/6fd2cd2b9917dcfb0a4946a48a02d835f127bafe.jpeg</picture>
+				<name>Нижнее белье Розовое Смущенье</name>
+				<xmlId>143</xmlId>
+				<param name="article" code="article">235-82-xx</param>
+				<param name="Цвет" code="color">розовый</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Соединенные Штаты &quot;USAGREY&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="174" productId="27" quantity="100">
+				<url></url>
+				<price>1199</price>
+				<categoryId>9</categoryId>
+				<picture>fc/fc6b64cf858e0dd7c6189fdfc517bdeafebe56fc.jpeg</picture>
+				<name>Нижнее белье Розовое Смущенье</name>
+				<xmlId>144</xmlId>
+				<param name="article" code="article">235-82-xx</param>
+				<param name="Цвет" code="color">розовый</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Соединенные Штаты &quot;USAGREY&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="175" productId="27" quantity="100">
+				<url></url>
+				<price>1199</price>
+				<categoryId>9</categoryId>
+				<picture>45/45ba0405084abf8a1eaf5978355d94cf3f02fe95.jpeg</picture>
+				<name>Нижнее белье Розовое Смущенье</name>
+				<xmlId>145</xmlId>
+				<param name="article" code="article">235-82-xx</param>
+				<param name="Цвет" code="color">розовый</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Соединенные Штаты &quot;USAGREY&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="176" productId="27" quantity="100">
+				<url></url>
+				<price>1199</price>
+				<categoryId>9</categoryId>
+				<picture>b8/b85f551838ba5b0ae89580151c89fe9711ab6b7b.jpeg</picture>
+				<name>Нижнее белье Розовое Смущенье</name>
+				<xmlId>146</xmlId>
+				<param name="article" code="article">235-82-xx</param>
+				<param name="Цвет" code="color">розовый</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Соединенные Штаты &quot;USAGREY&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="177" productId="28" quantity="100">
+				<url></url>
+				<price>1499</price>
+				<categoryId>9</categoryId>
+				<picture>a5/a5a3b46a892b13f73ff98f5fd9a498f137fe6d5a.jpeg</picture>
+				<name>Нижнее белье Огонек в Ночи</name>
+				<xmlId>137</xmlId>
+				<param name="article" code="article">235-81-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="178" productId="28" quantity="100">
+				<url></url>
+				<price>1499</price>
+				<categoryId>9</categoryId>
+				<picture>c1/c1cb8abb21a49fd98e44f1facb964596f1c81bef.jpeg</picture>
+				<name>Нижнее белье Огонек в Ночи</name>
+				<xmlId>138</xmlId>
+				<param name="article" code="article">235-81-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="179" productId="28" quantity="100">
+				<url></url>
+				<price>1499</price>
+				<categoryId>9</categoryId>
+				<picture>d1/d1136adbe230344e26644878cbfd79662685820a.jpeg</picture>
+				<name>Нижнее белье Огонек в Ночи</name>
+				<xmlId>139</xmlId>
+				<param name="article" code="article">235-81-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="180" productId="28" quantity="100">
+				<url></url>
+				<price>1499</price>
+				<categoryId>9</categoryId>
+				<picture>37/37420bef8ee12b54d1f35b55bd0b3eb11d06da0c.jpeg</picture>
+				<name>Нижнее белье Огонек в Ночи</name>
+				<xmlId>140</xmlId>
+				<param name="article" code="article">235-81-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="181" productId="28" quantity="100">
+				<url></url>
+				<price>1499</price>
+				<categoryId>9</categoryId>
+				<picture>4f/4ff9263365523a0ce952e69b2d8d58dc93308e65.jpeg</picture>
+				<name>Нижнее белье Огонек в Ночи</name>
+				<xmlId>141</xmlId>
+				<param name="article" code="article">235-81-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="182" productId="29" quantity="100">
+				<url></url>
+				<price>1459</price>
+				<categoryId>9</categoryId>
+				<picture>2c/2c1be98e59ee50781d9929405efa98921548265b.jpeg</picture>
+				<name>Нижнее белье Ночь Морозных Узоров</name>
+				<xmlId>132</xmlId>
+				<param name="article" code="article">235-80-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="183" productId="29" quantity="100">
+				<url></url>
+				<price>1459</price>
+				<categoryId>9</categoryId>
+				<picture>0c/0c352d90970acb9ae91be858f14a0196abef4b35.jpeg</picture>
+				<name>Нижнее белье Ночь Морозных Узоров</name>
+				<xmlId>133</xmlId>
+				<param name="article" code="article">235-80-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="184" productId="29" quantity="100">
+				<url></url>
+				<price>1459</price>
+				<categoryId>9</categoryId>
+				<picture>8f/8fa997bac059e00103644ec71573dc25db2b0d59.jpeg</picture>
+				<name>Нижнее белье Ночь Морозных Узоров</name>
+				<xmlId>134</xmlId>
+				<param name="article" code="article">235-80-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="185" productId="29" quantity="100">
+				<url></url>
+				<price>1459</price>
+				<categoryId>9</categoryId>
+				<picture>73/73f4b464fc0f166251bf014862cd5f7acb90e1fc.jpeg</picture>
+				<name>Нижнее белье Ночь Морозных Узоров</name>
+				<xmlId>135</xmlId>
+				<param name="article" code="article">235-80-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="186" productId="29" quantity="100">
+				<url></url>
+				<price>1459</price>
+				<categoryId>9</categoryId>
+				<picture>73/7356004b28c64dcbfecbaca523dc8314cec3668c.jpeg</picture>
+				<name>Нижнее белье Ночь Морозных Узоров</name>
+				<xmlId>136</xmlId>
+				<param name="article" code="article">235-80-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="187" productId="30" quantity="100">
+				<url></url>
+				<price>1099</price>
+				<categoryId>9</categoryId>
+				<picture>c8/c8d7e0175cff252cba7ea451ca32b38ca1b45ce8.jpeg</picture>
+				<name>Нижнее белье Интимный Вечер</name>
+				<xmlId>122</xmlId>
+				<param name="article" code="article">235-79-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="188" productId="30" quantity="100">
+				<url></url>
+				<price>1099</price>
+				<categoryId>9</categoryId>
+				<picture>d1/d1949939c990d7da0bed72e62d5d28921dca816f.jpeg</picture>
+				<name>Нижнее белье Интимный Вечер</name>
+				<xmlId>123</xmlId>
+				<param name="article" code="article">235-79-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="189" productId="30" quantity="100">
+				<url></url>
+				<price>1099</price>
+				<categoryId>9</categoryId>
+				<picture>16/16f4134aadc132990a53d4de758c1effcc238e44.jpeg</picture>
+				<name>Нижнее белье Интимный Вечер</name>
+				<xmlId>124</xmlId>
+				<param name="article" code="article">235-79-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="190" productId="30" quantity="100">
+				<url></url>
+				<price>1099</price>
+				<categoryId>9</categoryId>
+				<picture>ad/ad20b28fd0d27178beea0a66dd82f41f5cfcc2ea.jpeg</picture>
+				<name>Нижнее белье Интимный Вечер</name>
+				<xmlId>125</xmlId>
+				<param name="article" code="article">235-79-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="191" productId="30" quantity="100">
+				<url></url>
+				<price>1099</price>
+				<categoryId>9</categoryId>
+				<picture>af/af2489ea97a88409a08643862523db8e2dc02aff.jpeg</picture>
+				<name>Нижнее белье Интимный Вечер</name>
+				<xmlId>126</xmlId>
+				<param name="article" code="article">235-79-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="192" productId="30" quantity="100">
+				<url></url>
+				<price>1199</price>
+				<categoryId>9</categoryId>
+				<picture>8e/8e4dc91d6dffe532e1dfc96248250b5cfde038a9.jpeg</picture>
+				<name>Нижнее белье Интимный Вечер</name>
+				<xmlId>127</xmlId>
+				<param name="article" code="article">235-79-хх</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="193" productId="30" quantity="100">
+				<url></url>
+				<price>1199</price>
+				<categoryId>9</categoryId>
+				<picture>36/3647a6a0d995f13efbf18917f253a210cacae51e.jpeg</picture>
+				<name>Нижнее белье Интимный Вечер</name>
+				<xmlId>128</xmlId>
+				<param name="article" code="article">235-79-хх</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="194" productId="30" quantity="100">
+				<url></url>
+				<price>1199</price>
+				<categoryId>9</categoryId>
+				<picture>e2/e29c74515170480550339c5d8ec670d37417aeed.jpeg</picture>
+				<name>Нижнее белье Интимный Вечер</name>
+				<xmlId>129</xmlId>
+				<param name="article" code="article">235-79-хх</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="195" productId="30" quantity="100">
+				<url></url>
+				<price>1199</price>
+				<categoryId>9</categoryId>
+				<picture>da/dada0d9f086df7f35a6dc46aa811854aed3dee5b.jpeg</picture>
+				<name>Нижнее белье Интимный Вечер</name>
+				<xmlId>130</xmlId>
+				<param name="article" code="article">235-79-хх</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="196" productId="30" quantity="100">
+				<url></url>
+				<price>1199</price>
+				<categoryId>9</categoryId>
+				<picture>4a/4a922853ea833fb4398881f1d1f7f74625580ae5.jpeg</picture>
+				<name>Нижнее белье Интимный Вечер</name>
+				<xmlId>131</xmlId>
+				<param name="article" code="article">235-79-хх</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="197" productId="31" quantity="100">
+				<url></url>
+				<price>1399</price>
+				<categoryId>9</categoryId>
+				<picture>ad/ad162a883e405d1b931bd092e2bbb828c5fcf247.jpeg</picture>
+				<name>Нижнее белье Белая Свобода</name>
+				<xmlId>117</xmlId>
+				<param name="article" code="article">235-78-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="198" productId="31" quantity="98">
+				<url></url>
+				<price>1399</price>
+				<categoryId>9</categoryId>
+				<picture>92/9298c2394583ddd07d03b0185486f0844affede7.jpeg</picture>
+				<name>Нижнее белье Белая Свобода</name>
+				<xmlId>118</xmlId>
+				<param name="article" code="article">235-78-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="199" productId="31" quantity="99">
+				<url></url>
+				<price>1399</price>
+				<categoryId>9</categoryId>
+				<picture>da/dab9f4db6f61a36ba21a291e620539ba91bbed1f.jpeg</picture>
+				<name>Нижнее белье Белая Свобода</name>
+				<xmlId>119</xmlId>
+				<param name="article" code="article">235-78-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="200" productId="31" quantity="99">
+				<url></url>
+				<price>1399</price>
+				<categoryId>9</categoryId>
+				<picture>4f/4f2e8e706b15b3d976075557454c663d75e2bbba.jpeg</picture>
+				<name>Нижнее белье Белая Свобода</name>
+				<xmlId>120</xmlId>
+				<param name="article" code="article">235-78-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="201" productId="31" quantity="100">
+				<url></url>
+				<price>1399</price>
+				<categoryId>9</categoryId>
+				<picture>42/4226cf1e7bc7f9b4c690890ba4ed5b3dce0b6f0f.jpeg</picture>
+				<name>Нижнее белье Белая Свобода</name>
+				<xmlId>121</xmlId>
+				<param name="article" code="article">235-78-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Интим в Семье&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="202" productId="32" quantity="100">
+				<url></url>
+				<price>1299</price>
+				<categoryId>9</categoryId>
+				<picture>93/93f810433633f10d98e847c31a084a86d4c0c780.jpeg</picture>
+				<name>Нижнее белье Морская Волна</name>
+				<xmlId>112</xmlId>
+				<param name="article" code="article">235-77-хх</param>
+				<param name="Цвет" code="color">морской волны</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="203" productId="32" quantity="100">
+				<url></url>
+				<price>1299</price>
+				<categoryId>9</categoryId>
+				<picture>be/be81292887b276ffe80bd1d56a7963955a972abd.jpeg</picture>
+				<name>Нижнее белье Морская Волна</name>
+				<xmlId>113</xmlId>
+				<param name="article" code="article">235-77-хх</param>
+				<param name="Цвет" code="color">морской волны</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="204" productId="32" quantity="100">
+				<url></url>
+				<price>1299</price>
+				<categoryId>9</categoryId>
+				<picture>32/324a9d0432e7016dc44034039fb9f3205e5296dc.jpeg</picture>
+				<name>Нижнее белье Морская Волна</name>
+				<xmlId>114</xmlId>
+				<param name="article" code="article">235-77-хх</param>
+				<param name="Цвет" code="color">морской волны</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="205" productId="32" quantity="100">
+				<url></url>
+				<price>1299</price>
+				<categoryId>9</categoryId>
+				<picture>b8/b86082295babaa6698f686837f37dce259d58d52.jpeg</picture>
+				<name>Нижнее белье Морская Волна</name>
+				<xmlId>115</xmlId>
+				<param name="article" code="article">235-77-хх</param>
+				<param name="Цвет" code="color">морской волны</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="206" productId="32" quantity="100">
+				<url></url>
+				<price>1299</price>
+				<categoryId>9</categoryId>
+				<picture>16/161a0b7162d455326c8734df26d57fbbbf817097.jpeg</picture>
+				<name>Нижнее белье Морская Волна</name>
+				<xmlId>116</xmlId>
+				<param name="article" code="article">235-77-хх</param>
+				<param name="Цвет" code="color">морской волны</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Молодая семья&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="207" productId="33" quantity="100">
+				<url></url>
+				<price>3999</price>
+				<categoryId>7</categoryId>
+				<picture>9b/9ba55f04a3ee86a19f5428a5de322331865369ea.jpeg</picture>
+				<name>Платье Красная Фея</name>
+				<xmlId>107</xmlId>
+				<param name="article" code="article">144-15-xx</param>
+				<param name="Цвет" code="color">красный</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Модница&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="208" productId="33" quantity="100">
+				<url></url>
+				<price>3999</price>
+				<categoryId>7</categoryId>
+				<picture>dd/dded96dc88757c41fefa29f464e1b8f76e171965.jpeg</picture>
+				<name>Платье Красная Фея</name>
+				<xmlId>108</xmlId>
+				<param name="article" code="article">144-15-xx</param>
+				<param name="Цвет" code="color">красный</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Модница&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="209" productId="33" quantity="100">
+				<url></url>
+				<price>3999</price>
+				<categoryId>7</categoryId>
+				<picture>cd/cd7346c4270325e4219eb7ef7e087e66f218a318.jpeg</picture>
+				<name>Платье Красная Фея</name>
+				<xmlId>109</xmlId>
+				<param name="article" code="article">144-15-xx</param>
+				<param name="Цвет" code="color">красный</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Модница&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="210" productId="33" quantity="100">
+				<url></url>
+				<price>3999</price>
+				<categoryId>7</categoryId>
+				<picture>b0/b0e9511c04b25c40b673b93e6a5589d25da34592.jpeg</picture>
+				<name>Платье Красная Фея</name>
+				<xmlId>110</xmlId>
+				<param name="article" code="article">144-15-xx</param>
+				<param name="Цвет" code="color">красный</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Модница&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="211" productId="33" quantity="100">
+				<url></url>
+				<price>3999</price>
+				<categoryId>7</categoryId>
+				<picture>4f/4fd7661e1b7248dd03e7ff7f95e08766caf50398.jpeg</picture>
+				<name>Платье Красная Фея</name>
+				<xmlId>111</xmlId>
+				<param name="article" code="article">144-15-xx</param>
+				<param name="Цвет" code="color">красный</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Модница&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="212" productId="34" quantity="100">
+				<url></url>
+				<price>4499</price>
+				<categoryId>7</categoryId>
+				<picture>b2/b250962de5861e05f19e7b60cd2d3dd08ed02adf.jpeg</picture>
+				<name>Платье Ночная Жизнь</name>
+				<xmlId>102</xmlId>
+				<param name="article" code="article">144-14-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">L</param>
+				<vendor></vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="213" productId="34" quantity="100">
+				<url></url>
+				<price>4499</price>
+				<categoryId>7</categoryId>
+				<picture>46/463b95129b79b306c8f96e0b82b6553413739d8d.jpeg</picture>
+				<name>Платье Ночная Жизнь</name>
+				<xmlId>103</xmlId>
+				<param name="article" code="article">144-14-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor></vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="214" productId="34" quantity="100">
+				<url></url>
+				<price>4499</price>
+				<categoryId>7</categoryId>
+				<picture>c6/c61c85961e4bf958390db35e5a2696df64995295.jpeg</picture>
+				<name>Платье Ночная Жизнь</name>
+				<xmlId>104</xmlId>
+				<param name="article" code="article">144-14-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor></vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="215" productId="34" quantity="100">
+				<url></url>
+				<price>4499</price>
+				<categoryId>7</categoryId>
+				<picture>9c/9c772f8b2cf79021ac9776de162fa514a5d5eb2d.jpeg</picture>
+				<name>Платье Ночная Жизнь</name>
+				<xmlId>105</xmlId>
+				<param name="article" code="article">144-14-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">M</param>
+				<vendor></vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="216" productId="34" quantity="100">
+				<url></url>
+				<price>4499</price>
+				<categoryId>7</categoryId>
+				<picture>10/10f979eb0122e49bd2cb00279dbc9f520f41b7cb.jpeg</picture>
+				<name>Платье Ночная Жизнь</name>
+				<xmlId>106</xmlId>
+				<param name="article" code="article">144-14-xx</param>
+				<param name="Цвет" code="color">черный</param>
+				<param name="Размер" code="size">S</param>
+				<vendor></vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="217" productId="35" quantity="100">
+				<url></url>
+				<price>2999</price>
+				<categoryId>7</categoryId>
+				<picture>f4/f498fb1a60fb335043d48c9edd5b1a28d17f6121.jpeg</picture>
+				<name>Платье Весенняя Легкость</name>
+				<xmlId>97</xmlId>
+				<param name="article" code="article">144-13-xx</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Модница&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="218" productId="35" quantity="100">
+				<url></url>
+				<price>2999</price>
+				<categoryId>7</categoryId>
+				<picture>f3/f3b9c6799b51287a59d043a2e1996eef6c8872e3.jpeg</picture>
+				<name>Платье Весенняя Легкость</name>
+				<xmlId>98</xmlId>
+				<param name="article" code="article">144-13-xx</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Модница&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="219" productId="35" quantity="100">
+				<url></url>
+				<price>2999</price>
+				<categoryId>7</categoryId>
+				<picture>b0/b0d806d871eacbbadbf7c64cc9493eb5dee013b7.jpeg</picture>
+				<name>Платье Весенняя Легкость</name>
+				<xmlId>99</xmlId>
+				<param name="article" code="article">144-13-xx</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Модница&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="220" productId="35" quantity="100">
+				<url></url>
+				<price>2999</price>
+				<categoryId>7</categoryId>
+				<picture>db/db07f86de1395000670ef9820bdeaaacd637a0c9.jpeg</picture>
+				<name>Платье Весенняя Легкость</name>
+				<xmlId>100</xmlId>
+				<param name="article" code="article">144-13-xx</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Модница&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="221" productId="35" quantity="100">
+				<url></url>
+				<price>2999</price>
+				<categoryId>7</categoryId>
+				<picture>b7/b7fe86a1f02bb47d54ddb03b333e295a95a039a6.jpeg</picture>
+				<name>Платье Весенняя Легкость</name>
+				<xmlId>101</xmlId>
+				<param name="article" code="article">144-13-xx</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Модница&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="222" productId="36" quantity="100">
+				<url></url>
+				<price>4999</price>
+				<categoryId>7</categoryId>
+				<picture>a7/a7ed994969f1e131d07598ea28bce1c57a4b4130.jpeg</picture>
+				<name>Платье Модница на Прогулке</name>
+				<xmlId>92</xmlId>
+				<param name="article" code="article">144-12-xx</param>
+				<param name="Цвет" code="color">синий</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Модница&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="223" productId="36" quantity="100">
+				<url></url>
+				<price>4999</price>
+				<categoryId>7</categoryId>
+				<picture>34/34ede58f82551010493947aef0cb30e8c0c54080.jpeg</picture>
+				<name>Платье Модница на Прогулке</name>
+				<xmlId>93</xmlId>
+				<param name="article" code="article">144-12-xx</param>
+				<param name="Цвет" code="color">синий</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Модница&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="224" productId="36" quantity="100">
+				<url></url>
+				<price>4999</price>
+				<categoryId>7</categoryId>
+				<picture>03/03f8af21b0d673eb7d3ad5adbd1a46028e28781e.jpeg</picture>
+				<name>Платье Модница на Прогулке</name>
+				<xmlId>94</xmlId>
+				<param name="article" code="article">144-12-xx</param>
+				<param name="Цвет" code="color">синий</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Модница&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="225" productId="36" quantity="100">
+				<url></url>
+				<price>4999</price>
+				<categoryId>7</categoryId>
+				<picture>e4/e48e6e9bb1771c2a726d8a2d815cc727c3f21351.jpeg</picture>
+				<name>Платье Модница на Прогулке</name>
+				<xmlId>95</xmlId>
+				<param name="article" code="article">144-12-xx</param>
+				<param name="Цвет" code="color">синий</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Модница&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="226" productId="36" quantity="100">
+				<url></url>
+				<price>4999</price>
+				<categoryId>7</categoryId>
+				<picture>52/522c47f4db4426caef917ba13a8ad3011141000d.jpeg</picture>
+				<name>Платье Модница на Прогулке</name>
+				<xmlId>96</xmlId>
+				<param name="article" code="article">144-12-xx</param>
+				<param name="Цвет" code="color">синий</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Модница&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="227" productId="37" quantity="100">
+				<url></url>
+				<price>2199</price>
+				<categoryId>8</categoryId>
+				<picture>ab/ab022240c51ffcc905d31120695e6720c3087aa6.jpeg</picture>
+				<name>Штаны Цветочная Поляна</name>
+				<xmlId>72</xmlId>
+				<param name="article" code="article">177-79-хх</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="228" productId="37" quantity="100">
+				<url></url>
+				<price>2199</price>
+				<categoryId>8</categoryId>
+				<picture>d4/d44e70890f4b9945cdc74f666ba31d3d7e61f8ef.jpeg</picture>
+				<name>Штаны Цветочная Поляна</name>
+				<xmlId>73</xmlId>
+				<param name="article" code="article">177-79-хх</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="229" productId="37" quantity="99">
+				<url></url>
+				<price>2199</price>
+				<categoryId>8</categoryId>
+				<picture>3d/3dd57e2733e8b3585420f2883c671d2c65564227.jpeg</picture>
+				<name>Штаны Цветочная Поляна</name>
+				<xmlId>74</xmlId>
+				<param name="article" code="article">177-79-хх</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="230" productId="37" quantity="100">
+				<url></url>
+				<price>2199</price>
+				<categoryId>8</categoryId>
+				<picture>5b/5b5654ddcc9d3ded4866b53ad82aa26194ac6d61.jpeg</picture>
+				<name>Штаны Цветочная Поляна</name>
+				<xmlId>75</xmlId>
+				<param name="article" code="article">177-79-хх</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="231" productId="37" quantity="100">
+				<url></url>
+				<price>2199</price>
+				<categoryId>8</categoryId>
+				<picture>af/af505a5f5e13fdfdd59fc01756bb13d9e4e30323.jpeg</picture>
+				<name>Штаны Цветочная Поляна</name>
+				<xmlId>76</xmlId>
+				<param name="article" code="article">177-79-хх</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="232" productId="37" quantity="100">
+				<url></url>
+				<price>2199</price>
+				<categoryId>8</categoryId>
+				<picture>6d/6db3935d9fe3a4e180fa40db9e3d077a5c18b879.jpeg</picture>
+				<name>Штаны Цветочная Поляна</name>
+				<xmlId>77</xmlId>
+				<param name="article" code="article">177-79-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="233" productId="37" quantity="100">
+				<url></url>
+				<price>2199</price>
+				<categoryId>8</categoryId>
+				<picture>39/39268d45c27eda18ae103e43f55bafa51bbc23b0.jpeg</picture>
+				<name>Штаны Цветочная Поляна</name>
+				<xmlId>78</xmlId>
+				<param name="article" code="article">177-79-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="234" productId="37" quantity="100">
+				<url></url>
+				<price>2199</price>
+				<categoryId>8</categoryId>
+				<picture>1c/1c63e028e4a943af6399ffd86bfbf217110a6c8f.jpeg</picture>
+				<name>Штаны Цветочная Поляна</name>
+				<xmlId>79</xmlId>
+				<param name="article" code="article">177-79-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="235" productId="37" quantity="100">
+				<url></url>
+				<price>2199</price>
+				<categoryId>8</categoryId>
+				<picture>61/6152eeda4f8b974e34155ac196da6fcd83de5d32.jpeg</picture>
+				<name>Штаны Цветочная Поляна</name>
+				<xmlId>80</xmlId>
+				<param name="article" code="article">177-79-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="236" productId="37" quantity="100">
+				<url></url>
+				<price>2199</price>
+				<categoryId>8</categoryId>
+				<picture>5c/5c67f4029456529cb374e8deb4fe5ec6eb91c182.jpeg</picture>
+				<name>Штаны Цветочная Поляна</name>
+				<xmlId>81</xmlId>
+				<param name="article" code="article">177-79-хх</param>
+				<param name="Цвет" code="color">белый</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="237" productId="37" quantity="100">
+				<url></url>
+				<price>2199</price>
+				<categoryId>8</categoryId>
+				<picture>36/3648e548d5c1908ec3300fce74270d9442f24ffc.jpeg</picture>
+				<name>Штаны Цветочная Поляна</name>
+				<xmlId>82</xmlId>
+				<param name="article" code="article">177-79-хх</param>
+				<param name="Цвет" code="color">красный</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="238" productId="37" quantity="100">
+				<url></url>
+				<price>2199</price>
+				<categoryId>8</categoryId>
+				<picture>cd/cd6f8e088f3b1de6017d4177d0129f104a2c6146.jpeg</picture>
+				<name>Штаны Цветочная Поляна</name>
+				<xmlId>83</xmlId>
+				<param name="article" code="article">177-79-хх</param>
+				<param name="Цвет" code="color">красный</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="239" productId="37" quantity="100">
+				<url></url>
+				<price>2199</price>
+				<categoryId>8</categoryId>
+				<picture>f2/f2b623bafcdeb268ae78820f729f343e1269e657.jpeg</picture>
+				<name>Штаны Цветочная Поляна</name>
+				<xmlId>84</xmlId>
+				<param name="article" code="article">177-79-хх</param>
+				<param name="Цвет" code="color">красный</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="240" productId="37" quantity="100">
+				<url></url>
+				<price>2199</price>
+				<categoryId>8</categoryId>
+				<picture>96/960d7752f97194852b16f9e8bdb7c577c1da1cbe.jpeg</picture>
+				<name>Штаны Цветочная Поляна</name>
+				<xmlId>85</xmlId>
+				<param name="article" code="article">177-79-хх</param>
+				<param name="Цвет" code="color">красный</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="241" productId="37" quantity="100">
+				<url></url>
+				<price>2199</price>
+				<categoryId>8</categoryId>
+				<picture>80/803d5617e54a96fd6f06d9fb37555bbd6f58a263.jpeg</picture>
+				<name>Штаны Цветочная Поляна</name>
+				<xmlId>86</xmlId>
+				<param name="article" code="article">177-79-хх</param>
+				<param name="Цвет" code="color">красный</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="242" productId="37" quantity="100">
+				<url></url>
+				<price>2199</price>
+				<categoryId>8</categoryId>
+				<picture>26/2627574b0378bf09eddeac126945cffcf5874514.jpeg</picture>
+				<name>Штаны Цветочная Поляна</name>
+				<xmlId>87</xmlId>
+				<param name="article" code="article">177-79-хх</param>
+				<param name="Цвет" code="color">зеленый</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="243" productId="37" quantity="100">
+				<url></url>
+				<price>2199</price>
+				<categoryId>8</categoryId>
+				<picture>43/43d1337aae376d8521b1328f431fad9d21e1ba6c.jpeg</picture>
+				<name>Штаны Цветочная Поляна</name>
+				<xmlId>88</xmlId>
+				<param name="article" code="article">177-79-хх</param>
+				<param name="Цвет" code="color">зеленый</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="244" productId="37" quantity="100">
+				<url></url>
+				<price>2199</price>
+				<categoryId>8</categoryId>
+				<picture>4f/4f69ad1f66cfce5bbecb6edd1ada73d28d5a841e.jpeg</picture>
+				<name>Штаны Цветочная Поляна</name>
+				<xmlId>89</xmlId>
+				<param name="article" code="article">177-79-хх</param>
+				<param name="Цвет" code="color">зеленый</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="245" productId="37" quantity="100">
+				<url></url>
+				<price>2199</price>
+				<categoryId>8</categoryId>
+				<picture>b4/b4208f271367c9b9384fc2d6bd429c526a7bbad1.jpeg</picture>
+				<name>Штаны Цветочная Поляна</name>
+				<xmlId>90</xmlId>
+				<param name="article" code="article">177-79-хх</param>
+				<param name="Цвет" code="color">зеленый</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="246" productId="37" quantity="100">
+				<url></url>
+				<price>2199</price>
+				<categoryId>8</categoryId>
+				<picture>38/38239f2793d0c61370f3f19a8c8ae2902bb73fba.jpeg</picture>
+				<name>Штаны Цветочная Поляна</name>
+				<xmlId>91</xmlId>
+				<param name="article" code="article">177-79-хх</param>
+				<param name="Цвет" code="color">зеленый</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="247" productId="38" quantity="100">
+				<url></url>
+				<price>1899</price>
+				<categoryId>8</categoryId>
+				<picture>ae/ae6a6c46739bb5607b5cf183a199031111ee007d.jpeg</picture>
+				<name>Штаны Жизнь в Абстракции</name>
+				<xmlId>62</xmlId>
+				<param name="article" code="article">177-78-хх</param>
+				<param name="Цвет" code="color">красно-синий</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="248" productId="38" quantity="100">
+				<url></url>
+				<price>1899</price>
+				<categoryId>8</categoryId>
+				<picture>40/40b0eb1bfa59a492600b8f016e016554314bd85c.jpeg</picture>
+				<name>Штаны Жизнь в Абстракции</name>
+				<xmlId>63</xmlId>
+				<param name="article" code="article">177-78-хх</param>
+				<param name="Цвет" code="color">красно-синий</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="249" productId="38" quantity="100">
+				<url></url>
+				<price>1899</price>
+				<categoryId>8</categoryId>
+				<picture>2d/2d41106e701a87e942debccf695a6d6eef820cd6.jpeg</picture>
+				<name>Штаны Жизнь в Абстракции</name>
+				<xmlId>64</xmlId>
+				<param name="article" code="article">177-78-хх</param>
+				<param name="Цвет" code="color">красно-синий</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="250" productId="38" quantity="100">
+				<url></url>
+				<price>1899</price>
+				<categoryId>8</categoryId>
+				<picture>91/91f9e591f2641b505ac08ef233f87d1a9e3e9cb5.jpeg</picture>
+				<name>Штаны Жизнь в Абстракции</name>
+				<xmlId>65</xmlId>
+				<param name="article" code="article">177-78-хх</param>
+				<param name="Цвет" code="color">красно-синий</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="251" productId="38" quantity="100">
+				<url></url>
+				<price>1899</price>
+				<categoryId>8</categoryId>
+				<picture>70/70c84acb5625a0e4336e1a5009060a98a9360d06.jpeg</picture>
+				<name>Штаны Жизнь в Абстракции</name>
+				<xmlId>66</xmlId>
+				<param name="article" code="article">177-78-хх</param>
+				<param name="Цвет" code="color">красно-синий</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="252" productId="38" quantity="100">
+				<url></url>
+				<price>1899</price>
+				<categoryId>8</categoryId>
+				<picture>91/910050da6251b8d26297b7ca40463b9cf377c2fb.jpeg</picture>
+				<name>Штаны Жизнь в Абстракции</name>
+				<xmlId>67</xmlId>
+				<param name="article" code="article">177-78-хх</param>
+				<param name="Цвет" code="color">красно-оранжевый</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="253" productId="38" quantity="100">
+				<url></url>
+				<price>1899</price>
+				<categoryId>8</categoryId>
+				<picture>e3/e36e4975bbc46d5fb5d32604701a2e492015793a.jpeg</picture>
+				<name>Штаны Жизнь в Абстракции</name>
+				<xmlId>68</xmlId>
+				<param name="article" code="article">177-78-хх</param>
+				<param name="Цвет" code="color">красно-оранжевый</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="254" productId="38" quantity="100">
+				<url></url>
+				<price>1899</price>
+				<categoryId>8</categoryId>
+				<picture>11/11fc0f7aae51a8862c5a47c222d4e7026c044cdf.jpeg</picture>
+				<name>Штаны Жизнь в Абстракции</name>
+				<xmlId>69</xmlId>
+				<param name="article" code="article">177-78-хх</param>
+				<param name="Цвет" code="color">красно-оранжевый</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="255" productId="38" quantity="100">
+				<url></url>
+				<price>1899</price>
+				<categoryId>8</categoryId>
+				<picture>f3/f3ac6b71e82c9506192175c49261896e7c9dc695.jpeg</picture>
+				<name>Штаны Жизнь в Абстракции</name>
+				<xmlId>70</xmlId>
+				<param name="article" code="article">177-78-хх</param>
+				<param name="Цвет" code="color">красно-оранжевый</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="256" productId="38" quantity="100">
+				<url></url>
+				<price>1899</price>
+				<categoryId>8</categoryId>
+				<picture>d7/d78a48ed02ede78e5d2c7f9865f3c567b3168a04.jpeg</picture>
+				<name>Штаны Жизнь в Абстракции</name>
+				<xmlId>71</xmlId>
+				<param name="article" code="article">177-78-хх</param>
+				<param name="Цвет" code="color">красно-оранжевый</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="257" productId="39" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>8</categoryId>
+				<picture>2d/2da064269d6cde670f3bb3a453aa9c1374403ee9.jpeg</picture>
+				<name>Штаны Полосатый Рейс</name>
+				<xmlId>42</xmlId>
+				<param name="article" code="article">177-77-хх</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="258" productId="39" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>8</categoryId>
+				<picture>64/647515dd866b3cd34af824bcef85f72e89655233.jpeg</picture>
+				<name>Штаны Полосатый Рейс</name>
+				<xmlId>43</xmlId>
+				<param name="article" code="article">177-77-хх</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="259" productId="39" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>8</categoryId>
+				<picture>4b/4b54d5d92e95363e735bdb862dfaea16c7d8dcba.jpeg</picture>
+				<name>Штаны Полосатый Рейс</name>
+				<xmlId>44</xmlId>
+				<param name="article" code="article">177-77-хх</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="260" productId="39" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>8</categoryId>
+				<picture>e2/e23a5fd34f04ea0393d1626168b08168a00b1025.jpeg</picture>
+				<name>Штаны Полосатый Рейс</name>
+				<xmlId>45</xmlId>
+				<param name="article" code="article">177-77-хх</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="261" productId="39" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>8</categoryId>
+				<picture>45/4562bb99239f48c07b7e3282074e35e6ad725479.jpeg</picture>
+				<name>Штаны Полосатый Рейс</name>
+				<xmlId>46</xmlId>
+				<param name="article" code="article">177-77-хх</param>
+				<param name="Цвет" code="color">пурпурный</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="262" productId="39" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>8</categoryId>
+				<picture>54/54f5ab3b69956f8eb7d01e045b07e0003db8b580.jpeg</picture>
+				<name>Штаны Полосатый Рейс</name>
+				<xmlId>47</xmlId>
+				<param name="article" code="article">177-77-хх</param>
+				<param name="Цвет" code="color">зеленый</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="263" productId="39" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>8</categoryId>
+				<picture>4f/4fd091739d59a70e63ab02bd30cca994e768be9b.jpeg</picture>
+				<name>Штаны Полосатый Рейс</name>
+				<xmlId>48</xmlId>
+				<param name="article" code="article">177-77-хх</param>
+				<param name="Цвет" code="color">зеленый</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="264" productId="39" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>8</categoryId>
+				<picture>52/526bb9cba64f62c84457917ba9d28c491d1ae9c0.jpeg</picture>
+				<name>Штаны Полосатый Рейс</name>
+				<xmlId>49</xmlId>
+				<param name="article" code="article">177-77-хх</param>
+				<param name="Цвет" code="color">зеленый</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="265" productId="39" quantity="99">
+				<url></url>
+				<price>1999</price>
+				<categoryId>8</categoryId>
+				<picture>e7/e7f2bce99d4b7f7862765a04b197e3c5cbc6523f.jpeg</picture>
+				<name>Штаны Полосатый Рейс</name>
+				<xmlId>50</xmlId>
+				<param name="article" code="article">177-77-хх</param>
+				<param name="Цвет" code="color">зеленый</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="266" productId="39" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>8</categoryId>
+				<picture>51/5126b940d971a157129032f3dfea630d8e10a009.jpeg</picture>
+				<name>Штаны Полосатый Рейс</name>
+				<xmlId>51</xmlId>
+				<param name="article" code="article">177-77-хх</param>
+				<param name="Цвет" code="color">зеленый</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="267" productId="39" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>8</categoryId>
+				<picture>30/3069cf3967d2115a0a97201beba460781212bbf9.jpeg</picture>
+				<name>Штаны Полосатый Рейс</name>
+				<xmlId>52</xmlId>
+				<param name="article" code="article">177-77-хх</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="268" productId="39" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>8</categoryId>
+				<picture>fd/fd59e5ae9fed5a7efb783227fc5b9d77c290e87b.jpeg</picture>
+				<name>Штаны Полосатый Рейс</name>
+				<xmlId>53</xmlId>
+				<param name="article" code="article">177-77-хх</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="269" productId="39" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>8</categoryId>
+				<picture>fb/fb771dc11c1ff916021cbafb1cea87e9b6748271.jpeg</picture>
+				<name>Штаны Полосатый Рейс</name>
+				<xmlId>54</xmlId>
+				<param name="article" code="article">177-77-хх</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="270" productId="39" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>8</categoryId>
+				<picture>ec/ec9320eea9f0844f7df22baa3f8f227817e85efb.jpeg</picture>
+				<name>Штаны Полосатый Рейс</name>
+				<xmlId>55</xmlId>
+				<param name="article" code="article">177-77-хх</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="271" productId="39" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>8</categoryId>
+				<picture>7f/7f097c8ed82134fe8fa9b1930363237461b01efd.jpeg</picture>
+				<name>Штаны Полосатый Рейс</name>
+				<xmlId>56</xmlId>
+				<param name="article" code="article">177-77-хх</param>
+				<param name="Цвет" code="color">коричневый</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="272" productId="39" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>8</categoryId>
+				<picture>b1/b13ded62854a188009a7183ce7a1ff4f6d7db683.jpeg</picture>
+				<name>Штаны Полосатый Рейс</name>
+				<xmlId>57</xmlId>
+				<param name="article" code="article">177-77-хх</param>
+				<param name="Цвет" code="color">синий</param>
+				<param name="Размер" code="size">L</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="273" productId="39" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>8</categoryId>
+				<picture>55/553c155eda1c69feddfd41e06ac9154d11a22193.jpeg</picture>
+				<name>Штаны Полосатый Рейс</name>
+				<xmlId>58</xmlId>
+				<param name="article" code="article">177-77-хх</param>
+				<param name="Цвет" code="color">синий</param>
+				<param name="Размер" code="size">XL</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="274" productId="39" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>8</categoryId>
+				<picture>03/03c9afe2f4fa1508b6c4cd3f1e44663eea6803ef.jpeg</picture>
+				<name>Штаны Полосатый Рейс</name>
+				<xmlId>59</xmlId>
+				<param name="article" code="article">177-77-хх</param>
+				<param name="Цвет" code="color">синий</param>
+				<param name="Размер" code="size">XS</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="275" productId="39" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>8</categoryId>
+				<picture>fa/fa0a1093130a17c2080bd61bf44da6cfd068b1ff.jpeg</picture>
+				<name>Штаны Полосатый Рейс</name>
+				<xmlId>60</xmlId>
+				<param name="article" code="article">177-77-хх</param>
+				<param name="Цвет" code="color">синий</param>
+				<param name="Размер" code="size">M</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+			<offer id="276" productId="39" quantity="100">
+				<url></url>
+				<price>1999</price>
+				<categoryId>8</categoryId>
+				<picture>17/1731c2c631bb6c464addd9ccdf09f67fd3a38ba7.jpeg</picture>
+				<name>Штаны Полосатый Рейс</name>
+				<xmlId>61</xmlId>
+				<param name="article" code="article">177-77-хх</param>
+				<param name="Цвет" code="color">синий</param>
+				<param name="Размер" code="size">S</param>
+				<vendor>Россия &quot;Grishko&quot;</vendor>
+				<unit code="pcs" name="Штука" sym="Шт." />
+				<vatRate>20</vatRate>
+				<dimensions></dimensions>
+				<weight></weight>
+				<barcode></barcode>
+				<markable>N</markable>
+			</offer>
+		</offers>
+	</shop>
+</yml_catalog>
