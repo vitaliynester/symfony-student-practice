@@ -4,6 +4,33 @@
 
 {% block body %}
     <h1>Оформить заказ</h1>
-
-    {{ include('cart/_form.html.twig') }}
+    {{ form_start(form) }}
+        {{ form_errors(form) }}
+        <div>
+            {{ form_row(form.surname) }}
+        </div>
+        <div>
+            {{ form_row(form.name) }}
+        </div>
+        <div>
+            {{ form_row(form.patronymic) }}
+        </div>
+        <div>
+            {{ form_row(form.address) }}
+        </div>
+        <div>
+            {{ form_row(form.phone) }}
+        </div>
+        <div>
+            {{ form_row(form.email) }}
+        </div>
+        <div>
+            {{ form_row(form.delivery_type) }}
+        </div>
+        <div>
+            {{ form_row(form.payment_type) }}
+        </div>
+        <button class="btn">{{ button_label|default('Оформить заказ') }}</button>
+        {{ form_end(form) }}
+   {# {{ include('cart/_form.html.twig') }} #}
 {% endblock %}

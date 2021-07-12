@@ -90,13 +90,14 @@ class CartController extends AbstractController
 
             $apiResponse = $orderApi->createOrder($this->getUser(), $form);
 
-            $this->getDoctrine()->getRepository(CartItem::class)->deleteCustomerCart($this->getUser());
+            //$this->getDoctrine()->getRepository(CartItem::class)->deleteCustomerCart($this->getUser());
 
             return $this->redirectToRoute('cart_thanks', ['id' => $apiResponse->order->id]);
         }
 
         return $this->render('cart/checkout.html.twig', [
             'form' => $form->createView(),
+            'payment_amount' => $this->getPaymentAmount($this->getUser()),
         ]);
     }
 
