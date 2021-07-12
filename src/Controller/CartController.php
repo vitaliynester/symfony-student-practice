@@ -69,19 +69,19 @@ class CartController extends AbstractController
         ]);
     }
 
-//    /**
-//     * @Route("/{id}", name="cart_delete", methods={"POST"})
-//     */
-//    public function delete(Request $request, CartItem $cartItem): Response
-//    {
-//        if ($this->isCsrfTokenValid('delete' . $cartItem->getId(), $request->request->get('_token'))) {
-//            $entityManager = $this->getDoctrine()->getManager();
-//            $entityManager->remove($cartItem);
-//            $entityManager->flush();
-//        }
-//
-//        return $this->redirectToRoute('cart_index', [], Response::HTTP_SEE_OTHER);
-//    }
+    /**
+     * @Route("/{id}", name="cart_delete", methods={"POST"})
+     */
+    public function delete(Request $request, CartItem $cartItem): Response
+    {
+        if ($this->isCsrfTokenValid('delete' . $cartItem->getId(), $request->request->get('_token'))) {
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->remove($cartItem);
+            $entityManager->flush();
+        }
+
+        return $this->redirectToRoute('cart_index', [], Response::HTTP_SEE_OTHER);
+    }
 
     /**
      * @Route("/checkout", name="cart_checkout", methods={"GET","POST"})
