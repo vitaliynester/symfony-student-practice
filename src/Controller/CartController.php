@@ -26,6 +26,7 @@ class CartController extends AbstractController
     {
         return $this->render('cart/index.html.twig', [
             'cart_items' => $cartItemRepository->findBy(['customer' => $this->getUser()]),
+            'payment_amount' => $this->getPaymentAmount($this->getUser()),
         ]);
     }
 
@@ -107,5 +108,17 @@ class CartController extends AbstractController
         $orderApi = new OrderApi($this->getParameter('url'), $this->getParameter('apiKey'));
         $order = $orderApi->getOrderById($request->get('id'))->order;
         return $this->render('cart/thanks.html.twig', ['order' => $order]);
+    }
+
+    private function getPaymentAmount($customer)
+    {
+        $cartItems = $customer->getCartItems();
+
+        $amount = 0;
+        foreach ($cartItems as $item) {
+            $amount += $item->getOffer()->getPrice() * $item->getQuantity();
+        }
+
+        return $amount;
     }
 }
