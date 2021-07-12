@@ -148,12 +148,14 @@ class CartCheckoutFormType extends AbstractType
                 'choice_loader' => new CallbackChoiceLoader(function() {
                     return ReferenceApi::getDeliveryTypes($this->url, $this->apiKey);
                 }),
+                'label' => 'Способ доставки',
             ])
 
             ->add('payment_type', ChoiceType::class, [
                 'choice_loader' => new CallbackChoiceLoader(function() {
                     return ReferenceApi::getPaymentsTypes($this->url, $this->apiKey);
                 }),
+                'label' => 'Способ оплаты',
             ])
         ;
     }
