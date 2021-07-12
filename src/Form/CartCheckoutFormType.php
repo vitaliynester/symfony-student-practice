@@ -130,58 +130,17 @@ class CartCheckoutFormType extends AbstractType
                 ],
             ])
 
-            ->add('delivery_index', null, [
-              'required' => true,
-              'constraints' => [
-                  new Length([
-                      'max' => 6,
-                      'min' => 6,
-                      'exactMessage' => 'Индекс должен содержать ровно {{ limit }} цифр'
-                  ]),
-                  new Type([
-                      'type' => 'digit',
-                      'message' => 'Индекс может содержать только цифры'
-                  ])
-              ],
-              'label' => 'Индекс',
-              'attr' => [
-                  'class' => 'validate',
-              ],
-            ])
-
-            ->add('delivery_region', null,[
-                'label' => 'Регион',
-                'attr' => [
-                    'class' => 'validate',
+            ->add('address',null,[
+                'required'=>true,
+                'constraints'=>[
+                    new Length([
+                        'maxMessage'=>'Максимальное число символов {{ limit }}',
+                        'max'=>512,
+                    ]),
                 ],
-            ])
-
-            ->add('delivery_city', null,[
-                'label' => 'Город',
-                'attr' => [
-                    'class' => 'validate',
-                ],
-            ])
-
-
-            ->add('delivery_street', null,[
-                'label' => 'Улица',
-                'attr' => [
-                    'class' => 'validate',
-                ],
-            ])
-
-            ->add('delivery_building', null,[
-                'label' => 'Дом',
-                'attr' => [
-                    'class' => 'validate',
-                ],
-            ])
-
-            ->add('delivery_flat', null,[
-                'label' => 'Квартира',
-                'attr' => [
-                    'class' => 'validate',
+                'label'=>'Адрес доставки',
+                'attr'=>[
+                    'class'=>'validate',
                 ],
             ])
 

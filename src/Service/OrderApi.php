@@ -42,7 +42,6 @@ class OrderApi
         $payment         = new Payment();
         $delivery        = new SerializedOrderDelivery();
         $deliveryAddress = new OrderDeliveryAddress();
-        $deliveryService = new DeliveryService();
         $items            = [];
 
         $payment->type   = $form->get('payment_type')->getData();
@@ -50,18 +49,9 @@ class OrderApi
         $payment->amount = $this->getPaymentAmount($customer);
         $payment->paidAt = new DateTime();
 
-        $deliveryAddress->index      = $form->get('delivery_index')->getData();
-        $deliveryAddress->countryIso = CountryCodeIso3166::RUSSIAN_FEDERATION;
-        $deliveryAddress->region     = $form->get('delivery_region')->getData();
-        $deliveryAddress->city       = $form->get('delivery_city')->getData();
-        $deliveryAddress->street     = $form->get('delivery_street')->getData();
-        $deliveryAddress->building   = $form->get('delivery_building')->getData();
-        $deliveryAddress->flat       = $form->get('delivery_flat')->getData();
+        $deliveryAddress->text = $form->get('address')->getData();
 
-
-        $deliveryService->code = $form->get('delivery_type')->getData();
-
-        $delivery->service = $deliveryService;
+        $delivery->code = $form->get('delivery_type')->getData();
         $delivery->address = $deliveryAddress;
         $delivery->cost    = 0;
         $delivery->netCost = 0;
@@ -94,9 +84,10 @@ class OrderApi
         $order->patronymic    = $form->get('patronymic')->getData();
         $order->phone         = $form->get('phone')->getData();
         $order->email         = $form->get('email')->getData();
-        $order->customer      = SerializedRelationCustomer::withIdAndType(
+        $order->customer      = SerializedRelationCustomer::withExternalIdAndType(
             $customer->getId(),
-            CustomerType::CUSTOMER
+            CustomerType::CUSTOMER,
+            "b12-skillum-ru"
         );
         $order->status        = 'assembling';
         $order->shipmentDate  = (new DateTime())->add(new DateInterval('P7D'));
