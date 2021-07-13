@@ -59,6 +59,9 @@ class RegistrationController extends AbstractController
              ));
 
             if($resultApi!==true){
+                $entityManager = $this->getDoctrine()->getManager();
+                $entityManager->remove($user);
+                $entityManager->flush();
                 return $this->render('registration/register.html.twig', [
                     'registrationForm' => $form->createView(),
                     'error'=>$resultApi,
