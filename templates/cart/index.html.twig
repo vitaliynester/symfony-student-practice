@@ -3,6 +3,7 @@
 {% block title %}Корзина{% endblock %}
 
 {% block body %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <div class="container mx-auto">
         <div class="flex justify-center m-6">
             <h1 class="font-sans text-4xl">Моя корзина</h1>
@@ -14,10 +15,11 @@
                     <div class="row-span-4">
                         <img class="flex-grow-0 w-48 h-48" src="/upload/pictures/{{ cart_item.offer.picture }}" alt="Фото товара" />
                     </div>
+                        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ cart_item.id) }}">
                         <p class="my-1 font-sans text-xl">{{ cart_item.offer.name }}</p>
-                        <p class="my-1 font-sans text-xl">{{ cart_item.offer.price }}</p>
+                        <p class="my-1 font-sans text-xl">{{ cart_item.offer.price }} руб.</p>
                         <div class="flex flex-row items-stretch mt-0">
-                            <button class="border border-black rounded-l-lg" type="submit">
+                            <button id="increase_{{ cart_item.id }}" class="border border-black rounded-l-lg">
                                 <svg class="h-5 w-5 text-black" width="24" height="24" viewBox="0 0 24 24"
                                      stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
                                      stroke-linejoin="round">
@@ -25,8 +27,32 @@
                                     <polyline points="6 15 12 9 18 15"/>
                                 </svg>
                             </button>
-                            <p class="px-2 mx-0 border border-black font-sans text-xl">{{ cart_item.quantity }}</p>
-                            <button class="border border-black rounded-r-lg" type="submit">
+                            <script>
+                                $(document).on('click', 'button#increase_{{ cart_item.id }}', function(){
+                                    that = $(this);
+                                    $.ajax({
+                                        url:'{{ (path('quantityChange')) }}',
+                                        type: "POST",
+                                        dataType: "json",
+                                        data: {
+                                            "operation": "increase",
+                                            "cartItemId": {{ cart_item.id }}
+                                        },
+                                        async: true,
+                                        success: function (data)
+                                        {
+                                            console.log(data)
+                                            $('p#{{ cart_item.id }}_cart_item_quantity').html(data.output);
+                                            $('p#payment_amount').html(data.payment_amount);
+
+                                        }
+                                    });
+                                    return false;
+
+                                });
+                            </script>
+                            <p id="{{ cart_item.id }}_cart_item_quantity" class="px-2 mx-0 border border-black font-sans text-xl">{{ cart_item.quantity }}</p>
+                            <button id="reduce_{{ cart_item.id }}" class="border border-black rounded-r-lg">
                                 <svg class="h-5 w-5 text-black" width="24" height="24" viewBox="0 0 24 24"
                                      stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
                                      stroke-linejoin="round">
@@ -34,8 +60,34 @@
                                     <polyline points="6 9 12 15 18 9"/>
                                 </svg>
                             </button>
+                            <script>
+                                $(document).on('click', 'button#reduce_{{ cart_item.id }}', function(){
+                                    that = $(this);
+                                    $.ajax({
+                                        url:'{{ (path('quantityChange')) }}',
+                                        type: "POST",
+                                        dataType: "json",
+                                        data: {
+                                            "operation": "reduce",
+                                            "cartItemId": {{ cart_item.id }}
+                                        },
+                                        async: true,
+                                        success: function (data)
+                                        {
+                                            console.log(data)
+                                            $('p#{{ cart_item.id }}_cart_item_quantity').html(data.output);
+                                            $('p#payment_amount').html(data.payment_amount);
+
+                                        }
+                                    });
+                                    return false;
+                                });
+                            </script>
                         </div>
-                        <a class="underline font-sans text-xl" href="{{ path('cart_delete', {'id': cart_item.id}) }}">Удалить</a>
+                    <form method="post" action="{{ path('cart_delete', {'id': cart_item.id}) }}" onsubmit="return confirm('Вы уверены, что хотите удалить товар из корзины?');">
+                        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ cart_item.id) }}">
+                        <button class="btn underline font-sans text-xl">Удалить</button>
+                    </form>
                 </div>
                     {% else %}
                         <h3 class="flex justify-center font-sans text-4xl">Корзина пуста</h3>
@@ -47,7 +99,7 @@
             </div>
             <div class="flex justify-between">
                 <p class="mx-4 font-sans text-2xl">Сумма к оплате</p>
-                <p class="mx-4 font-sans text-2xl">{{ payment_amount }}</p>
+                <p id="payment_amount" class="mx-4 font-sans text-2xl">{{ payment_amount }} руб.</p>
             </div>
             <div class="flex justify-center bg-black rounded-xl mx-20 my-8">
                 <a class="text-white font-sans text-2xl" href={{ path('cart_checkout') }}>Оформить заказ</a>
