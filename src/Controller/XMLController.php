@@ -2,14 +2,13 @@
 
 namespace App\Controller;
 
-use App\Entity\Section;
 use App\Entity\Offer;
+use App\Entity\Section;
+use App\Service\XMLUploader;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\Filesystem\Filesystem;
-use Symfony\Component\Filesystem\Exception\ExceptionInterface;
-use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
 
 class XMLController extends AbstractController
 {
@@ -22,7 +21,7 @@ class XMLController extends AbstractController
         $file = $folder . 'catalog.xml';
 
         $fileSystem = new Filesystem();
-        
+
         if (!$fileSystem->exists($folder)) {
             $fileSystem->mkdir($folder);
         }
@@ -86,5 +85,14 @@ class XMLController extends AbstractController
         return $this->render('xml/index.html.twig', [
             'controller_name' => 'XMLController',
         ]);
+    }
+
+    /**
+     * @Route("/xml_export", name="xml_export")
+     */
+    public function exportXml(XMLUploader $uploader): Response
+    {
+        $uploader->export();
+        return $this->redirectToRoute('admin');
     }
 }
