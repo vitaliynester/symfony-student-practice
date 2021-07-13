@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Form\PersonalAccountType;
+use Knp\Component\Pager\PaginatorInterface;
 use RetailCrm\Api\Enum\ByIdentifier;
 use RetailCrm\Api\Factory\SimpleClientFactory;
 use RetailCrm\Api\Interfaces\ApiExceptionInterface;
@@ -27,7 +28,7 @@ class PersonalAccountController extends AbstractController
     public function index(): Response
     {
         $user_ = $this->getUser();
-        $client = SimpleClientFactory::createClient('https://popova.retailcrm.ru', 'eVsrX4drzsw35chftqiSbTbGgbLtaPbN');
+        $client = SimpleClientFactory::createClient($this->getParameter('url'), $this->getParameter('apiKey'));
         $user = $client->customers->get($user_->getId())->customer;
         return $this->render('personal_account/index.html.twig', [
             'user' => $user,
@@ -77,18 +78,19 @@ class PersonalAccountController extends AbstractController
     }
 
     /**
-     * @Route("/personalAccount/ordersHystory", name="personal_account_orders_history")
+     * @Route("/personalAccount/ordersHystory/{page}", name="personal_account_orders_history", methods={"GET","POST"})
      */
-    public function ordersHistory(): Response
+    public function ordersHistory(PaginatorInterface $paginator, $page): Response
     {
         $user_ = $this->getUser();
-        $client = SimpleClientFactory::createClient('https://popova.retailcrm.ru', 'eVsrX4drzsw35chftqiSbTbGgbLtaPbN');
+        $client = SimpleClientFactory::createClient($this->getParameter('url'), $this->getParameter('apiKey'));
         $requestOrders = new OrdersRequest();
         $requestOrders->filter = new OrderFilter();
         $requestOrders->filter->customerExternalId = $user_->getId();
-        $orders = $client->orders->list($requestOrders)->orders;
+        $order = $client->orders->list($requestOrders)->orders;
+        $pagination = $paginator->paginate($order,$page,1);
         return $this->render('personal_account/historyOrders.html.twig', [
-            'orders' => $orders,
+            'pagination' => $pagination,
         ]);
     }
 }

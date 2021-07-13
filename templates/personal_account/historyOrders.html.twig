@@ -10,7 +10,7 @@
 
 <div class="example-wrapper">
     <a href="{{ path('personal_account') }}">Назад</a>
-    {% for order in orders %}
+    {% for order in pagination %}
     <p>-------------------------</p>
     <p>Номер заказа: {{ order.number }}</p>
     <p>Дата оформления: {{ order.createdAt | date("m/d/Y") }}</p>
@@ -22,5 +22,8 @@
     {% endfor %}
     <p>-------------------------</p>
     {% endfor %}
+    <div class="navigation">
+        {{ knp_pagination_render(pagination) }}
+    </div>
 </div>
 {% endblock %}

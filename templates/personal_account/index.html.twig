@@ -15,6 +15,6 @@
     <p>Номер телефона: {{ user.phones[0].number }}</p>
     <p>Адрес доставки: {{ user.address.text }}</p>
     <a href="{{ path('personal_account_edit') }}">Изменить</a>
-    <a href="{{ path('personal_account_orders_history') }}">История заказов</a>
+    <a href="{{ path('personal_account_orders_history', {'page': 1} ) }}">История заказов</a>
 </div>
 {% endblock %}
