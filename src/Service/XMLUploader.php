@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\RequestStack;
 class XMLUploader
 {
     private string $shopName = 'Интернет-магазин одежды';
-    private string $fileNameToSave = 'XML_EXPORT.xml';
+    private string $fileNameToSave = 'catalog.xml';
     private string $pathPictures = 'upload/pictures/';
 
     private EntityManagerInterface $entityManager;
@@ -134,9 +134,6 @@ class XMLUploader
         // Добавляем сформированный список предложений в XML документ
         $shop->appendChild($offers);
 
-        // Сохраняем XML документ (произойдет загрузка файла)
-        header('Content-type: "text/xml"; charset="utf8"');
-        header('Content-disposition: attachment; filename=' . $this->fileNameToSave);
-        echo $xml->saveXML();
+        $xml->save('xml/' . $this->fileNameToSave);
     }
 }
