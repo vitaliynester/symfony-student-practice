@@ -6,6 +6,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "easycorp/easyadmin-bundle": "^3.4",
+        "retailcrm/api-client-php": "6.0",
         "sensio/framework-extra-bundle": "^5.1",
         "symfony/asset": "5.1.*",
         "symfony/console": "5.1.*",
@@ -86,6 +87,7 @@
         "symfony": {
             "allow-contrib": false,
             "require": "5.1.*"
-        }
+        },
+        "compile-whitelist": ["retailcrm/api-client-php"]
     }
 }
