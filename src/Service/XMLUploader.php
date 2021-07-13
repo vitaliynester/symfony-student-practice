@@ -135,6 +135,8 @@ class XMLUploader
         $shop->appendChild($offers);
 
         // Сохраняем XML документ (произойдет загрузка файла)
-        $xml->save($this->fileNameToSave);
+        header('Content-type: "text/xml"; charset="utf8"');
+        header('Content-disposition: attachment; filename=' . $this->fileNameToSave);
+        echo $xml->saveXML();
     }
 }
