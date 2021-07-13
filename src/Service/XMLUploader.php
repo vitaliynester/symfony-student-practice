@@ -65,8 +65,8 @@ class XMLUploader
             /** @var Section $category */
             $categoryElement = $xml->createElement('category', $category->getName());
             $categoryElement->setAttribute('id', $category->getXmlId());
-            if ($category->getParent() !== null) {
-                $categoryElement->setAttribute("parentId", $category->getParent()->getXmlId());
+            if (null !== $category->getParent()) {
+                $categoryElement->setAttribute('parentId', $category->getParent()->getXmlId());
             }
             $categories->appendChild($categoryElement);
         }
@@ -84,7 +84,7 @@ class XMLUploader
             $offerElement->setAttribute('quantity', $offer->getQuantity());
 
             // Добавляем фотографию предложения
-            if ($offer->getPicture() !== null) {
+            if (null !== $offer->getPicture()) {
                 $pictureUrl = "$protocolSite://$domainSite/" . $this->pathPictures . $offer->getPicture();
                 $pictureElement = $xml->createElement('picture', $pictureUrl);
                 $offerElement->appendChild($pictureElement);
