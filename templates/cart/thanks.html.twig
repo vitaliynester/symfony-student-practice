@@ -3,26 +3,32 @@
 {% block title %}Спасибо за заказ{% endblock %}
 
 {% block body %}
-    {{ dump(order) }}
     <div class="container mx-auto">
         <div class="flex justify-center m-6">
             <h1 class="font-sans text-4xl">Спасибо за заказ!</h1>
         </div>
         <div class="grid grid-cols-3 gap-2 mt-14">
-            <div class="col-span-2 divide-y divide-current">
+            <div class="col-span-2 ">
+                <table class="mx-5 border-separate table-auto font-sans text-2xl tracking-wide text-center">
+                    <thead>
+                    <th class="font-medium border-b border-black">Наименование товара</th>
+                    <th class="font-medium border-b border-black">Стоимость</th>
+                    <th class="font-medium border-b border-black">Количество</th>
+                    </thead>
+                    <tbody>
                 {% for item in order.items %}
-                    <div class="grid grid-rows-4 grid-flow-col gap-4 ">
-                        <p class="my-1 font-sans text-xl">{{ item.offer.name }}</p>
-                        <p class="my-1 font-sans text-xl">{{ item.initialPrice }}</p>
-                        <div class="flex flex-row items-stretch">
-                            <p class="px-2 mx-0 border border-black font-sans text-xl">{{ item.quantity }}</p>
-                        </div>
-                    </div>
+                    <tr>
+                        <td class="px-3">{{ item.offer.name }}</td>
+                        <td class="px-3">{{ item.initialPrice }} руб.</td>
+                        <td class="px-3">{{ item.quantity }}</td>
+                    </tr>
                 {% else %}
                     <h3 class="flex justify-center font-sans text-4xl">Заказ пуст</h3>
                 {% endfor %}
+                    </tbody>
+                </table>
             </div>
-            <div class="border-solid border-2 border-black rounded-xl self-start">
+            <div class="-mx-4 border-solid border-2 border-black rounded-xl self-start">
                 <div class="flex justify-center">
                     <h5 class="m-3 font-sans text-4xl">Информация о заказе</h5>
                 </div>
@@ -32,7 +38,7 @@
                 </div>
                 <div class="flex justify-between">
                     <p class="mx-4 font-sans text-2xl">Стоимость заказа</p>
-                    <p class="mx-4 font-sans text-2xl">{{ order.totalSumm }}</p>
+                    <p class="mx-4 font-sans text-2xl">{{ order.totalSumm }} руб.</p>
                 </div>
             </div>
 
