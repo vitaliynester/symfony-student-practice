@@ -4,10 +4,7 @@ namespace App\Controller;
 
 use App\Form\PersonalAccountType;
 use Knp\Component\Pager\PaginatorInterface;
-use RetailCrm\Api\Enum\ByIdentifier;
 use RetailCrm\Api\Factory\SimpleClientFactory;
-use RetailCrm\Api\Interfaces\ApiExceptionInterface;
-use RetailCrm\Api\Interfaces\ClientExceptionInterface;
 use RetailCrm\Api\Model\Entity\Customers\Customer;
 use RetailCrm\Api\Model\Entity\Customers\CustomerAddress;
 use RetailCrm\Api\Model\Entity\Customers\CustomerPhone;
@@ -30,6 +27,7 @@ class PersonalAccountController extends AbstractController
         $user_ = $this->getUser();
         $client = SimpleClientFactory::createClient($this->getParameter('url'), $this->getParameter('apiKey'));
         $user = $client->customers->get($user_->getId())->customer;
+
         return $this->render('personal_account/index.html.twig', [
             'user' => $user,
         ]);
@@ -42,23 +40,23 @@ class PersonalAccountController extends AbstractController
     {
         $user = $this->getUser();
         $client = SimpleClientFactory::createClient($this->getParameter('url'), $this->getParameter('apiKey'));
-        $form = $this->createForm(PersonalAccountType::class,null);
+        $form = $this->createForm(PersonalAccountType::class, null);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
             $requestUser = new CustomersEditRequest();
             $requestUser->customer = new Customer();
             $requestUser->site = 'b12-skillum-ru';
-            if (!is_null($form->get('phoneNumber')->getData())){
-                $requestUser->customer->phones= [new CustomerPhone($form->get('phoneNumber')->getData())];
+            if (null !== $form->get('phoneNumber')->getData()) {
+                $requestUser->customer->phones = [new CustomerPhone($form->get('phoneNumber')->getData())];
             }
-            if (!is_null($form->get('gender')->getData())){
-                $requestUser->customer->sex=$form->get('gender')->getData();
+            if (null !== $form->get('gender')->getData()) {
+                $requestUser->customer->sex = $form->get('gender')->getData();
             }
-            if (!is_null($form->get('address')->getData())){
-                $requestUser->customer->address= new CustomerAddress();
-                $requestUser->customer->address->text=$form->get('address')->getData();
+            if (null !== $form->get('address')->getData()) {
+                $requestUser->customer->address = new CustomerAddress();
+                $requestUser->customer->address->text = $form->get('address')->getData();
             }
-            if (!is_null($form->get('plainPassword')->getData())){
+            if (null !== $form->get('plainPassword')->getData()) {
                 $user->setPassword(
                     $passwordEncoder->encodePassword(
                         $user,
@@ -70,8 +68,10 @@ class PersonalAccountController extends AbstractController
                 $entityManager->flush();
             }
             $client->customers->edit($user->getId(), $requestUser);
+
             return $this->redirectToRoute('personal_account');
         }
+
         return $this->render('personal_account/edit.html.twig', [
             'form' => $form->createView(),
         ]);
@@ -88,7 +88,8 @@ class PersonalAccountController extends AbstractController
         $requestOrders->filter = new OrderFilter();
         $requestOrders->filter->customerExternalId = $user_->getId();
         $order = $client->orders->list($requestOrders)->orders;
-        $pagination = $paginator->paginate($order,$page,1);
+        $pagination = $paginator->paginate($order, $page, 1);
+
         return $this->render('personal_account/historyOrders.html.twig', [
             'pagination' => $pagination,
         ]);
