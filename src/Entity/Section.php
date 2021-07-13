@@ -25,7 +25,7 @@ class Section
     private $name;
 
     /**
-     * @ORM\ManyToMany(targetEntity=Product::class, mappedBy="category")
+     * @ORM\ManyToMany(targetEntity=Product::class, mappedBy="sections")
      */
     private $products;
 
@@ -113,5 +113,10 @@ class Section
         $this->xmlId = $xmlId;
 
         return $this;
+    }
+
+    public function __toString()
+    {
+        return "$this->id | $this->name";
     }
 }

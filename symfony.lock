@@ -3,7 +3,7 @@
         "version": "3.2.5"
     },
     "composer/xdebug-handler": {
-        "version": "2.0.1"
+        "version": "1.4.6"
     },
     "doctrine/annotations": {
         "version": "1.0",
@@ -102,23 +102,35 @@
     "doctrine/sql-formatter": {
         "version": "1.1.0"
     },
-    "egulias/email-validator": {
-        "version": "2.1.18"
-    },
-    "friendsofphp/php-cs-fixer": {
+    "easycorp/easyadmin-bundle": {
         "version": "3.0",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "master",
             "version": "3.0",
-            "ref": "be2103eb4a20942e28a6dd87736669b757132435"
+            "ref": "b131e6cbfe1b898a508987851963fff485986285"
+        }
+    },
+    "egulias/email-validator": {
+        "version": "2.1.18"
+    },
+    "friendsofphp/php-cs-fixer": {
+        "version": "2.17",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "2.17",
+            "ref": "f0d4b4ddb4e2bb73b227e3987b6ecc53cd8be431"
         },
         "files": [
-            ".php-cs-fixer.dist.php"
+            ".php_cs.dist"
         ]
     },
     "friendsofphp/proxy-manager-lts": {
         "version": "v1.0.5"
+    },
+    "jms/metadata": {
+        "version": "2.5.0"
     },
     "laminas/laminas-code": {
         "version": "3.4.1"
@@ -154,7 +166,7 @@
         "version": "7.2"
     },
     "php-cs-fixer/diff": {
-        "version": "v2.0.2"
+        "version": "v1.3.1"
     },
     "phpdocumentor/reflection-common": {
         "version": "2.2.0"
@@ -486,6 +498,9 @@
     "symfony/polyfill-php80": {
         "version": "v1.17.1"
     },
+    "symfony/polyfill-uuid": {
+        "version": "v1.23.0"
+    },
     "symfony/process": {
         "version": "v5.1.2"
     },
@@ -593,6 +608,9 @@
     "symfony/twig-pack": {
         "version": "v1.0.0"
     },
+    "symfony/uid": {
+        "version": "v5.1.11"
+    },
     "symfony/validator": {
         "version": "4.3",
         "recipe": {
@@ -640,6 +658,15 @@
     },
     "twig/twig": {
         "version": "v3.0.3"
+    },
+    "vich/uploader-bundle": {
+        "version": "1.7",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.7",
+            "ref": "c4f5755b37fb65b9c6a3cbdae91205c15a137ed4"
+        }
     },
     "webmozart/assert": {
         "version": "1.9.0"
