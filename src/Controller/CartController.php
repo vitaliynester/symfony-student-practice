@@ -5,9 +5,7 @@ namespace App\Controller;
 use App\Entity\CartItem;
 use App\Entity\Offer;
 use App\Form\CartCheckoutFormType;
-use App\Form\CartItemType;
 use App\Repository\CartItemRepository;
-use App\Repository\OfferRepository;
 use App\Service\OrderApi;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -31,6 +29,18 @@ class CartController extends AbstractController
         ]);
     }
 
+    private function getPaymentAmount($customer)
+    {
+        $cartItems = $customer->getCartItems();
+
+        $amount = 0;
+        foreach ($cartItems as $item) {
+            $amount += $item->getOffer()->getPrice() * $item->getQuantity();
+        }
+
+        return $amount;
+    }
+
     /**
      * @Route("/new/", name="cart_new", methods={"POST"})
      */
@@ -38,16 +48,14 @@ class CartController extends AbstractController
     {
         $offer = $this->getDoctrine()->getRepository(Offer::class)->findOneBy(['id' => $request->request->get('offer')]);
         $cartItem = $cartItemRepository->findOneBy(['customer' => $this->getUser(), 'offer' => $offer]);
-        if ($cartItem == null) {
+        if (null == $cartItem) {
             $cartItem = new CartItem();
             $cartItem->setCustomer($this->getUser());
             $cartItem->setOffer($offer);
             $cartItem->setQuantity($request->request->get('quantity'));
-
         } else {
-            $cartItem->setQuantity($cartItem->getQuantity()+$request->request->get('quantity'));
+            $cartItem->setQuantity($cartItem->getQuantity() + $request->request->get('quantity'));
         }
-
 
         $entityManager = $this->getDoctrine()->getManager();
         $entityManager->persist($cartItem);
@@ -55,7 +63,6 @@ class CartController extends AbstractController
 
         return $this->redirectToRoute('cart_index', [], Response::HTTP_SEE_OTHER);
     }
-
 
     /**
      * @Route("/{id}/edit", name="cart_edit", methods={"POST"})
@@ -92,7 +99,6 @@ class CartController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-
             $orderApi = new OrderApi($this->getParameter('url'), $this->getParameter('apiKey'));
 
             $apiResponse = $orderApi->createOrder($this->getUser(), $form);
@@ -110,23 +116,12 @@ class CartController extends AbstractController
     /**
      * @Route("/thanks", name="cart_thanks", methods={"GET"})
      */
-    public function thanks(Request $request)
+    public function thanks(Request $request): Response
     {
         $orderApi = new OrderApi($this->getParameter('url'), $this->getParameter('apiKey'));
         $order = $orderApi->getOrderById($request->get('id'))->order;
+
         return $this->render('cart/thanks.html.twig', ['order' => $order]);
-    }
-
-    private function getPaymentAmount($customer)
-    {
-        $cartItems = $customer->getCartItems();
-
-        $amount = 0;
-        foreach ($cartItems as $item) {
-            $amount += $item->getOffer()->getPrice() * $item->getQuantity();
-        }
-
-        return $amount;
     }
 
     /**
@@ -136,16 +131,20 @@ class CartController extends AbstractController
     {
         if ($request->request->get('operation')) {
             $cartItem = $cartItemRepository->findOneBy(['id' => $request->request->get('cartItemId')]);
-            if ($request->request->get('operation') == 'reduce')
+            if ('reduce' == $request->request->get('operation')) {
                 $cartItem->setQuantity($cartItem->getQuantity() - 1);
-            elseif ($request->request->get('operation') == 'increase')
+            } elseif ('increase' == $request->request->get('operation')) {
                 $cartItem->setQuantity($cartItem->getQuantity() + 1);
+            }
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($cartItem);
             $entityManager->flush();
-            $data = ['output' => $cartItem->getQuantity(), 'payment_amount' => $this->getPaymentAmount($this->getUser()).' руб.'];
+            $data = ['output' => $cartItem->getQuantity(),
+                'payment_amount' => $this->getPaymentAmount($this->getUser()) . ' руб.', ];
+
             return new JsonResponse($data);
         }
+
         return $this->redirectToRoute('cart_index', [], Response::HTTP_SEE_OTHER);
     }
 }
