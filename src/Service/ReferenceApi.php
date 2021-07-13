@@ -4,11 +4,9 @@ namespace App\Service;
 
 use RetailCrm\Api\Factory\SimpleClientFactory;
 use RetailCrm\Api\Interfaces\ApiExceptionInterface;
-use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 
 class ReferenceApi
 {
-
     public static function getDeliveryTypes($url, $apiKey)
     {
         $client = SimpleClientFactory::createClient($url, $apiKey);
