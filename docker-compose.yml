@@ -2,7 +2,7 @@ version: "3.1"
 volumes:
   postgres: ~
 services:
-  nginx:
+  nginx_dev:
     container_name: pract_nginx_dev
     image: nginx:alpine
     working_dir: /app
@@ -13,18 +13,18 @@ services:
     ports:
       - "${NGINX_PORT}:80"
     links:
-      - php
-  postgres:
+      - php_dev
+  postgres_dev:
     container_name: pract_postgres_dev
     image: postgres:alpine
     volumes:
-      - postgres:/var/lib/postgresql/data
+      - ./var/lib/postgresql/data:/var/lib/postgresql/data
     ports:
       - 5434:5432
     environment:
       POSTGRES_USER: pguser
       POSTGRES_PASSWORD: pguser
-  php:
+  php_dev:
     container_name: pract_php_dev
     build: docker/images/php
     working_dir: /app
@@ -35,4 +35,4 @@ services:
     environment:
       - COMPOSER_ALLOW_SUPERUSER=1
     links:
-      - postgres
+      - postgres_dev
