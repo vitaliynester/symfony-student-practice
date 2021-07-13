@@ -36,7 +36,6 @@ class PersonalAccountController extends AbstractController
      */
     public function edit(Request $request, UserPasswordEncoderInterface $passwordEncoder): Response
     {
-        $user = $this->getUser();
         $form = $this->createForm(PersonalAccountType::class, null);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
@@ -46,28 +45,13 @@ class PersonalAccountController extends AbstractController
             if (null !== $form->get('phoneNumber')->getData()) {
                 $requestUser->customer->phones = [new CustomerPhone($form->get('phoneNumber')->getData())];
             }
-            if (null !== $form->get('gender')->getData()) {
-                $requestUser->customer->sex = $form->get('gender')->getData();
-            }
             if (null !== $form->get('address')->getData()) {
                 $requestUser->customer->address = new CustomerAddress();
                 $requestUser->customer->address->text = $form->get('address')->getData();
             }
-            if (null !== $form->get('plainPassword')->getData()) {
-                $user->setPassword(
-                    $passwordEncoder->encodePassword(
-                        $user,
-                        $form->get('plainPassword')->getData()
-                    )
-                );
-                $entityManager = $this->getDoctrine()->getManager();
-                $entityManager->persist($user);
-                $entityManager->flush();
-            }
             $user = $this->getUser();
             $Api = new CustomerApi();
             $Api->changeCustomer($user, $this->getParameter('url'), $this->getParameter('apiKey'), $requestUser);
-
             return $this->redirectToRoute('personal_account');
         }
 
