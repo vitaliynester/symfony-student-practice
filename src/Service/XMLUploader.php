@@ -12,7 +12,7 @@ class XMLUploader
 {
     private string $shopName = 'Интернет-магазин одежды';
     private string $fileNameToSave = 'XML_EXPORT.xml';
-    private string $pathPictures = __DIR__ . '/../../public/upload/pictures';
+    private string $pathPictures = 'upload/pictures/';
 
     private EntityManagerInterface $entityManager;
     private RequestStack $requestStack;
@@ -85,7 +85,7 @@ class XMLUploader
 
             // Добавляем фотографию предложения
             if ($offer->getPicture() !== null) {
-                $pictureUrl = "$protocolSite://$domainSite/$this->pathPictures" . $offer->getPicture();
+                $pictureUrl = "$protocolSite://$domainSite/" . $this->pathPictures . $offer->getPicture();
                 $pictureElement = $xml->createElement('picture', $pictureUrl);
                 $offerElement->appendChild($pictureElement);
             }
