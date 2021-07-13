@@ -67,9 +67,8 @@ class OrderApi
 
             $item = new OrderProduct();
             $item->offer = $crmOffer;
-            $item->priceType = new PriceType('base');
-            $item->quantity = $cartItem->getQuantity();
-            $item->purchasePrice = $offer->getPrice();
+            $item->productName = $offer->getName();
+            $item->initialPrice = $offer->getPrice();
 
             $items[] = $item;
         }
