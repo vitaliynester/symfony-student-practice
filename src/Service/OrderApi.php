@@ -10,6 +10,7 @@ use RetailCrm\Api\Enum\Customers\CustomerType;
 use RetailCrm\Api\Factory\SimpleClientFactory;
 use RetailCrm\Api\Interfaces\ApiExceptionInterface;
 use RetailCrm\Api\Interfaces\ClientExceptionInterface;
+use RetailCrm\Api\Model\Entity\Customers\Customer;
 use RetailCrm\Api\Model\Entity\Orders\Delivery\OrderDeliveryAddress;
 use RetailCrm\Api\Model\Entity\Orders\Delivery\SerializedOrderDelivery;
 use RetailCrm\Api\Model\Entity\Orders\Items\Offer;
@@ -83,11 +84,8 @@ class OrderApi
         $order->patronymic    = $form->get('patronymic')->getData();
         $order->phone         = $form->get('phone')->getData();
         $order->email         = $form->get('email')->getData();
-        $order->customer      = SerializedRelationCustomer::withExternalIdAndType(
-            $customer->getId(),
-            CustomerType::CUSTOMER,
-            "b12-skillum-ru"
-        );
+        $order->customer      = new Customer();
+        $order->customer->externalId = $customer->getId();
         $order->status        = 'assembling';
         $order->shipmentDate  = (new DateTime())->add(new DateInterval('P7D'));
         $order->shipped       = false;
