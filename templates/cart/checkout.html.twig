@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Оформление заказа{% endblock %}
+
+{% block body %}
+    <div class="flex justify-center m-6">
+        <h1 class="font-sans text-4xl">Оформить заказ</h1>
+    </div>
+    <div class="container mx-auto">
+        {{ form_start(form) }}
+        {{ form_errors(form) }}
+        <div class="grid grid-cols-2 grid-rows-5 font-sans text-2xl items-start flex items-stretch">
+            <div class="row-span-full mx-10 self-auto">
+                <div class="flex flex-col">
+                    {{ form_label(form.surname) }}
+                    {{ form_widget(form.surname, {'attr' : {'class':'border-2 rounded-md border-black mb-9'}}) }}
+                </div>
+                <div class="flex flex-col">
+                    {{ form_label(form.name) }}
+                    {{ form_widget(form.name, {'attr' : {'class':'border-2 rounded-md border-black mb-8'}}) }}
+                </div>
+                <div class="flex flex-col">
+                    {{ form_label(form.patronymic) }}
+                    {{ form_widget(form.patronymic, {'attr' : {'class':'border-2 rounded-md border-black mb-8'}}) }}
+                </div>
+                <div class="flex flex-col">
+                    {{ form_label(form.address) }}
+                    {{ form_widget(form.address, {'attr' : {'class':'border-2 rounded-md border-black mb-8'}}) }}
+                </div>
+                <div class="flex flex-col">
+                    {{ form_label(form.phone) }}
+                    {{ form_widget(form.phone, {'attr' : {'class':'border-2 rounded-md border-black'}}) }}
+                </div>
+            </div>
+            <div class="mx- row-span-2">
+                <div class="border-solid border-2 border-black rounded-xl self-start mb-1">
+                    <div class="flex justify-center">
+                        <h5 class="m-3 font-sans text-4xl">Информация о заказе</h5>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="mx-4 font-sans text-2xl">Сумма к оплате</p>
+                        <p class="mx-4 font-sans text-2xl">{{ payment_amount }}</p>
+                    </div>
+                    <div class="flex justify-center bg-black rounded-xl mx-28 my-8">
+                        <button class="text-white px-28">{{ button_label|default('Оформить заказ') }}</button>
+                    </div>
+                </div>
+            </div>
+                <div class="flex flex-col">
+                    {{ form_label(form.email) }}
+                    {{ form_widget(form.email, {'attr' : {'class':'border-2 rounded-md border-black items-end'}}) }}
+                </div>
+                <div class="flex flex-col">
+                    {{ form_label(form.delivery_type) }}
+                    {{ form_widget(form.delivery_type, {'attr' : {'class':'border-2 rounded-md border-black items-end'}}) }}
+                </div>
+                <div class="flex flex-col">
+                    {{ form_label(form.payment_type) }}
+                    {{ form_widget(form.payment_type, {'attr' : {'class':'border-2 rounded-md border-black items-end'}}) }}
+                </div>
+            </div>
+        {{ form_end(form) }}
+    </div>
+   {# {{ include('cart/_form.html.twig') }} #}
+{% endblock %}

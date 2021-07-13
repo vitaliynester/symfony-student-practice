@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Корзина{% endblock %}
+
+{% block body %}
+    <div class="container mx-auto">
+        <div class="flex justify-center m-6">
+            <h1 class="font-sans text-4xl">Моя корзина</h1>
+        </div>
+        <div class="grid grid-cols-3 gap-2 mt-14">
+            <div class="col-span-2 divide-y divide-current">
+                {% for cart_item in cart_items %}
+                <div class="grid grid-rows-4 grid-flow-col gap-4 ">
+                    <div class="row-span-4">
+                        <img class="flex-grow-0 w-48 h-48" src="/upload/pictures/{{ cart_item.offer.picture }}" alt="Фото товара" />
+                    </div>
+                        <p class="my-1 font-sans text-xl">{{ cart_item.offer.name }}</p>
+                        <p class="my-1 font-sans text-xl">{{ cart_item.offer.price }}</p>
+                        <div class="flex flex-row items-stretch mt-0">
+                            <button class="border border-black rounded-l-lg" type="submit">
+                                <svg class="h-5 w-5 text-black" width="24" height="24" viewBox="0 0 24 24"
+                                     stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                     stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <polyline points="6 15 12 9 18 15"/>
+                                </svg>
+                            </button>
+                            <p class="px-2 mx-0 border border-black font-sans text-xl">{{ cart_item.quantity }}</p>
+                            <button class="border border-black rounded-r-lg" type="submit">
+                                <svg class="h-5 w-5 text-black" width="24" height="24" viewBox="0 0 24 24"
+                                     stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                     stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <polyline points="6 9 12 15 18 9"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <a class="underline font-sans text-xl" href="{{ path('cart_delete', {'id': cart_item.id}) }}">Удалить</a>
+                </div>
+                    {% else %}
+                        <h3 class="flex justify-center font-sans text-4xl">Корзина пуста</h3>
+                    {% endfor %}
+            </div>
+        <div class="border-solid border-2 border-black rounded-xl self-start">
+            <div class="flex justify-center">
+                <h5 class="m-3 font-sans text-4xl">Информация о заказе</h5>
+            </div>
+            <div class="flex justify-between">
+                <p class="mx-4 font-sans text-2xl">Сумма к оплате</p>
+                <p class="mx-4 font-sans text-2xl">{{ payment_amount }}</p>
+            </div>
+            <div class="flex justify-center bg-black rounded-xl mx-20 my-8">
+                <a class="text-white font-sans text-2xl" href={{ path('cart_checkout') }}>Оформить заказ</a>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+{% endblock %}
