@@ -25,7 +25,7 @@ class Section
     private $name;
 
     /**
-     * @ORM\ManyToMany(targetEntity=Product::class, mappedBy="category")
+     * @ORM\ManyToMany(targetEntity=Product::class, mappedBy="sections")
      */
     private $products;
 
