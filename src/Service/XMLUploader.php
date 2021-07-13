@@ -4,7 +4,7 @@ namespace App\Service;
 
 use App\Entity\Offer;
 use App\Entity\Section;
-use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\EntityManagerInterface;
 use DOMDocument;
 use Symfony\Component\HttpFoundation\RequestStack;
 
@@ -14,10 +14,10 @@ class XMLUploader
     private string $fileNameToSave = 'XML_EXPORT.xml';
     private string $pathPictures = __DIR__ . '/../../public/upload/pictures';
 
-    private EntityManager $entityManager;
+    private EntityManagerInterface $entityManager;
     private RequestStack $requestStack;
 
-    public function __construct(EntityManager $entityManager, RequestStack $requestStack)
+    public function __construct(EntityManagerInterface $entityManager, RequestStack $requestStack)
     {
         $this->entityManager = $entityManager;
         $this->requestStack = $requestStack;
