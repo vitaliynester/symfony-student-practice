@@ -62,8 +62,8 @@ class RegistrationController extends AbstractController
                 $user->getId(),
                 $form,
                 $this->getParameter('url'),
-                $this->getParameter('apiKey'
-             ));
+                $this->getParameter('apiKey')
+            );
 
             if($resultApi!==true){
                 $entityManager = $this->getDoctrine()->getManager();

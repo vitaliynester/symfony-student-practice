@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PersonalAccountController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <p>Ф.И.О.:{{ user.lastName }} {{ user.firstName }} {{ user.patronymic }}</p>
+    <p>Эл. почта: {{ user.email }}</p>
+    <p>Пол: {{ user.sex }}</p>
+    <p>Номер телефона: {{ user.phones[0].number }}</p>
+    <p>Адрес доставки: {{ user.address.text }}</p>
+    <a href="{{ path('personal_account_edit') }}">Изменить</a>
+    <a href="{{ path('personal_account_orders_history', {'page': 1} ) }}">История заказов</a>
+</div>
+{% endblock %}
