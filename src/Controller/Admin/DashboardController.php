@@ -41,7 +41,7 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToCrud('Значение свойств', 'far fa-clipboard', PropertyValue::class);
         yield MenuItem::linkToCrud('Разделы', 'far fa-folder-open', Section::class);
         yield MenuItem::section('Каталог');
-        yield MenuItem::linkToRoute('Экспортировать в XML', 'fas fa-file-export', 'admin');
+        yield MenuItem::linkToRoute('Экспортировать в XML', 'fas fa-file-export', 'xml_export');
         yield MenuItem::linkToRoute('Импортировать из XML', 'far fa-file-code', 'admin');
     }
 }
