@@ -39,15 +39,6 @@ class PersonalAccountType extends AbstractType
                 ],
             ])
 
-            ->add('gender', ChoiceType::class,[
-                'required'=>false,
-                'label'=>'Выберите пол',
-                'choices'=>[
-                    'Мужской'=>'male',
-                    'Женский'=>'female',
-                ],
-            ])
-
             ->add('address',null,[
                 'required'=>false,
                 'constraints'=>[
@@ -59,18 +50,6 @@ class PersonalAccountType extends AbstractType
                 'label'=>'Адрес доставки',
                 'attr'=>[
                     'class'=>'validate',
-                ],
-            ])
-
-            ->add('plainPassword', PasswordType::class, [
-                'mapped' => false,
-                'attr' => ['autocomplete' => 'new-password'],
-                'constraints' => [
-                    new Length([
-                        'min' => 6,
-                        'minMessage' => 'Ваш пароль должен быть не менее {{ limit }} символов',
-                        'max' => 4096,
-                    ]),
                 ],
             ])
         ;
