@@ -1,42 +1,49 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Log in!{% endblock %}
+{% block title %}Авторизация{% endblock %}
 
 {% block body %}
-<form method="post">
-    {% if error %}
-        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-    {% endif %}
+{% include 'header-non-authorized.html.twig' %}
 
-    {% if app.user %}
-        <div class="mb-3">
-            You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Logout</a>
-        </div>
-    {% endif %}
+{% if error %}
+    <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+{% endif %}
 
-    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-    <label for="inputEmail">Email</label>
-    <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
-    <label for="inputPassword">Password</label>
-    <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
+{% if app.user %}
+    <div class="mb-3">
+        You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Logout</a>
+    </div>
+{% endif %}
+<div class="relative w-screen mt-20">
+    <h2 class="font-bold text-center text-2xl">Авторизация</h2>
+    <div class="items-center flex justify-center items-center">
+        <div class="flex-column flex w-80 justify-center items-center">
+             <form method="post">
 
-    <input type="hidden" name="_csrf_token"
-           value="{{ csrf_token('authenticate') }}"
-    >
+                    <div class="flex flex-row mt-5 justify-between items-center mt-6 h-10">
+                        <label class="text-center items-center w-24" for="inputEmail">Email</label>
+                        <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control focus:outline-none p-1 items-center rounded-full border-solid border border-black w-56 h-10" autocomplete="email" required>
+                    </div>
 
-    {#
-        Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
-        See https://symfony.com/doc/current/security/remember_me.html
+                    <div class="flex flex-row mt-5 justify-between items-center mt-6 h-10">
+                        <label class="text-center items-center w-24" for="inputPassword">Password</label>
+                        <input type="password" name="password" id="inputPassword" class="form-control focus:outline-none p-1 items-center rounded-full border-solid border border-black w-56 h-10" autocomplete="current-password" required>
+                    </div>
 
-        <div class="checkbox mb-3">
-            <label>
-                <input type="checkbox" name="_remember_me"> Remember me
-            </label>
-        </div>
-    #}
-
-    <button class="btn btn-lg btn-primary" type="submit">
-        Sign in
-    </button>
-</form>
+                    <input type="hidden" name="_csrf_token"
+                        value="{{ csrf_token('authenticate') }}"
+                    >
+                    
+                    <div class="text-center mt-5">
+                        <button class="bg-black text-white w-20 h-10 rounded mb-5" type="submit">
+                           Войти
+                        </button>
+                    </div>
+                </form>
+            </div>
+    </div>
+</div>
+<div class="fixed bottom-0 w-screen">
+    {% include 'footer.html.twig' %}
+</div>
 {% endblock %}
