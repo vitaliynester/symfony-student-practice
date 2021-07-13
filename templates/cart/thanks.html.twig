@@ -12,11 +12,8 @@
             <div class="col-span-2 divide-y divide-current">
                 {% for item in order.items %}
                     <div class="grid grid-rows-4 grid-flow-col gap-4 ">
-                        <div class="row-span-4">
-                            <img class="flex-grow-0 w-48 h-48" src="/upload/pictures/{{ item.offer.picture }}" alt="Фото товара" />
-                        </div>
                         <p class="my-1 font-sans text-xl">{{ item.offer.name }}</p>
-                        <p class="my-1 font-sans text-xl">{{ item.offer.price }}</p>
+                        <p class="my-1 font-sans text-xl">{{ item.initialPrice }}</p>
                         <div class="flex flex-row items-stretch">
                             <p class="px-2 mx-0 border border-black font-sans text-xl">{{ item.quantity }}</p>
                         </div>
