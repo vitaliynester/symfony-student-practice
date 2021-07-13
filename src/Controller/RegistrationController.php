@@ -23,7 +23,7 @@ class RegistrationController extends AbstractController
     public function register(Request $request, UserPasswordEncoderInterface $passwordEncoder, GuardAuthenticatorHandler $guardHandler, LoginFormAuthentificatorAuthenticator $authenticator): Response
     {
         if($this->getUser() !== null) {
-            return new RedirectResponse($this->generateUrl('about'));
+            return new RedirectResponse($this->generateUrl('home'));
         }
 
         $user = new User();
@@ -43,6 +43,13 @@ class RegistrationController extends AbstractController
                 return $this->render('registration/register.html.twig', [
                     'registrationForm' => $form->createView(),
                     'error'=>'Пользователь с введенным email уже существует',
+                    'link_img_logo'=>'',
+                    'alt_text_logo'=>'',
+                    'store_title'=>'',
+                    'link_log_in'=>'',
+                    'link_sign_up'=>'',
+                    'categories'=>[],
+                    'store_name'=>''
                 ]);
             }
 
@@ -65,6 +72,13 @@ class RegistrationController extends AbstractController
                 return $this->render('registration/register.html.twig', [
                     'registrationForm' => $form->createView(),
                     'error'=>$resultApi,
+                    'link_img_logo'=>'',
+                    'alt_text_logo'=>'',
+                    'store_title'=>'',
+                    'link_log_in'=>'',
+                    'link_sign_up'=>'',
+                    'categories'=>[],
+                    'store_name'=>''
                 ]);
             }
 
@@ -78,6 +92,13 @@ class RegistrationController extends AbstractController
 
         return $this->render('registration/register.html.twig', [
             'registrationForm' => $form->createView(),
+            'link_img_logo'=>'',
+            'alt_text_logo'=>'',
+            'store_title'=>'',
+            'link_log_in'=>'',
+            'link_sign_up'=>'',
+            'categories'=>[],
+            'store_name'=>''
         ]);
     }
 }
