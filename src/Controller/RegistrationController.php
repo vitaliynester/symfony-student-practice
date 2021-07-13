@@ -55,8 +55,8 @@ class RegistrationController extends AbstractController
                 $user->getId(),
                 $form,
                 $this->getParameter('url'),
-                $this->getParameter('apiKey'
-             ));
+                $this->getParameter('apiKey')
+            );
 
             if($resultApi!==true){
                 return $this->render('registration/register.html.twig', [

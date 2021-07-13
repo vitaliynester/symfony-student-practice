@@ -63,13 +63,9 @@ class PersonalAccountType extends AbstractType
             ])
 
             ->add('plainPassword', PasswordType::class, [
-                'required'=>false,
                 'mapped' => false,
                 'attr' => ['autocomplete' => 'new-password'],
                 'constraints' => [
-                    new NotBlank([
-                        'message' => 'Пожалуйста, введите пароль',
-                    ]),
                     new Length([
                         'min' => 6,
                         'minMessage' => 'Ваш пароль должен быть не менее {{ limit }} символов',

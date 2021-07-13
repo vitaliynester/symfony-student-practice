@@ -40,7 +40,7 @@ class PersonalAccountController extends AbstractController
     public function edit(Request $request, UserPasswordEncoderInterface $passwordEncoder): Response
     {
         $user = $this->getUser();
-        $client = SimpleClientFactory::createClient('https://popova.retailcrm.ru', 'eVsrX4drzsw35chftqiSbTbGgbLtaPbN');
+        $client = SimpleClientFactory::createClient($this->getParameter('url'), $this->getParameter('apiKey'));
         $form = $this->createForm(PersonalAccountType::class,null);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
@@ -57,7 +57,7 @@ class PersonalAccountController extends AbstractController
                 $requestUser->customer->address= new CustomerAddress();
                 $requestUser->customer->address->text=$form->get('address')->getData();
             }
-            if ($form->get('plainPassword')->getData()){
+            if (!is_null($form->get('plainPassword')->getData())){
                 $user->setPassword(
                     $passwordEncoder->encodePassword(
                         $user,
@@ -68,8 +68,8 @@ class PersonalAccountController extends AbstractController
                 $entityManager->persist($user);
                 $entityManager->flush();
             }
-
-            $response_ = $client->customers->edit($user->getId(), $requestUser);
+            $client->customers->edit($user->getId(), $requestUser);
+            return $this->redirectToRoute('personal_account');
         }
         return $this->render('personal_account/edit.html.twig', [
             'form' => $form->createView(),
