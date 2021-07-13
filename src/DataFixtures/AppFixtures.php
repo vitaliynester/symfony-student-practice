@@ -47,7 +47,7 @@ class AppFixtures extends Fixture
         $sections = [];
         foreach ($xmlCategories as $category) {
             $section = new Section();
-            $section->setName($category->getName());
+            $section->setName(trim((string)$category));
             $xmlId = (string)$category->attributes()->id ?? null;
             $section->setXmlId($xmlId);
             $sections[$xmlId] = $section;
