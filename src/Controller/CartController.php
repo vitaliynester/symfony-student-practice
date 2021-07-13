@@ -143,7 +143,7 @@ class CartController extends AbstractController
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($cartItem);
             $entityManager->flush();
-            $data = ['output' => $cartItem->getQuantity(), 'payment_amount' => $this->getPaymentAmount($this->getUser())];
+            $data = ['output' => $cartItem->getQuantity(), 'payment_amount' => $this->getPaymentAmount($this->getUser()).' руб.'];
             return new JsonResponse($data);
         }
         return $this->redirectToRoute('cart_index', [], Response::HTTP_SEE_OTHER);
