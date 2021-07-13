@@ -23,7 +23,7 @@ use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 class PersonalAccountController extends AbstractController
 {
     /**
-     * @Route("/personalAccount", name="personal_account")
+     * @Route("/personal_account", name="personal_account")
      */
     public function index(): Response
     {
@@ -36,7 +36,7 @@ class PersonalAccountController extends AbstractController
     }
 
     /**
-     * @Route("/personalAccount/edit", name="personal_account_edit")
+     * @Route("/personal_account/edit", name="personal_account_edit")
      */
     public function edit(Request $request, UserPasswordEncoderInterface $passwordEncoder): Response
     {
@@ -78,7 +78,7 @@ class PersonalAccountController extends AbstractController
     }
 
     /**
-     * @Route("/personalAccount/ordersHystory/{page}", name="personal_account_orders_history", methods={"GET","POST"})
+     * @Route("/personal_account/ordersHystory/{page}", name="personal_account_orders_history", methods={"GET","POST"})
      */
     public function ordersHistory(PaginatorInterface $paginator, $page): Response
     {
