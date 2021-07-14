@@ -3,17 +3,11 @@
 {% block title %}Авторизация{% endblock %}
 
 {% block body %}
-{% include 'header-non-authorized.html.twig' %}
 
 {% if error %}
     <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
 {% endif %}
 
-{% if app.user %}
-    <div class="mb-3">
-        You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Logout</a>
-    </div>
-{% endif %}
 <div class="relative w-screen mt-20">
     <h2 class="font-bold text-center text-2xl">Авторизация</h2>
     <div class="items-center flex justify-center items-center">
@@ -42,8 +36,5 @@
                 </form>
             </div>
     </div>
-</div>
-<div class="fixed bottom-0 w-screen">
-    {% include 'footer.html.twig' %}
 </div>
 {% endblock %}
