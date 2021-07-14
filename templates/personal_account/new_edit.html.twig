@@ -1,0 +1,94 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Редактирование данных{% endblock %}
+
+{% block body %}
+
+<div class="p-8 pb-36 static w-screen h-full">
+    <h2 class="text-center text-4xl">Редактирование данных</h2>
+    {% if error is defined %}
+    <p class="flex justify-center items-center text-center text-red-500 text-2xl">{{ error }}</p>
+    {% endif %}
+    <div class="items-center flex justify-center items-center">
+        <div class="relative flex-column flex w-80 justify-center items-center">
+            {{ form_start(registrationForm) }}
+
+            <div class="flex flex-row mt-5 justify-between items-center mt-6 h-10">
+                {{ form_label(registrationForm.surname, null,
+                form_errors(registrationForm.surname)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
+                {'label_attr': {'class': 'text-center items-center w-24'}}) }}
+                {{ form_widget(registrationForm.surname, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}
+            </div>
+            <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.surname) }}</span>
+
+            <div class="flex flex-row mt-6 items-center h-10">
+                {{ form_label(registrationForm.name, null,
+                form_errors(registrationForm.name)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
+                {'label_attr': {'class': 'text-center items-center w-24'}}) }}
+                {{ form_widget(registrationForm.name, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}
+            </div>
+            <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.name) }}</span>
+
+            <div class="flex flex-row mt-6  items-center h-10">
+                {{ form_label(registrationForm.patronymic, null,
+                form_errors(registrationForm.patronymic)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
+                {'label_attr': {'class': 'text-center items-center w-24'}}) }}
+                {{ form_widget(registrationForm.patronymic, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}
+            </div>
+            <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.patronymic) }}</span>
+
+            <div class="flex flex-row mt-6  items-center h-10">
+                {{ form_label(registrationForm.gender, null,
+                form_errors(registrationForm.gender)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
+                {'label_attr': {'class': 'text-center items-center w-24'}}) }}
+                {{ form_widget(registrationForm.gender, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}
+            </div>
+            <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.gender) }}</span>
+
+            <div class="flex flex-row mt-6  items-center h-10">
+                {{ form_label(registrationForm.phoneNumber, null,
+                form_errors(registrationForm.phoneNumber)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
+                {'label_attr': {'class': 'text-center items-center w-24'}}) }}
+                {{ form_widget(registrationForm.phoneNumber, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}
+
+            </div>
+            <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.phoneNumber) }}</span>
+
+            <div class="flex flex-row mt-6  items-center h-10">
+                {{ form_label(registrationForm.address, null,
+                form_errors(registrationForm.address)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
+                {'label_attr': {'class': 'text-center items-center w-24'}}) }}
+                {{ form_widget(registrationForm.address, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}
+
+            </div>
+            <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.address) }}</span>
+
+
+            <div class="flex flex-row mt-6  items-center h-10">
+                {{ form_label(registrationForm.email, null,
+                form_errors(registrationForm.email)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
+                {'label_attr': {'class': 'text-center items-center w-24'}}) }}
+                {{ form_widget(registrationForm.email, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}
+            </div>
+            <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.email) }}</span>
+
+            <div class="flex justify-center px-8 py-12">
+                <div class="flex justify-between">
+                    <button type="submit" class="transition duration-500 ease-in-out bg-black rounded-md m-6 transform hover:scale-110">
+                        <a class="text-white px-8 py-2 rounded text-2xl w-auto float-right text-center align-middle" href="{{ }}">Сохранить</a>
+                    </button>
+                </div>
+                <div class="flex justify-between">
+                    <button type="submit" class="transition duration-500 ease-in-out bg-black rounded-md m-6 transform hover:scale-110">
+                        <a class="text-white px-8 py-2 rounded text-2xl w-auto float-right text-center align-middle" href="{{ }}">Отменить</a>
+                    </button>
+                </div>
+            </div>
+            {{ form_end(registrationForm) }}
+        </div>
+    </div>
+</div>
+<div class="fixed bottom-0 w-screen">
+    {% include 'footer.html.twig' %}
+</div>
+{% endblock %}
