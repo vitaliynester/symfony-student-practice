@@ -10,6 +10,7 @@
         {% endblock %}
     </head>
     <body>
+    <div class="flex flex-col h-screen">
         {% if app.user %}
             {% include 'header-authorized.html.twig' %}
         {% else %}
@@ -18,5 +19,6 @@
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
         {% include 'footer.html.twig' %}
+    </div>
     </body>
 </html>
