@@ -4,10 +4,10 @@
         <div class="m-auto w-max">
             <div class="h-20 flex items-center">
                 <div class="mr-4">
-                    <img class="object-contain h-8 w-8" src="{{ link_img_logo }}" alt="{{ alt_text_logo }}">
+                    <span class="iconify object-contain h-8 w-8" data-inline="false" data-icon="bi:shop" style="font-size: 200px; color: #FFFFFF"></span>
                 </div>
                 <div class="text-white text-5xl">
-                    {{ store_title }}
+                    Интернет-магазин одежды
                 </div>
             </div>
         </div>
@@ -16,10 +16,10 @@
             <div class="relative bottom-14">
                 <ul class="flex flex-row text-lg mr-10 text-white">
                     <li class="transform transition duration-300 hover:scale-110">
-                        <a href="{{ link_log_in }}">Вход</a>
+                        <a href="{{ path('app_login') }}">Вход</a>
                     </li>
                     <li class="transform transition duration-300 hover:scale-110 ml-12">
-                        <a href="{{ link_sign_up }}">Регистрация</a>
+                        <a href="{{ path('app_register') }}">Регистрация</a>
                     </li>
                 </ul>
             </div>
@@ -30,7 +30,7 @@
         <div class="h-16 flex items-center">
             <ul class="flex flex-row justify-between ml-96 mr-96 w-full text-white">
                 {% for category in categories %}
-                    <li class="text-2xl">{{ category }}</li>
+                    <li class="text-2xl">{{ category.name }}</li>
                 {% endfor %}
             </ul>
         </div>

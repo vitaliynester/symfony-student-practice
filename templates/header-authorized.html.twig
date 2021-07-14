@@ -3,12 +3,12 @@
     <div class="flex flex-row justify-between items-center top-floor border-b-2">
         <ul class="flex flex-row justify-around text-lg w-1/5 text-white text-base">
             <li class="transform transition duration-300 hover:scale-110">
-                <a href="{{ link_basket }}">
+                <a href="{{ path('cart_index') }}">
                     <i class="object-contain h-6 w-6 fas fa-shopping-bag text-white>"></i>
                 </a>
             </li>
             <li class="transform transition duration-300 hover:scale-110">
-                <a href="{{ link_cabinet }}">
+                <a href="{{ path('personal_account') }}">
                     <i class="object-contain h-6 w-6 fas fa-user"></i>
                 </a>
             </li>
@@ -16,16 +16,16 @@
 
         <div class="flex flex-row items-center h-20">
             <div class="mr-4">
-                <img class = "object-contain h-8 w-8" src="{{ link_img_logo }}" alt="{{ alt_text_logo }}">
+                <span class="iconify object-contain h-8 w-8" data-inline="false" data-icon="bi:shop" style="font-size: 200px; color: #FFFFFF"></span>
             </div>
             <div class="text-white text-5xl">
-                {{ store_title }}
+                Интернет-магазин одежды
             </div>
         </div>
 
         <div class="flex flex-row justify-end text-lg w-1/5 text-white">
             <h5 class="mr-12 transform transition duration-300 hover:scale-110">
-                <a href="{{ link_log_out }}">Выход</a>
+                <a href="{{ path('app_logout') }}">Выход</a>
             </h5>
         </div>
     </div>
@@ -34,7 +34,7 @@
         <div class="h-16 flex items-center">
             <ul class="flex flex-row justify-between ml-96 mr-96 w-full text-white">
                 {% for category in categories %}
-                    <li class="text-2xl">{{ category }}</li>
+                    <li class="text-2xl">{{ category.name }}</li>
                 {% endfor %}
             </ul>
         </div>
