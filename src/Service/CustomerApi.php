@@ -33,7 +33,16 @@ class CustomerApi
             $client->customers->create($requestUser);
             return true;
         }catch (ApiExceptionInterface | ClientExceptionInterface $exception) {
-            return $exception; // Every ApiExceptionInterface instance should implement __toString() method.
+            switch ($exception->getCode()){
+                case 400:
+                    return 'Ошибка при создании пользователя (Совпадение с внешним id)';
+                case 403:
+                    return 'Не верный ключ Api';
+                case 0:
+                    return 'Неверно указан адрес url для подключения';
+                default:
+                    return $exception->getMessage();
+            }
         }
     }
 }
