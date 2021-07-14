@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}История заказов{% endblock %}
+
+{% block body %}
+
+<div class="container mx-auto font-sans not-italic font-normal ml-10 px-4 text-lg text-base text-black">
+    <div class="flex justify-center m-6">
+        <h1 class=" text-4xl pt-6 pb-12">Мои заказы</h1>
+    </div>
+    {% for order in pagination %}
+    <div class="grid grid-cols-3 gap-2 mt-14">
+        <div class="col-span-2">
+            <table class="table-auto mx-5 border-separate font-sans text-2xl tracking-wide text-center">
+                <thead>
+                <tr>
+                    <th class="font-medium border-b border-black">Наименование товара</th>
+                    <th class="font-medium border-b border-black">Стоимость</th>
+                    <th class="font-medium border-b border-black">Количество</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for item in order.items %}
+                <tr>
+                    <td class="px-3">{{ item.offer.name }}</td>
+                    <td class="px-3">{{ }} руб.</td>
+                    <td class="px-3">{{ }}</td>
+                </tr>
+                {% else %}
+                <h3 class="flex justify-center text-4xl">Заказ пуст</h3>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="-mx-4 border-black rounded-xl border-2">
+            <div class="flex justify-center">
+                <h5 class="text-4xl font-sans pt-6 pb-2">Информация о заказе</h5>
+            </div>
+            <div class="flex justify-between">
+                <p class="text-2xl font-sans pl-6 pb-6">Номер заказа</p>
+                <p class="text-2xl font-sans pr-6 pb-6">{{ order.number }}</p>
+            </div>
+            <!--<div class="flex justify-between">
+                    <p class="pl-6 pb-4">Дата оформления</p>
+                    <p class="pr-6 pb-4">{{ order.createdAt | date("m/d/Y") }}</p>
+                </div>-->
+            <div class="flex justify-between">
+                <p class="text-2xl font-sans pl-6 pb-6">Статус</p>
+                <p class="text-2xl font-sans pr-6 pb-6">{{ order.status }}</p>
+            </div>
+            <div class="flex justify-between">
+                <p class="text-2xl font-sans pl-6 pb-6">Стоимость</p>
+                <p class="text-2xl font-sans pr-6 pb-6">{{ order.purchaseSumm }} руб.</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    <ul class="flex justify-center">
+        <li class="">
+            <a href="" class="flex justify-between">1</a>
+        </li>
+        <li class="">
+            <a href="" class="flex justify-between">2</a>
+        </li>
+        <li class="">
+            <a href="" class="flex justify-between">3</a>
+        </li>
+
+    </ul>
+    <div class="flex justify-end -bottom-1">
+        <button type="submit" class="transition duration-500 ease-in-out bg-black rounded-md m-6 transform hover:scale-110">
+            <a class="text-white px-12 py-4 rounded text-2xl w-auto float-right text-center align-middle" href="{{ path('personal_account') }}">Назад</a>
+        </button>
+    </div>
+</div>
+<div class="fixed bottom-0 w-screen">
+    {% include 'footer.html.twig' %}
+</div>
+{% endblock %}
+</html>
