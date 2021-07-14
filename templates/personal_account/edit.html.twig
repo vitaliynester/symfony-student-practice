@@ -1,18 +1,47 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello PersonalAccountController!{% endblock %}
+{% block title %}Редактирование данных{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
+<div class="p-8 pb-36 static w-screen h-full">
+    <h2 class="text-center text-4xl">Редактирование данных</h2>
+    {% if error is defined %}
+    <p class="flex justify-center items-center text-center text-red-500 text-2xl">{{ error }}</p>
+    {% endif %}
+    <div class="items-center flex justify-center items-center">
+        <div class="relative flex-column flex w-80 justify-center items-center">
+            {{ form_start(form) }}
+            <div class="flex flex-row mt-6  items-center h-10">
+                {{ form_label(form.phoneNumber, null,
+                form_errors(form.phoneNumber)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
+                {'label_attr': {'class': 'text-center items-center w-24'}}) }}
+                {{ form_widget(form.phoneNumber, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}
 
-    {{ form_start(form) }}
-        <button type="submit" class="btn">Изменить</button>
-    {{ form_end(form) }}
-        <a href="{{ path('personal_account') }}">Назад</a>
+            </div>
+            <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(form.phoneNumber) }}</span>
+
+            <div class="flex flex-row mt-6  items-center h-10">
+                {{ form_label(form.address, null,
+                form_errors(form.address)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
+                {'label_attr': {'class': 'text-center items-center w-24'}}) }}
+                {{ form_widget(form.address, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}
+
+            </div>
+            <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(form.address) }}</span>
+
+            <div class="flex justify-center px-8 py-12">
+                <div class="flex justify-between">
+                    <button type="submit" class="transition duration-500 ease-in-out bg-black rounded-md m-6 transform hover:scale-110">
+                        <a class="text-white px-8 py-2 rounded text-2xl w-auto float-right text-center align-middle">Сохранить</a>
+                    </button>
+                </div>
+            </div>
+            {{ form_end(form) }}
+        </div>
+    </div>
+</div>
+<div class="fixed bottom-0 w-screen">
+    {% include 'footer.html.twig' %}
 </div>
 {% endblock %}
