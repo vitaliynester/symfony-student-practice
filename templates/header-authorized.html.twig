@@ -14,13 +14,15 @@
             </li>
         </ul>
 
-        <div class="flex flex-row items-center h-20">
-            <div class="mr-4">
-                <span class="iconify object-contain h-8 w-8" data-inline="false" data-icon="bi:shop" style="font-size: 200px; color: #FFFFFF"></span>
-            </div>
-            <div class="text-white text-5xl">
-                Интернет-магазин одежды
-            </div>
+        <div class="flex h-20 content-center">
+            <a class="flex flex-row items-center content-center" href="{{ path('start_page') }}">
+                <div class="mr-4">
+                        <span class="iconify object-contain h-8 w-8" data-inline="false" data-icon="bi:shop" style="font-size: 200px; color: #FFFFFF"></span>
+                </div>
+                <div class="text-white text-5xl">
+                        Интернет-магазин одежды
+                </div>
+            </a>
         </div>
 
         <div class="flex flex-row justify-end text-lg w-1/5 text-white">
@@ -32,7 +34,7 @@
 
     <div class="container mx-auto">
         <div class="h-16 flex items-center">
-            <ul class="flex flex-row justify-between ml-96 mr-96 w-full text-white">
+            <ul class="flex flex-row justify-between ml-56 mr-56 w-full text-white">
                 {% for category in categories %}
                     <li class="text-2xl">{{ category.name }}</li>
                 {% endfor %}
