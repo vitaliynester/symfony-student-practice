@@ -2,55 +2,53 @@
 
 namespace App\Controller;
 
-use App\Entity\Section;
-use App\Entity\Product;
-use App\Entity\Offer;
 use App\Repository\OfferRepository;
-use App\Repository\SectionRepository;
 use App\Repository\ProductRepository;
+use App\Repository\SectionRepository;
+use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Doctrine\ORM\EntityManagerInterface;
-use Doctrine\ORM\Mapping\Id;
-use Knp\Component\Pager\PaginatorInterface;
 
 class CatalogController extends AbstractController
 {
     /**
      * @Route("/catalog/{parId}/{page}", name="catalog")
      */
-    public function index(SectionRepository $sectRep,PaginatorInterface $paginator, $parId,$page): Response 
+    public function index(SectionRepository $sectRep, PaginatorInterface $paginator, $parId, $page): Response
     {
         $sectData = $sectRep->findBy(['parent' => $parId]);
         $tmp = $sectRep->findBy(['id' => $parId]);
         array_unshift($sectData, $tmp[0]);
         $offerData = [];
-        foreach($sectData as $section)
-        {
+        foreach ($sectData as $section) {
             $products = $section->getProducts();
-            foreach($products as $product)
-            {
+            foreach ($products as $product) {
                 $offers = $product->getOffers();
-                foreach($offers as $offer)
-                {
-                    array_push($offerData, $offer);
+                foreach ($offers as $offer) {
+                    $offerData[] = $offer;
                 }
             }
         }
-        $pagination = $paginator->paginate($offerData,$page,9);
+        $pagination = $paginator->paginate($offerData, $page, 9);
+
         return $this->render('catalog/index.html.twig', [
-            'sections' => $sectData, 'pagination' => $pagination,
+            'sections' => $sectData,
+            'pagination' => $pagination,
+            'categories' => $sectRep->findBy(['parent' => null]),
         ]);
     }
 
     /**
      * @Route("/offer/{offerId}", name="offer")
      */
-    public function offer( OfferRepository $offerRep, ProductRepository $prodRep, $offerId): Response
+    public function offer(OfferRepository $offerRep, SectionRepository $sectionRepository, ProductRepository $prodRep, $offerId): Response
     {
         $offerData = $offerRep->findBy(['id' => $offerId]);
-        return $this->render('catalog/offer.html.twig', [ 'offer' => $offerData,
+
+        return $this->render('catalog/offer.html.twig', [
+            'offer' => $offerData,
+            'categories' => $sectionRepository->findBy(['parent' => null]),
         ]);
     }
 }
