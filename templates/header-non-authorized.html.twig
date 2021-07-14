@@ -2,14 +2,16 @@
 
     <div class="w-full border-b-2">
         <div class="m-auto w-max">
-            <div class="h-20 flex items-center">
-                <div class="mr-4">
-                    <span class="iconify object-contain h-8 w-8" data-inline="false" data-icon="bi:shop" style="font-size: 200px; color: #FFFFFF"></span>
+            <a class="flex flex-row items-center content-center" href="{{ path('start_page') }}">
+                <div class="h-20 flex items-center">
+                    <div class="mr-4">
+                        <span class="iconify object-contain h-8 w-8" data-inline="false" data-icon="bi:shop" style="font-size: 200px; color: #FFFFFF"></span>
+                    </div>
+                    <div class="text-white text-5xl">
+                        Интернет-магазин одежды
+                    </div>
                 </div>
-                <div class="text-white text-5xl">
-                    Интернет-магазин одежды
-                </div>
-            </div>
+            </a>
         </div>
 
         <div class="absolute right-0">
@@ -28,7 +30,7 @@
 
     <div class="container mx-auto">
         <div class="h-16 flex items-center">
-            <ul class="flex flex-row justify-between ml-96 mr-96 w-full text-white">
+            <ul class="flex flex-row justify-between ml-56 mr-56 w-full text-white">
                 {% for category in categories %}
                     <li class="text-2xl">{{ category.name }}</li>
                 {% endfor %}
