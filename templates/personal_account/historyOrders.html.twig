@@ -4,7 +4,7 @@
 
 {% block body %}
 
-<div class="container mx-auto font-sans not-italic font-normal px-4 text-lg text-base text-black">
+<div class="container mx-auto font-sans not-italic font-normal px-4 text-lg text-base text-black flex-grow">
     <div class="flex justify-center m-6">
         <h1 class=" text-4xl pt-6 pb-12">Мои заказы</h1>
     </div>
@@ -63,8 +63,5 @@
             <a class="text-white px-12 py-4 rounded text-2xl w-auto float-right text-center align-middle" href="{{ path('personal_account') }}">Назад</a>
         </button>
     </div>
-</div>
-<div class="fixed bottom-0 w-screen">
-    {% include 'footer.html.twig' %}
 </div>
 {% endblock %}
