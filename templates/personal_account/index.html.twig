@@ -1,20 +1,30 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello PersonalAccountController!{% endblock %}
+{% block title %}Личный аккаунт{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <p>Ф.И.О.:{{ user.lastName }} {{ user.firstName }} {{ user.patronymic }}</p>
-    <p>Эл. почта: {{ user.email }}</p>
-    <p>Пол: {{ user.sex }}</p>
-    <p>Номер телефона: {{ user.phones[0].number }}</p>
-    <p>Адрес доставки: {{ user.address.text }}</p>
-    <a href="{{ path('personal_account_edit') }}">Изменить</a>
-    <a href="{{ path('personal_account_orders_history', {'page': 1} ) }}">История заказов</a>
-</div>
+    <div class="container mx-auto font-sans not-italic font-normal px-4 text-lg text-base text-black">
+        <div class="flex justify-center p-6 pb-12 text-4xl">Мой профиль</div>
+        <div class="flex justify-center">
+            <ul class="flex justify-center flex-col text-left text-2xl">
+                <li>{{ user.lastName }} {{ user.firstName }} {{ user.patronymic }}</li>
+                <li>{{ user.email }}</li>
+                <li>{{ user.phones[0].number }}</li>
+                <li>{{ user.sex }}</li>
+                <li>{{ user.address.text }}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="flex justify-center px-8 py-12">
+        <div class="flex justify-between">
+            <button type="submit" class="transition duration-500 ease-in-out bg-black rounded-md m-6 transform hover:scale-110">
+                <a class="text-white px-8 py-2 rounded text-2xl w-auto float-right text-center align-middle" href="{{ path('personal_account_edit') }}">Изменить</a>
+            </button>
+        </div>
+        <div class="flex justify-between">
+            <button type="submit" class="transition duration-500 ease-in-out bg-black rounded-md m-6 transform hover:scale-110">
+                <a class="text-white px-8 py-2 rounded text-2xl w-auto float-right text-center align-middle" href="{{ path('personal_account_orders_history', {'page': 1} ) }}">История заказов</a>
+            </button>
+        </div>
+    </div>
 {% endblock %}
