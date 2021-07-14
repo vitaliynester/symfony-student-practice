@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\User;
 use App\Form\RegistrationFormType;
+use App\Repository\SectionRepository;
 use App\Security\LoginFormAuthentificatorAuthenticator;
 use App\Service\CustomerApi;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -22,7 +23,8 @@ class RegistrationController extends AbstractController
     public function register(Request $request,
                              UserPasswordEncoderInterface $passwordEncoder,
                              GuardAuthenticatorHandler $guardHandler,
-                             LoginFormAuthentificatorAuthenticator $authenticator
+                             LoginFormAuthentificatorAuthenticator $authenticator,
+                             SectionRepository $repository
     ): Response {
         if (null !== $this->getUser()) {
             return new RedirectResponse($this->generateUrl('home'));
@@ -45,13 +47,7 @@ class RegistrationController extends AbstractController
                 return $this->render('registration/register.html.twig', [
                     'registrationForm' => $form->createView(),
                     'error' => 'Пользователь с введенным email уже существует',
-                    'link_img_logo' => '',
-                    'alt_text_logo' => '',
-                    'store_title' => '',
-                    'link_log_in' => '',
-                    'link_sign_up' => '',
-                    'categories' => [],
-                    'store_name' => '',
+                    'categories' => $repository->findBy(['parent' => null]),
                 ]);
             }
 
@@ -75,13 +71,7 @@ class RegistrationController extends AbstractController
                 return $this->render('registration/register.html.twig', [
                     'registrationForm' => $form->createView(),
                     'error' => $resultApi,
-                    'link_img_logo' => '',
-                    'alt_text_logo' => '',
-                    'store_title' => '',
-                    'link_log_in' => '',
-                    'link_sign_up' => '',
-                    'categories' => [],
-                    'store_name' => '',
+                    'categories' => $repository->findBy(['parent' => null]),
                 ]);
             }
 
@@ -95,13 +85,7 @@ class RegistrationController extends AbstractController
 
         return $this->render('registration/register.html.twig', [
             'registrationForm' => $form->createView(),
-            'link_img_logo' => '',
-            'alt_text_logo' => '',
-            'store_title' => '',
-            'link_log_in' => '',
-            'link_sign_up' => '',
-            'categories' => [],
-            'store_name' => '',
+            'categories' => $repository->findBy(['parent' => null]),
         ]);
     }
 }
