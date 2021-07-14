@@ -3,7 +3,6 @@
 {% block title %}Регистрация{% endblock %}
 
 {% block body %}
-    {% include 'header-non-authorized.html.twig' %}
     <div class="p-8 pb-36 static w-screen h-full">
         <h2 class="font-bold text-center text-2xl">Регистрация</h2>
         {% if error is defined %}
@@ -96,9 +95,6 @@
             </div>
         </div>
     </div>
-<div class="fixed bottom-0 w-screen">
-    {% include 'footer.html.twig' %}
-</div>
 {% endblock %}
 
 
