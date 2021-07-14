@@ -3,9 +3,11 @@
 {% block title %}New CartItem{% endblock %}
 
 {% block body %}
+    <div class="flex-grow">
     <h1>Create new CartItem</h1>
 
     {{ include('cart/_form.html.twig') }}
 
     <a href="{{ path('cart_index') }}">back to list</a>
+    </div>
 {% endblock %}
