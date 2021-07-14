@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Form\PersonalAccountType;
+use App\Repository\SectionRepository;
 use App\Service\CustomerApi;
 use Knp\Component\Pager\PaginatorInterface;
 use RetailCrm\Api\Model\Entity\Customers\Customer;
@@ -13,14 +14,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 class PersonalAccountController extends AbstractController
 {
     /**
      * @Route("/personal_account", name="personal_account")
      */
-    public function index(): Response
+    public function index(SectionRepository $sectionRepository): Response
     {
         $user = $this->getUser();
         $Api = new CustomerApi();
@@ -28,13 +28,14 @@ class PersonalAccountController extends AbstractController
 
         return $this->render('personal_account/index.html.twig', [
             'user' => $customer,
+            'categories' => $sectionRepository->findBy(['parent' => null]),
         ]);
     }
 
     /**
      * @Route("/personal_account/edit", name="personal_account_edit")
      */
-    public function edit(Request $request, UserPasswordEncoderInterface $passwordEncoder): Response
+    public function edit(Request $request, SectionRepository $sectionRepository): Response
     {
         $form = $this->createForm(PersonalAccountType::class, null);
         $form->handleRequest($request);
@@ -57,13 +58,14 @@ class PersonalAccountController extends AbstractController
 
         return $this->render('personal_account/edit.html.twig', [
             'form' => $form->createView(),
+            'categories' => $sectionRepository->findBy(['parent' => null]),
         ]);
     }
 
     /**
      * @Route("/personal_account/ordersHystory/{page}", name="personal_account_orders_history", methods={"GET","POST"})
      */
-    public function ordersHistory(PaginatorInterface $paginator, $page): Response
+    public function ordersHistory(PaginatorInterface $paginator, SectionRepository $sectionRepository, $page): Response
     {
         $user = $this->getUser();
         $Api = new CustomerApi();
@@ -72,6 +74,7 @@ class PersonalAccountController extends AbstractController
 
         return $this->render('personal_account/historyOrders.html.twig', [
             'pagination' => $pagination,
+            'categories' => $sectionRepository->findBy(['parent' => null]),
         ]);
     }
 }
