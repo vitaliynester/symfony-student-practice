@@ -5,36 +5,39 @@
 {% include 'header.html.twig' %}
 
 <body bgcolor="white">
-<div class="container mb-7 bg-black border-t-2">
+<div class="mb-7 bg-black border-t-2">
         <div class="h-16 flex items-center">
             <ul class="flex flex-row justify-between ml-96 mr-96 w-full text-white">
               {% for  subSection in subSections %}
-                <li class="text-2xl">subSection.name</li>
-                {% endfor %}
+                <li class="text-2xl"><a href="{{path ('')}}">{{subSection.name}}</a></li>
+                 {% endfor %}
             </ul>
         </div>
 </div>
 <center class = "text-3xl mb-7", style="font-family:PT Sans;">
-Name
+{{parentSection.name}}
 </center>
+{% for offer in pagination %}
 <div class="flex flex-col items-center">
   <div class="container">
     <div class="grid  lg:grid-cols-3 grid-rows-3 sm:grid-cols-2">
       <div class="flex flex-col items-center">
         <div class="relative flex rounded-3xl w-72 h-72 border-solid border-4 border-black">
-          <img class="object-contain  object-center rounded-3xl" src="https://cdn1.ozone.ru/s3/multimedia-u/6002895078.jpg">
+          <img class="object-contain  object-center rounded-3xl" src={{offer.picture}}>
           <div class="absolute top-0 left-0 bg-black rounded-tl-2xl rounded-br-3xl text-white">
-            <div class = "mx-4 text-3xl">1000</div>
+            <div class = "mx-4 text-3xl">{{offer.price}}</div>
           </div>
         </div>
         <div class ="mt-6 ">
-            <a href="#"style="font-family:PT Sans;" class="hover:bg-gray-200 rounded-full py-2 px-24  text-3xl border-4 border-black">
-              Name
+            <a href="{{path()}}"style="font-family:PT Sans;" class="hover:bg-gray-200 rounded-full py-2 px-24  text-3xl border-4 border-black">
+             {{offer.name}}
             </a>
           </div>
       </div>  
   </div>
 </div> 
+{% endfor %}
+
 <div class="mb-8">
       <nav class=" rounded-md shadow-sm " aria-label="Pagination">
       <a href="#" aria-current="page" class="bg-white border-black rounded-full text-black hover:bg-black hover:text-white hidden md:inline-flex relative items-center px-3.5 py-2 border-4   text-sm font-medium">
