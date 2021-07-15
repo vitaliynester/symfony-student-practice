@@ -26,9 +26,16 @@ class PersonalAccountController extends AbstractController
         $Api = new CustomerApi();
         $customer = $Api->checkCustomer($user, $this->getParameter('url'), $this->getParameter('apiKey'));
 
+        $items = [];
+        $categories = $sectionRepository->findBy(['parent' => null]);
+        foreach ($categories as $category) {
+            $subCategories = $sectionRepository->findBy(['parent' => $category->getId()]);
+            $items[] = [$category, $subCategories];
+        }
+
         return $this->render('personal_account/index.html.twig', [
             'user' => $customer,
-            'categories' => $sectionRepository->findBy(['parent' => null]),
+            'categories' => $items,
         ]);
     }
 
@@ -56,9 +63,16 @@ class PersonalAccountController extends AbstractController
             return $this->redirectToRoute('personal_account');
         }
 
+        $items = [];
+        $categories = $sectionRepository->findBy(['parent' => null]);
+        foreach ($categories as $category) {
+            $subCategories = $sectionRepository->findBy(['parent' => $category->getId()]);
+            $items[] = [$category, $subCategories];
+        }
+
         return $this->render('personal_account/edit.html.twig', [
             'form' => $form->createView(),
-            'categories' => $sectionRepository->findBy(['parent' => null]),
+            'categories' => $items,
         ]);
     }
 
@@ -72,9 +86,16 @@ class PersonalAccountController extends AbstractController
         $order = $Api->getHistoryOrders($user, $this->getParameter('url'), $this->getParameter('apiKey'));
         $pagination = $paginator->paginate($order, $page, 1);
 
+        $items = [];
+        $categories = $sectionRepository->findBy(['parent' => null]);
+        foreach ($categories as $category) {
+            $subCategories = $sectionRepository->findBy(['parent' => $category->getId()]);
+            $items[] = [$category, $subCategories];
+        }
+
         return $this->render('personal_account/historyOrders.html.twig', [
             'pagination' => $pagination,
-            'categories' => $sectionRepository->findBy(['parent' => null]),
+            'categories' => $items,
         ]);
     }
 }
