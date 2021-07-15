@@ -3,27 +3,65 @@
 {% block title %}История заказов{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <a href="{{ path('personal_account') }}">Назад</a>
+<div class="container mx-auto font-sans not-italic font-normal px-4 text-lg text-base text-black flex-grow">
+    <div class="flex justify-center m-6">
+        <h1 class=" text-4xl pt-6 pb-12">Мои заказы</h1>
+    </div>
     {% for order in pagination %}
-    <p>-------------------------</p>
-    <p>Номер заказа: {{ order.number }}</p>
-    <p>Дата оформления: {{ order.createdAt | date("m/d/Y") }}</p>
-    <p>Статус: {{ order.status }}</p>
-    <p>Стоимость: {{ order.purchaseSumm }}</p>
-    <p>Список товаров:</p>
-    {% for item in order.items %}
-    <p>Название товара: {{ item.offer.name }}</p>
+    <div class="grid grid-cols-3 gap-2 mt-14">
+        <div class="col-span-2">
+            <table class="table-auto mx-5 border-separate font-sans text-2xl tracking-wide text-center">
+                <thead>
+                <tr>
+                    <th class="font-medium border-b border-black">Наименование товара</th>
+                    <th class="font-medium border-b border-black">Стоимость</th>
+                    <th class="font-medium border-b border-black">Количество</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for item in order.items %}
+                <tr>
+                    <td class="px-3">{{ item.offer.name }}</td>
+                    <td class="px-3">{{ item.initialPrice }} руб.</td>
+                    <td class="px-3">{{ item.quantity }}</td>
+                </tr>
+                {% else %}
+                <h3 class="flex justify-center text-4xl">Заказ пуст</h3>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="-mx-4 border-black rounded-xl border-2">
+            <div class="flex justify-center">
+                <h5 class="text-4xl font-sans pt-6 pb-2">Информация о заказе</h5>
+            </div>
+            <div class="flex justify-between">
+                <p class="text-2xl font-sans pl-6 pb-6">Номер заказа</p>
+                <p class="text-2xl font-sans pr-6 pb-6">{{ order.number }}</p>
+            </div>
+            <div class="flex justify-between">
+                <p class="text-2xl font-sans pl-6 pb-6">Дата оформления</p>
+                <p class="text-2xl font-sans pl-6 pb-6">{{ order.createdAt | date("m/d/Y") }}</p>
+            </div>
+            <div class="flex justify-between">
+                <p class="text-2xl font-sans pl-6 pb-6">Статус</p>
+                <p class="text-2xl font-sans pr-6 pb-6">{{ order.status }}</p>
+            </div>
+            <div class="flex justify-between">
+                <p class="text-2xl font-sans pl-6 pb-6">Стоимость</p>
+                <p class="text-2xl font-sans pr-6 pb-6">{{ order.purchaseSumm }} руб.</p>
+            </div>
+        </div>
+    </div>
     {% endfor %}
-    <p>-------------------------</p>
-    {% endfor %}
-    <div class="navigation">
-        {{ knp_pagination_render(pagination) }}
+    <div class="flex justify-center items-center space-x-2">
+        <div> {{ knp_pagination_render(pagination) }} </div>
+    </div>
+    <div class="flex justify-end -bottom-1">
+        <button type="submit" class="transition duration-500 ease-in-out bg-black rounded-md m-6 transform hover:scale-110">
+            <a class="text-white px-12 py-4 rounded text-2xl w-auto float-right text-center align-middle" href="{{ path('personal_account') }}">Назад</a>
+        </button>
     </div>
 </div>
 {% endblock %}

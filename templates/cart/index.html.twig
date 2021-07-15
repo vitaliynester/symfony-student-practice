@@ -4,7 +4,7 @@
 
 {% block body %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <div class="container mx-auto">
+    <div class="container mx-auto flex-grow">
         <div class="flex justify-center m-6">
             <h1 class="font-sans text-4xl">Моя корзина</h1>
         </div>
@@ -89,10 +89,9 @@
                         <button class="btn underline font-sans text-xl">Удалить</button>
                     </form>
                 </div>
-                    {% else %}
-                        <h3 class="flex justify-center font-sans text-4xl">Корзина пуста</h3>
                     {% endfor %}
             </div>
+            {% if cart_items|length > 0 %}
         <div class="border-solid border-2 border-black rounded-xl self-start">
             <div class="flex justify-center">
                 <h5 class="m-3 font-sans text-4xl">Информация о заказе</h5>
@@ -105,6 +104,9 @@
                 <a class="text-white font-sans text-2xl" href={{ path('cart_checkout') }}>Оформить заказ</a>
             </div>
         </div>
+            {% else %}
+                <h3 class="col-span-3 flex justify-center font-sans text-4xl">Корзина пуста</h3>
+            {% endif %}
 
     </div>
     </div>

@@ -34,6 +34,13 @@ class RegistrationController extends AbstractController
         $form = $this->createForm(RegistrationFormType::class, null);
         $form->handleRequest($request);
 
+        $items = [];
+        $categories = $repository->findBy(['parent' => null]);
+        foreach ($categories as $category) {
+            $subCategories = $repository->findBy(['parent' => $category->getId()]);
+            $items[] = [$category, $subCategories];
+        }
+
         if ($form->isSubmitted() && $form->isValid()) {
             $user->setPassword(
                 $passwordEncoder->encodePassword(
@@ -47,7 +54,7 @@ class RegistrationController extends AbstractController
                 return $this->render('registration/register.html.twig', [
                     'registrationForm' => $form->createView(),
                     'error' => 'Пользователь с введенным email уже существует',
-                    'categories' => $repository->findBy(['parent' => null]),
+                    'categories' => $items,
                 ]);
             }
 
@@ -71,7 +78,7 @@ class RegistrationController extends AbstractController
                 return $this->render('registration/register.html.twig', [
                     'registrationForm' => $form->createView(),
                     'error' => $resultApi,
-                    'categories' => $repository->findBy(['parent' => null]),
+                    'categories' => $items,
                 ]);
             }
 
@@ -85,7 +92,7 @@ class RegistrationController extends AbstractController
 
         return $this->render('registration/register.html.twig', [
             'registrationForm' => $form->createView(),
-            'categories' => $repository->findBy(['parent' => null]),
+            'categories' => $items,
         ]);
     }
 }

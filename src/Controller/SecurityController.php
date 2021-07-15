@@ -22,10 +22,17 @@ class SecurityController extends AbstractController
         $error = $authenticationUtils->getLastAuthenticationError();
         $lastUsername = $authenticationUtils->getLastUsername();
 
+        $items = [];
+        $categories = $repository->findBy(['parent' => null]);
+        foreach ($categories as $category) {
+            $subCategories = $repository->findBy(['parent' => $category->getId()]);
+            $items[] = [$category, $subCategories];
+        }
+
         return $this->render('security/login.html.twig', [
             'last_username' => $lastUsername,
             'error' => $error,
-            'categories' => $repository->findBy(['parent' => null]),
+            'categories' => $items,
         ]);
     }
 
