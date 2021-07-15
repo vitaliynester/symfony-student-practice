@@ -104,6 +104,13 @@ class CartController extends AbstractController
      */
     public function checkout(Request $request): Response
     {
+        $items = [];
+        $categories = $repository->findBy(['parent' => null]);
+        foreach ($categories as $category) 
+        {
+            $subCategories = $repository->findBy(['parent' => $category->getId()]);
+            $items[] = [$category, $subCategories];
+        }
         $form = $this->createForm(CartCheckoutFormType::class, null);
         $form->handleRequest($request);
 
@@ -119,6 +126,7 @@ class CartController extends AbstractController
         return $this->render('cart/checkout.html.twig', [
             'form' => $form->createView(),
             'payment_amount' => $this->getPaymentAmount($this->getUser()),
+            'categories' => $items,
         ]);
     }
 
@@ -127,10 +135,18 @@ class CartController extends AbstractController
      */
     public function thanks(Request $request): Response
     {
+        $items = [];
+        $categories = $repository->findBy(['parent' => null]);
+        foreach ($categories as $category) 
+        {
+            $subCategories = $repository->findBy(['parent' => $category->getId()]);
+            $items[] = [$category, $subCategories];
+        }
         $orderApi = new OrderApi($this->getParameter('url'), $this->getParameter('apiKey'));
         $order = $orderApi->getOrderById($request->get('id'))->order;
 
-        return $this->render('cart/thanks.html.twig', ['order' => $order]);
+        return $this->render('cart/thanks.html.twig', ['order' => $order,
+            'categories' => $items,]);
     }
 
     /**
