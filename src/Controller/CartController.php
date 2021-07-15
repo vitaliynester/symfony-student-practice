@@ -159,8 +159,15 @@ class CartController extends AbstractController
             return new JsonResponse($data);
         }
 
+        $items = [];
+        $categories = $sectionRepository->findBy(['parent' => null]);
+        foreach ($categories as $category) {
+            $subCategories = $sectionRepository->findBy(['parent' => $category->getId()]);
+            $items[] = [$category, $subCategories];
+        }
+
         return $this->redirectToRoute('cart_index', [
-            'categories' => $sectionRepository->findBy(['parent' => null]),
+            'categories' => $items,
         ], Response::HTTP_SEE_OTHER);
     }
 }
