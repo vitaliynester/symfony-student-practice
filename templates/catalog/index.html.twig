@@ -23,9 +23,10 @@
       <div class="flex flex-col items-center mb-7">
         <div class="relative flex rounded-3xl w-72 h-72 border-solid border-4 border-black">
          <img class="object-contain  object-center rounded-3xl" src=/upload/pictures/{{offer.picture}}>
-          
+           <div class="absolute top-0 left-0 bg-black rounded-tl-2xl rounded-br-3xl text-white">
             <div class = "mx-4 text-3xl">{{offer.price}}</div>
-        </div>
+            </div>
+          </div>
         <div class ="mt-6 ">
          <form action="{{path('offer',{offerId:offer.id})}}">
           <button style="font-family:PT Sans;"class="hover:bg-gray-200 rounded-full  text-md truncate overflow-hidden py-2 w-72 h-14  border-4 border-black"type="submit">
