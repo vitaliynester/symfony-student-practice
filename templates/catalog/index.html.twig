@@ -1,25 +1,49 @@
 {% extends 'base.html.twig' %}
-
-{% block title %}Hello CatalogController!{% endblock %}
+{% block title %}Домашняя страница{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello catalog!</h1>
-    <div> Name of main catalog: {{sections[0].name}} </div>
-    <div> Name of offer: {{pagination[0].name}} </div>
-    <div> Pagination Total Item Count  {{pagination.getTotalItemCount}}</div>
-    <div class="navigation">
+<body bgcolor="white">
+<div class="mb-7 bg-black border-t-2">
+        <div class="h-16 flex items-center">
+            <ul class="flex flex-row justify-between ml-96 mr-96 w-full text-white">
+              {% for  subSection in subSections %}
+                <li class="text-2xl"><a href="{{ path('catalog', {parId:subSection.id, page:1}) }}">{{subSection.name}}</a></li>
+                 {% endfor %}
+            </ul>
+        </div>
+</div>
+<center class = "text-3xl mb-7", style="font-family:PT Sans;">
+{{parentSection.name}}
+</center>
+<div class="flex flex-col items-center">
+  <div class="container">
+    <div class="grid  lg:grid-cols-3 grid-rows-3 sm:grid-cols-2">
+{% for offer in pagination %}
+      <div class="flex flex-col items-center">
+        <div class="relative flex rounded-3xl w-72 h-72 border-solid border-4 border-black">
+          <img class="object-contain  object-center rounded-3xl" src={{offer.picture}}>
+          <div class="absolute top-0 left-0 bg-black rounded-tl-2xl rounded-br-3xl text-white">
+            <div class = "mx-4 text-3xl">{{offer.price}}</div>
+          </div>
+        </div>
+        <div class ="mt-6 ">
+            <a href="{{path('offer',{offerId:offer.id})}}"style="font-family:PT Sans;" class="hover:bg-gray-200 rounded-full py-2 px-24  
+            text-3 border-4 border-black">
+             {{offer.name}}
+            </a>
+          </div>
+      </div>  
+{% endfor %}
+
+  </div>
+</div> 
+<div class="mb-8">
+      <nav class=" rounded-md shadow-sm " aria-label="Pagination">
+      <div class="navigation">
         {{ knp_pagination_render(pagination) }}
     </div>
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/OpenServer/domains/symfony-student-practice/src/Controller/CatalogController.php'|file_link(0) }}">src/Controller/CatalogController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/OpenServer/domains/symfony-student-practice/templates/catalog/index.html.twig'|file_link(0) }}">templates/catalog/index.html.twig</a></code></li>
-    </ul>
-</div>
+      </nav>
+   </div> 
+</div> 
 {% endblock %}
