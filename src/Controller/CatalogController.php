@@ -25,7 +25,8 @@ class CatalogController extends AbstractController
     public function index(SectionRepository $sectRep,PaginatorInterface $paginator,Request $request, $parId): Response 
     {
         $pageRequest = $request->query->getInt('page', 1);
-        if ($pageRequest <= 0) {
+        if ($pageRequest <= 0) 
+        {
             $pageRequest = 1;
         }
         $qb = $sectRep->createQueryBuilder('s');
@@ -49,9 +50,18 @@ class CatalogController extends AbstractController
                 }
             }
         }
+        $mainSecion = $sectData[0];
+        $childSections = [];
+        foreach($sectData as $section)
+        {
+            if($section->getId() != $parId)
+            {
+                array_push($childSections, $section);
+            }
+        }
         $pagination = $paginator->paginate($offerData,$pageRequest,9);
-        return $this->render('catalog/index.html.twig', [
-            'sections' => $sectData, 'pagination' => $pagination,
+        return $this->render('catalog/index.html.twig', ['parentSection' => $mainSecion,
+            'subSections' => $childSections, 'pagination' => $pagination,  'sections' => $sectData,
         ]);
     }
 
@@ -60,17 +70,20 @@ class CatalogController extends AbstractController
      */
     public function offer( OfferRepository $offerRep, ProductRepository $prodRep, $offerId,Request $request): Response
     {
-        $offerData = $offerRep->findBy(['id' => $offerId]);
+        $offerData = $offerRep->findOneBy(['id' => $offerId]);
         $form = $this->createForm(CartItemType::class, null);
         $form->handleRequest($request);
-        if ($form->isSubmitted() && $form->isValid()) {
-            $response = $this->forward('App\Controller\OtherController::fancy', [
+        if ($form->isSubmitted() && $form->isValid()) 
+        {
+            $response = $this->forward('App\Controller\CartContorller::new', [
                 'quantity'  => $form->quantity,
                 'offer' => $form->offer,
             ]);
             return $response;
         }
-        return $this->render('catalog/offer.html.twig', [ 'offer' => $offerData, 'form' => $form->createView(),
+        $product = $offerData->getProduct();
+        $offers = $product->getOffers();
+        return $this->render('catalog/offer.html.twig', [ 'mainOffer' => $offerData, 'similarOffers' => $offers, 'form' => $form->createView(),
         ]);
     }
 }
