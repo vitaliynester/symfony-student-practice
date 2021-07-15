@@ -2,11 +2,10 @@
 {% block title %}Домашняя страница{% endblock %}
 
 {% block body %}
-{% include 'header.html.twig' %}
 
 <body bgcolor="white">
 <div class = "mt-10 text-3xl", style="font-family:PT Sans;">
     {{offer.name}}
 </div>
-{% include 'footer.html.twig' %}
+{{ include('catalog/_form.html.twig') }}
 {% endblock %}
