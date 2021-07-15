@@ -13,8 +13,6 @@ class CartItemType extends AbstractType
     {
         $builder
             ->add('quantity')
-            ->add('customer')
-            ->add('offer')
         ;
     }
 
