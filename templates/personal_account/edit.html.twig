@@ -4,7 +4,7 @@
 
 {% block body %}
 
-<div class="p-8 pb-36 static w-screen h-full">
+<div class="p-8 pb-36 static w-screen h-full flex-grow">
     <h2 class="text-center text-4xl">Редактирование данных</h2>
     {% if error is defined %}
     <p class="flex justify-center items-center text-center text-red-500 text-2xl">{{ error }}</p>
@@ -40,8 +40,5 @@
             {{ form_end(form) }}
         </div>
     </div>
-</div>
-<div class="fixed bottom-0 w-screen">
-    {% include 'footer.html.twig' %}
 </div>
 {% endblock %}
