@@ -32,23 +32,37 @@ class CatalogController extends AbstractController
         }
         $pagination = $paginator->paginate($offerData, $page, 9);
 
+        $items = [];
+        $categories = $sectRep->findBy(['parent' => null]);
+        foreach ($categories as $category) {
+            $subCategories = $sectRep->findBy(['parent' => $category->getId()]);
+            $items[] = [$category, $subCategories];
+        }
+
         return $this->render('catalog/index.html.twig', [
             'sections' => $sectData,
             'pagination' => $pagination,
-            'categories' => $sectRep->findBy(['parent' => null]),
+            'categories' => $items,
         ]);
     }
 
     /**
      * @Route("/offer/{offerId}", name="offer")
      */
-    public function offer(OfferRepository $offerRep, SectionRepository $sectionRepository, ProductRepository $prodRep, $offerId): Response
+    public function offer(OfferRepository $offerRep, SectionRepository $sectionRepository, $offerId): Response
     {
         $offerData = $offerRep->findBy(['id' => $offerId]);
 
+        $items = [];
+        $categories = $sectionRepository->findBy(['parent' => null]);
+        foreach ($categories as $category) {
+            $subCategories = $sectionRepository->findBy(['parent' => $category->getId()]);
+            $items[] = [$category, $subCategories];
+        }
+
         return $this->render('catalog/offer.html.twig', [
             'offer' => $offerData,
-            'categories' => $sectionRepository->findBy(['parent' => null]),
+            'categories' => $items,
         ]);
     }
 }
