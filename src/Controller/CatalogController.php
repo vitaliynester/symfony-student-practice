@@ -10,21 +10,32 @@ use App\Repository\SectionRepository;
 use App\Repository\ProductRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Mapping\Id;
 use Knp\Component\Pager\PaginatorInterface;
+use App\Form\CartItemType;
 
 class CatalogController extends AbstractController
 {
     /**
-     * @Route("/catalog/{parId}/{page}", name="catalog")
+     * @Route("/catalog/{parId}/", name="catalog", methods={"GET"})
      */
-    public function index(SectionRepository $sectRep,PaginatorInterface $paginator, $parId,$page): Response 
+    public function index(SectionRepository $sectRep,PaginatorInterface $paginator,Request $request, $parId): Response 
     {
-        $sectData = $sectRep->findBy(['parent' => $parId]);
-        $tmp = $sectRep->findBy(['id' => $parId]);
-        array_unshift($sectData, $tmp[0]);
+        $pageRequest = $request->query->getInt('page', 1);
+        if ($pageRequest <= 0) {
+            $pageRequest = 1;
+        }
+        $qb = $sectRep->createQueryBuilder('s');
+        $sectData =  $qb->where('s.id = :parId')
+        ->setParameter('parId',$parId)
+        ->orWhere('s.parent = :parId')
+        ->setParameter('parId',$parId)
+        ->orderBy('s.id')
+        ->getQuery()
+        ->getResult();
         $offerData = [];
         foreach($sectData as $section)
         {
@@ -38,19 +49,28 @@ class CatalogController extends AbstractController
                 }
             }
         }
-        $pagination = $paginator->paginate($offerData,$page,9);
+        $pagination = $paginator->paginate($offerData,$pageRequest,9);
         return $this->render('catalog/index.html.twig', [
             'sections' => $sectData, 'pagination' => $pagination,
         ]);
     }
 
     /**
-     * @Route("/offer/{offerId}", name="offer")
+     * @Route("/offer/{offerId}", name="offer", methods={"GET","POST"})
      */
-    public function offer( OfferRepository $offerRep, ProductRepository $prodRep, $offerId): Response
+    public function offer( OfferRepository $offerRep, ProductRepository $prodRep, $offerId,Request $request): Response
     {
         $offerData = $offerRep->findBy(['id' => $offerId]);
-        return $this->render('catalog/offer.html.twig', [ 'offer' => $offerData,
+        $form = $this->createForm(CartItemType::class, null);
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $response = $this->forward('App\Controller\OtherController::fancy', [
+                'quantity'  => $form->quantity,
+                'offer' => $form->offer,
+            ]);
+            return $response;
+        }
+        return $this->render('catalog/offer.html.twig', [ 'offer' => $offerData, 'form' => $form->createView(),
         ]);
     }
 }
