@@ -55,7 +55,7 @@ class CatalogController extends AbstractController
         }
         $pagination = $paginator->paginate($offerData, $pageRequest, 9);
         return $this->render('catalog/index.html.twig', ['parentSection' => $mainSecion,
-            'subSections' => $childSections, 'pagination' => $pagination, 'sections' => $sectData
+            'subSections' => $childSections, 'pagination' => $pagination, 'categories' => $sectData
         ]);
     }
 
