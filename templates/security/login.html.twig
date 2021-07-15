@@ -4,11 +4,11 @@
 
 {% block body %}
 
-{% if error %}
-    <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-{% endif %}
 
 <div class="relative w-screen mt-20 flex-grow">
+    {% if error %}
+        <div class="flex justify-center items-center text-center text-red-500 text-2xl">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
     <h2 class="font-bold text-center text-2xl">Авторизация</h2>
     <div class="items-center flex justify-center items-center">
         <div class="flex-column flex w-80 justify-center items-center">
