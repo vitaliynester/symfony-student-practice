@@ -36,7 +36,10 @@
         <div class="h-16 flex items-center">
             <ul class="flex flex-row justify-between ml-56 mr-56 w-full text-white">
                 {% for category in categories %}
-                    <li class="text-2xl">{{ category.name }}</li>
+                    <li class="text-2xl">{{ category[0].name }}</li>
+                    {% for subCategory in category[1] %}
+                        <li class="text-2xl">{{ subCategory.name }}</li>
+                    {% endfor %}
                 {% endfor %}
             </ul>
         </div>
