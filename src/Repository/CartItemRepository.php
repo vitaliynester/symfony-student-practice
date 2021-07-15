@@ -46,6 +46,5 @@ class CartItemRepository extends ServiceEntityRepository
             ->getQuery()
             ->execute()
         ;
-        dd($builder);
     }
 }

@@ -22,12 +22,18 @@ class CartController extends AbstractController
     /**
      * @Route("/", name="cart_index", methods={"GET"})
      */
-    public function index(CartItemRepository $cartItemRepository, SectionRepository $sectionRepository): Response
+    public function index(SectionRepository $repository, CartItemRepository $cartItemRepository): Response
     {
+        $items = [];
+        $categories = $repository->findBy(['parent' => null]);
+        foreach ($categories as $category) {
+            $subCategories = $repository->findBy(['parent' => $category->getId()]);
+            $items[] = [$category, $subCategories];
+        }
         return $this->render('cart/index.html.twig', [
             'cart_items' => $cartItemRepository->findBy(['customer' => $this->getUser()]),
             'payment_amount' => $this->getPaymentAmount($this->getUser()),
-            'categories' => $sectionRepository->findBy(['parent' => null]),
+            'categories' => $items,
         ]);
     }
 
@@ -62,9 +68,14 @@ class CartController extends AbstractController
         $entityManager = $this->getDoctrine()->getManager();
         $entityManager->persist($cartItem);
         $entityManager->flush();
-
+        $items = [];
+        $categories = $sectionRepository->findBy(['parent' => null]);
+        foreach ($categories as $category) {
+            $subCategories = $sectionRepository->findBy(['parent' => $category->getId()]);
+            $items[] = [$category, $subCategories];
+        }
         return $this->redirectToRoute('cart_index', [
-            'categories' => $sectionRepository->findBy(['parent' => null]),
+            'categories' => $items,
         ],
             Response::HTTP_SEE_OTHER);
     }
@@ -77,9 +88,14 @@ class CartController extends AbstractController
         $cartItem->setQuantity($request->get('quantity'));
 
         $this->getDoctrine()->getManager()->flush();
-
+        $items = [];
+        $categories = $sectionRepository->findBy(['parent' => null]);
+        foreach ($categories as $category) {
+            $subCategories = $sectionRepository->findBy(['parent' => $category->getId()]);
+            $items[] = [$category, $subCategories];
+        }
         return $this->redirectToRoute('cart_index', [
-            'categories' => $sectionRepository->findBy(['parent' => null]),
+            'categories' => $items,
         ], Response::HTTP_SEE_OTHER);
     }
 
@@ -93,9 +109,14 @@ class CartController extends AbstractController
             $entityManager->remove($cartItem);
             $entityManager->flush();
         }
-
+        $items = [];
+        $categories = $sectionRepository->findBy(['parent' => null]);
+        foreach ($categories as $category) {
+            $subCategories = $sectionRepository->findBy(['parent' => $category->getId()]);
+            $items[] = [$category, $subCategories];
+        }
         return $this->redirectToRoute('cart_index', [
-            'categories' => $sectionRepository->findBy(['parent' => null]),
+            'categories' => $items,
         ], Response::HTTP_SEE_OTHER);
     }
 
@@ -106,21 +127,25 @@ class CartController extends AbstractController
     {
         $form = $this->createForm(CartCheckoutFormType::class, null);
         $form->handleRequest($request);
-
+        $items = [];
+        $categories = $sectionRepository->findBy(['parent' => null]);
+        foreach ($categories as $category) {
+            $subCategories = $sectionRepository->findBy(['parent' => $category->getId()]);
+            $items[] = [$category, $subCategories];
+        }
         if ($form->isSubmitted() && $form->isValid()) {
             $orderApi = new OrderApi($this->getParameter('url'), $this->getParameter('apiKey'));
-
             $apiResponse = $orderApi->createOrder($this->getUser(), $form);
-
+            $this->getDoctrine()->getRepository(CartItem::class)->deleteCustomerCart($this->getUser());
             return $this->redirectToRoute('cart_thanks', [
                 'id' => $apiResponse->order->id,
-                'categories' => $sectionRepository->findBy(['parent' => null]), ]);
+                'categories' => $items, ]);
         }
 
         return $this->render('cart/checkout.html.twig', [
             'form' => $form->createView(),
             'payment_amount' => $this->getPaymentAmount($this->getUser()),
-            'categories' => $sectionRepository->findBy(['parent' => null]),
+            'categories' => $items,
         ]);
     }
 
@@ -131,10 +156,15 @@ class CartController extends AbstractController
     {
         $orderApi = new OrderApi($this->getParameter('url'), $this->getParameter('apiKey'));
         $order = $orderApi->getOrderById($request->get('id'))->order;
-
+        $items = [];
+        $categories = $sectionRepository->findBy(['parent' => null]);
+        foreach ($categories as $category) {
+            $subCategories = $sectionRepository->findBy(['parent' => $category->getId()]);
+            $items[] = [$category, $subCategories];
+        }
         return $this->render('cart/thanks.html.twig', [
                 'order' => $order,
-                'categories' => $sectionRepository->findBy(['parent' => null]), ]
+                'categories' => $items, ]
         );
     }
 
