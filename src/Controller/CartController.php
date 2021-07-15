@@ -102,7 +102,7 @@ class CartController extends AbstractController
     /**
      * @Route("/checkout", name="cart_checkout", methods={"GET","POST"})
      */
-    public function checkout(Request $request): Response
+    public function checkout(SectionRepository $repository,Request $request): Response
     {
         $items = [];
         $categories = $repository->findBy(['parent' => null]);
@@ -133,7 +133,7 @@ class CartController extends AbstractController
     /**
      * @Route("/thanks", name="cart_thanks", methods={"GET"})
      */
-    public function thanks(Request $request): Response
+    public function thanks(SectionRepository $repository,Request $request): Response
     {
         $items = [];
         $categories = $repository->findBy(['parent' => null]);
