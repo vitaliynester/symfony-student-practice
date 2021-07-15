@@ -6,6 +6,7 @@ use App\Entity\CartItem;
 use App\Entity\Offer;
 use App\Form\CartCheckoutFormType;
 use App\Repository\CartItemRepository;
+use App\Repository\SectionRepository;
 use App\Service\OrderApi;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -21,11 +22,19 @@ class CartController extends AbstractController
     /**
      * @Route("/", name="cart_index", methods={"GET"})
      */
-    public function index(CartItemRepository $cartItemRepository): Response
+    public function index(SectionRepository $repository, CartItemRepository $cartItemRepository): Response
     {
+        $items = [];
+        $categories = $repository->findBy(['parent' => null]);
+        foreach ($categories as $category) 
+        {
+            $subCategories = $repository->findBy(['parent' => $category->getId()]);
+            $items[] = [$category, $subCategories];
+        }
         return $this->render('cart/index.html.twig', [
             'cart_items' => $cartItemRepository->findBy(['customer' => $this->getUser()]),
             'payment_amount' => $this->getPaymentAmount($this->getUser()),
+            'categories' => $items,
         ]);
     }
 
