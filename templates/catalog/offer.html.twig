@@ -1,12 +1,12 @@
 {% extends 'base.html.twig' %}
-
-{% block title %}Hello CatalogController!{% endblock %}
+{% block title %}Домашняя страница{% endblock %}
 
 {% block body %}
+{% include 'header.html.twig' %}
 
-<form action={{path('catalog')}} method="GET">
-    <input size="15" type="text" id="latbox" name="lat" value=""> 
-    <input type="submit" value="Add to cart" />
-</form>
-
+<body bgcolor="white">
+<div class = "mt-10 text-3xl", style="font-family:PT Sans;">
+    {{offer.name}}
+</div>
+{% include 'footer.html.twig' %}
 {% endblock %}
