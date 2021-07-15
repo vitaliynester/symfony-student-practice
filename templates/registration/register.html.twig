@@ -3,102 +3,111 @@
 {% block title %}Регистрация{% endblock %}
 
 {% block body %}
-    {% include 'header-non-authorized.html.twig' %}
-    <div class="p-8 pb-36 static w-screen h-full">
-        <h2 class="font-bold text-center text-2xl">Регистрация</h2>
-        {% if error is defined %}
-            <p class="flex justify-center items-center text-center text-red-500 text-2xl">{{ error }}</p>
-        {% endif %}
-        <div class="items-center flex justify-center items-center">
-            <div class="relative flex-column flex w-80 justify-center items-center">
-                {{ form_start(registrationForm) }}
+    <body style="height: 100vh">
+    <div class="page overflow-hidden flex flex-col min-h-full w-full items-center justify-center text-center">
+        <div class="w-full">
+            {% include 'header-non-authorized.html.twig' %}
+        </div>
+        <div class="mt-auto">
+            <div class="form-reg">
+                {% if error is defined %}
+                    <p class="flex justify-center items-center text-center text-red-500 text-2xl">{{ error }}</p>
+                {% endif %}
+                <h2 class="font-bold text-center text-2xl">Регистрация</h2>
 
-                <div class="flex flex-row mt-5 justify-between items-center mt-6 h-10">
-                        {{ form_label(registrationForm.surname, null,
-                            form_errors(registrationForm.surname)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
-                            {'label_attr': {'class': 'text-center items-center w-24'}}) }}
-                        {{ form_widget(registrationForm.surname, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}
-                </div>
-                <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.surname) }}</span>
+                <div class="items-center flex justify-center items-center">
+                    <div class="relative flex-column flex w-80 justify-center items-center">
+                        {{ form_start(registrationForm) }}
 
-                <div class="flex flex-row mt-6 items-center h-10">
-                    {{ form_label(registrationForm.name, null,
-                        form_errors(registrationForm.name)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
-                        {'label_attr': {'class': 'text-center items-center w-24'}}) }}
-                    {{ form_widget(registrationForm.name, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}
-                </div>
-                <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.name) }}</span>
+                        <div class="flex flex-row mt-5 justify-between items-center mt-6 h-10">
+                            {{ form_label(registrationForm.surname, null,
+                                form_errors(registrationForm.surname)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
+                                {'label_attr': {'class': 'text-center items-center w-24'}}) }}
+                            {{ form_widget(registrationForm.surname, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}
+                        </div>
+                        <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.surname) }}</span>
 
-                <div class="flex flex-row mt-6  items-center h-10">
-                    {{ form_label(registrationForm.patronymic, null,
-                        form_errors(registrationForm.patronymic)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
-                        {'label_attr': {'class': 'text-center items-center w-24'}}) }}
-                    {{ form_widget(registrationForm.patronymic, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}  
-                </div>
-                <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.patronymic) }}</span>
+                        <div class="flex flex-row mt-6 items-center h-10">
+                            {{ form_label(registrationForm.name, null,
+                                form_errors(registrationForm.name)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
+                                {'label_attr': {'class': 'text-center items-center w-24'}}) }}
+                            {{ form_widget(registrationForm.name, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}
+                        </div>
+                        <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.name) }}</span>
 
-                <div class="flex flex-row mt-6  items-center h-10">
-                    {{ form_label(registrationForm.gender, null,
-                        form_errors(registrationForm.gender)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
-                        {'label_attr': {'class': 'text-center items-center w-24'}}) }}
-                    {{ form_widget(registrationForm.gender, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}
-                </div>
-                <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.gender) }}</span>
+                        <div class="flex flex-row mt-6  items-center h-10">
+                            {{ form_label(registrationForm.patronymic, null,
+                                form_errors(registrationForm.patronymic)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
+                                {'label_attr': {'class': 'text-center items-center w-24'}}) }}
+                            {{ form_widget(registrationForm.patronymic, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}
+                        </div>
+                        <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.patronymic) }}</span>
 
-                 <div class="flex flex-row mt-6  items-center h-10">
-                    {{ form_label(registrationForm.phoneNumber, null,
-                        form_errors(registrationForm.phoneNumber)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
-                        {'label_attr': {'class': 'text-center items-center w-24'}}) }}
-                    {{ form_widget(registrationForm.phoneNumber, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}
-                    
-                </div>
-                <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.phoneNumber) }}</span>
+                        <div class="flex flex-row mt-6  items-center h-10">
+                            {{ form_label(registrationForm.gender, null,
+                                form_errors(registrationForm.gender)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
+                                {'label_attr': {'class': 'text-center items-center w-24'}}) }}
+                            {{ form_widget(registrationForm.gender, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}
+                        </div>
+                        <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.gender) }}</span>
 
-                <div class="flex flex-row mt-6  items-center h-10">
-                    {{ form_label(registrationForm.address, null,
-                        form_errors(registrationForm.address)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
-                        {'label_attr': {'class': 'text-center items-center w-24'}}) }}
-                    {{ form_widget(registrationForm.address, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}
-                     
-                </div>
-                <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.address) }}</span>
-                
+                        <div class="flex flex-row mt-6  items-center h-10">
+                            {{ form_label(registrationForm.phoneNumber, null,
+                                form_errors(registrationForm.phoneNumber)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
+                                {'label_attr': {'class': 'text-center items-center w-24'}}) }}
+                            {{ form_widget(registrationForm.phoneNumber, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}
 
-                <div class="flex flex-row mt-6  items-center h-10">
-                    {{ form_label(registrationForm.email, null,
-                        form_errors(registrationForm.email)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
-                        {'label_attr': {'class': 'text-center items-center w-24'}}) }}
-                    {{ form_widget(registrationForm.email, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}                    
-                </div>
-                <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.email) }}</span>
-                
+                        </div>
+                        <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.phoneNumber) }}</span>
 
-               <div class="flex flex-row mt-6  items-center h-10">
-                    {{ form_label(registrationForm.plainPassword, null,
-                        form_errors(registrationForm.plainPassword)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
-                        {'label_attr': {'class': 'text-center items-center w-24'}}) }}
-                    {{ form_widget(registrationForm.plainPassword, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}                    
-                </div>
-                <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.plainPassword) }}</span>
-              
-                <div class="flex flex-row-reverse mt-6 items-center">
-                    {{ form_label(registrationForm.agreeTerms, null,
-                        form_errors(registrationForm.agreeTerms)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
-                        {'label_attr': {'class': 'flex items-center'}}) }}
-                   {{ form_widget(registrationForm.agreeTerms, {'attr': {'class': 'form-checkbox mr-3 ml-5'}}) }}                    
-                </div>
-                <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.agreeTerms) }}</span>
+                        <div class="flex flex-row mt-6  items-center h-10">
+                            {{ form_label(registrationForm.address, null,
+                                form_errors(registrationForm.address)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
+                                {'label_attr': {'class': 'text-center items-center w-24'}}) }}
+                            {{ form_widget(registrationForm.address, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}
 
-                <div class="text-center mt-5">
-                    <button type="submit" class="bg-black text-white w-40 h-10 rounded mb-5">Зарегистрироваться</button>
-                </div>    
-                {{ form_end(registrationForm) }}
+                        </div>
+                        <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.address) }}</span>
+
+
+                        <div class="flex flex-row mt-6  items-center h-10">
+                            {{ form_label(registrationForm.email, null,
+                                form_errors(registrationForm.email)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
+                                {'label_attr': {'class': 'text-center items-center w-24'}}) }}
+                            {{ form_widget(registrationForm.email, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}
+                        </div>
+                        <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.email) }}</span>
+
+
+                        <div class="flex flex-row mt-6  items-center h-10">
+                            {{ form_label(registrationForm.plainPassword, null,
+                                form_errors(registrationForm.plainPassword)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
+                                {'label_attr': {'class': 'text-center items-center w-24'}}) }}
+                            {{ form_widget(registrationForm.plainPassword, {'attr': {'class': 'focus:outline-none p-1 absolute right-0 items-center rounded-full border-solid border border-black w-56 h-10 '}}) }}
+                        </div>
+                        <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.plainPassword) }}</span>
+
+                        <div class="flex flex-row-reverse mt-6 items-center">
+                            {{ form_label(registrationForm.agreeTerms, null,
+                                form_errors(registrationForm.agreeTerms)|length ? { 'label_attr': {'class': 'text-center items-center w-24'} } :
+                                {'label_attr': {'class': 'flex items-center'}}) }}
+                            {{ form_widget(registrationForm.agreeTerms, {'attr': {'class': 'form-checkbox mr-3 ml-5'}}) }}
+                        </div>
+                        <span class="w-full flex justify-center absolute text-red-500 text-xs italic">{{ form_errors(registrationForm.agreeTerms) }}</span>
+
+                        <div class="text-center mt-5">
+                            <button type="submit" class="bg-black text-white w-40 h-10 rounded mb-5">Зарегистрироваться</button>
+                        </div>
+                        {{ form_end(registrationForm) }}
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="mt-auto w-full">
+            {% include 'footer.html.twig' %}
+        </div>
     </div>
-<div class="fixed bottom-0 w-screen">
-    {% include 'footer.html.twig' %}
-</div>
+    </body>
 {% endblock %}
 
 

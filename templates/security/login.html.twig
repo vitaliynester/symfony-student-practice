@@ -3,47 +3,59 @@
 {% block title %}Авторизация{% endblock %}
 
 {% block body %}
-{% include 'header-non-authorized.html.twig' %}
+    <body style="height: 100vh">
 
-{% if error %}
-    <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-{% endif %}
 
-{% if app.user %}
-    <div class="mb-3">
-        You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Logout</a>
-    </div>
-{% endif %}
-<div class="relative w-screen mt-20">
-    <h2 class="font-bold text-center text-2xl">Авторизация</h2>
-    <div class="items-center flex justify-center items-center">
-        <div class="flex-column flex w-80 justify-center items-center">
-             <form method="post">
 
-                    <div class="flex flex-row mt-5 justify-between items-center mt-6 h-10">
-                        <label class="text-center items-center w-24" for="inputEmail">Email</label>
-                        <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control focus:outline-none p-1 items-center rounded-full border-solid border border-black w-56 h-10" autocomplete="email" required>
+
+
+
+    {% if app.user %}
+        <div class="mb-3">
+            You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Logout</a>
+        </div>
+    {% endif %}
+    <div class="page overflow-hidden flex flex-col min-h-full w-full items-center justify-center text-center">
+        <div class="header w-full">
+            {% include 'header-non-authorized.html.twig' %}
+        </div>
+        <div class="content mt-auto">
+            <div class="form-login">
+                {% if error %}
+                    <div class="flex justify-center items-center text-center text-red-500 text-2xl">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                {% endif %}
+                <h2 class="font-bold text-center text-2xl">Авторизация</h2>
+                <div class="items-center flex justify-center items-center">
+                    <div class="flex-column flex w-80 justify-center items-center">
+                        <form method="post">
+
+                            <div class="flex flex-row mt-5 justify-between items-center mt-6 h-10">
+                                <label class="text-center items-center w-24" for="inputEmail">Email</label>
+                                <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control focus:outline-none p-1 items-center rounded-full border-solid border border-black w-56 h-10" autocomplete="email" required>
+                            </div>
+
+                            <div class="flex flex-row mt-5 justify-between items-center mt-6 h-10">
+                                <label class="text-center items-center w-24" for="inputPassword">Password</label>
+                                <input type="password" name="password" id="inputPassword" class="form-control focus:outline-none p-1 items-center rounded-full border-solid border border-black w-56 h-10" autocomplete="current-password" required>
+                            </div>
+
+                            <input type="hidden" name="_csrf_token"
+                                   value="{{ csrf_token('authenticate') }}"
+                            >
+
+                            <div class="text-center mt-5">
+                                <button class="bg-black text-white w-20 h-10 rounded mb-5" type="submit">
+                                    Войти
+                                </button>
+                            </div>
+                        </form>
                     </div>
-
-                    <div class="flex flex-row mt-5 justify-between items-center mt-6 h-10">
-                        <label class="text-center items-center w-24" for="inputPassword">Password</label>
-                        <input type="password" name="password" id="inputPassword" class="form-control focus:outline-none p-1 items-center rounded-full border-solid border border-black w-56 h-10" autocomplete="current-password" required>
-                    </div>
-
-                    <input type="hidden" name="_csrf_token"
-                        value="{{ csrf_token('authenticate') }}"
-                    >
-                    
-                    <div class="text-center mt-5">
-                        <button class="bg-black text-white w-20 h-10 rounded mb-5" type="submit">
-                           Войти
-                        </button>
-                    </div>
-                </form>
+                </div>
             </div>
+        </div>
+        <div class="mt-auto w-full">
+            {% include 'footer.html.twig' %}
+        </div>
     </div>
-</div>
-<div class="fixed bottom-0 w-screen">
-    {% include 'footer.html.twig' %}
-</div>
+    </body>
 {% endblock %}
