@@ -127,7 +127,7 @@ class RegistrationFormType extends AbstractType
                         'message' => 'Email введен не корректно!',
                     ]),
                     new Length([
-                        'max' => 255,
+                        'max' => 180,
                     ]),
                 ],
                 'label' => 'Электронная почта',
