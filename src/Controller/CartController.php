@@ -6,7 +6,6 @@ use App\Entity\CartItem;
 use App\Entity\Offer;
 use App\Form\CartCheckoutFormType;
 use App\Repository\CartItemRepository;
-use App\Repository\SectionRepository;
 use App\Service\OrderApi;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -22,12 +21,11 @@ class CartController extends AbstractController
     /**
      * @Route("/", name="cart_index", methods={"GET"})
      */
-    public function index(CartItemRepository $cartItemRepository, SectionRepository $sectionRepository): Response
+    public function index(CartItemRepository $cartItemRepository): Response
     {
         return $this->render('cart/index.html.twig', [
             'cart_items' => $cartItemRepository->findBy(['customer' => $this->getUser()]),
             'payment_amount' => $this->getPaymentAmount($this->getUser()),
-            'categories' => $sectionRepository->findBy(['parent' => null]),
         ]);
     }
 
@@ -46,47 +44,42 @@ class CartController extends AbstractController
     /**
      * @Route("/new/", name="cart_new", methods={"POST"})
      */
-    public function new(Request $request, CartItemRepository $cartItemRepository, SectionRepository $sectionRepository): Response
+    public function new($quantity, $offer, CartItemRepository $cartItemRepository): Response
     {
-        $offer = $this->getDoctrine()->getRepository(Offer::class)->findOneBy(['id' => $request->request->get('offer')]);
+        $offer = $this->getDoctrine()->getRepository(Offer::class)->findOneBy(['id' => $offer]);
         $cartItem = $cartItemRepository->findOneBy(['customer' => $this->getUser(), 'offer' => $offer]);
         if (null == $cartItem) {
             $cartItem = new CartItem();
             $cartItem->setCustomer($this->getUser());
             $cartItem->setOffer($offer);
-            $cartItem->setQuantity($request->request->get('quantity'));
+            $cartItem->setQuantity($quantity);
         } else {
-            $cartItem->setQuantity($cartItem->getQuantity() + $request->request->get('quantity'));
+            $cartItem->setQuantity($cartItem->getQuantity() + $quantity);
         }
 
         $entityManager = $this->getDoctrine()->getManager();
         $entityManager->persist($cartItem);
         $entityManager->flush();
 
-        return $this->redirectToRoute('cart_index', [
-            'categories' => $sectionRepository->findBy(['parent' => null]),
-        ],
-            Response::HTTP_SEE_OTHER);
+        return $this->redirectToRoute('cart_index', [], Response::HTTP_SEE_OTHER);
     }
 
     /**
      * @Route("/{id}/edit", name="cart_edit", methods={"POST"})
      */
-    public function edit(Request $request, CartItem $cartItem, SectionRepository $sectionRepository): Response
+    public function edit(Request $request, CartItem $cartItem): Response
     {
         $cartItem->setQuantity($request->get('quantity'));
 
         $this->getDoctrine()->getManager()->flush();
 
-        return $this->redirectToRoute('cart_index', [
-            'categories' => $sectionRepository->findBy(['parent' => null]),
-        ], Response::HTTP_SEE_OTHER);
+        return $this->redirectToRoute('cart_index', [], Response::HTTP_SEE_OTHER);
     }
 
     /**
      * @Route("/{id}/delete", name="cart_delete", methods={"GET","POST"})
      */
-    public function delete(Request $request, CartItem $cartItem, SectionRepository $sectionRepository): Response
+    public function delete(Request $request, CartItem $cartItem): Response
     {
         if ($this->isCsrfTokenValid('delete' . $cartItem->getId(), $request->request->get('_token'))) {
             $entityManager = $this->getDoctrine()->getManager();
@@ -94,15 +87,13 @@ class CartController extends AbstractController
             $entityManager->flush();
         }
 
-        return $this->redirectToRoute('cart_index', [
-            'categories' => $sectionRepository->findBy(['parent' => null]),
-        ], Response::HTTP_SEE_OTHER);
+        return $this->redirectToRoute('cart_index', [], Response::HTTP_SEE_OTHER);
     }
 
     /**
      * @Route("/checkout", name="cart_checkout", methods={"GET","POST"})
      */
-    public function checkout(Request $request, SectionRepository $sectionRepository): Response
+    public function checkout(Request $request): Response
     {
         $form = $this->createForm(CartCheckoutFormType::class, null);
         $form->handleRequest($request);
@@ -111,37 +102,32 @@ class CartController extends AbstractController
             $orderApi = new OrderApi($this->getParameter('url'), $this->getParameter('apiKey'));
 
             $apiResponse = $orderApi->createOrder($this->getUser(), $form);
+            //$this->getDoctrine()->getRepository(CartItem::class)->deleteCustomerCart($this->getUser());
 
-            return $this->redirectToRoute('cart_thanks', [
-                'id' => $apiResponse->order->id,
-                'categories' => $sectionRepository->findBy(['parent' => null]), ]);
+            return $this->redirectToRoute('cart_thanks', ['id' => $apiResponse->order->id]);
         }
 
         return $this->render('cart/checkout.html.twig', [
             'form' => $form->createView(),
             'payment_amount' => $this->getPaymentAmount($this->getUser()),
-            'categories' => $sectionRepository->findBy(['parent' => null]),
         ]);
     }
 
     /**
      * @Route("/thanks", name="cart_thanks", methods={"GET"})
      */
-    public function thanks(Request $request, SectionRepository $sectionRepository): Response
+    public function thanks(Request $request): Response
     {
         $orderApi = new OrderApi($this->getParameter('url'), $this->getParameter('apiKey'));
         $order = $orderApi->getOrderById($request->get('id'))->order;
 
-        return $this->render('cart/thanks.html.twig', [
-                'order' => $order,
-                'categories' => $sectionRepository->findBy(['parent' => null]), ]
-        );
+        return $this->render('cart/thanks.html.twig', ['order' => $order]);
     }
 
     /**
      * @Route("/quantityChange", name="quantityChange", methods={"POST"})
      */
-    public function quantityChange(Request $request, CartItemRepository $cartItemRepository, SectionRepository $sectionRepository)
+    public function quantityChange(Request $request, CartItemRepository $cartItemRepository)
     {
         if ($request->request->get('operation')) {
             $cartItem = $cartItemRepository->findOneBy(['id' => $request->request->get('cartItemId')]);
@@ -159,8 +145,6 @@ class CartController extends AbstractController
             return new JsonResponse($data);
         }
 
-        return $this->redirectToRoute('cart_index', [
-            'categories' => $sectionRepository->findBy(['parent' => null]),
-        ], Response::HTTP_SEE_OTHER);
+        return $this->redirectToRoute('cart_index', [], Response::HTTP_SEE_OTHER);
     }
 }
