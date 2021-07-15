@@ -28,6 +28,7 @@ class RegistrationFormType extends AbstractType
                         'min'=>3,
                         'minMessage'=>'Минимальное число символов - {{ limit }}',
                         'max'=>255,
+                        'maxMessage'=>'Максимальное число символов - {{ limit }}',
                     ]),
                     new Regex([
                         'match' => true,
@@ -48,6 +49,7 @@ class RegistrationFormType extends AbstractType
                         'min'=>3,
                         'minMessage'=>'Минимальное число символов - {{ limit }}',
                         'max'=>255,
+                        'maxMessage'=>'Максимальное число символов - {{ limit }}',
                     ]),
                     new Regex([
                         'match'=>true,
@@ -158,6 +160,7 @@ class RegistrationFormType extends AbstractType
                         'min' => 6,
                         'minMessage' => 'Ваш пароль должен быть не менее {{ limit }} символов',
                         'max' => 4096,
+                        'maxMessage'=>'Максимальное число символов - {{ limit }}',
                     ]),
                 ],
             ])
