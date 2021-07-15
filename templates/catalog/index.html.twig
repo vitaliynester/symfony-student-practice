@@ -20,22 +20,22 @@
   <div class="container">
     <div class="grid  lg:grid-cols-3 grid-rows-3 sm:grid-cols-2">
 {% for offer in pagination %}
-      <div class="flex flex-col items-center">
+      <div class="flex flex-col items-center mb-7">
         <div class="relative flex rounded-3xl w-72 h-72 border-solid border-4 border-black">
-          <img class="object-contain  object-center rounded-3xl" src={{offer.picture}}>
+          <img class="object-contain  object-center rounded-3xl" src=/upload/pictures/{{offer.picture}}>
           <div class="absolute top-0 left-0 bg-black rounded-tl-2xl rounded-br-3xl text-white">
             <div class = "mx-4 text-3xl">{{offer.price}}</div>
           </div>
         </div>
         <div class ="mt-6 ">
-            <a href="{{path('offer',{offerId:offer.id})}}"style="font-family:PT Sans;" class="hover:bg-gray-200 rounded-full py-2 px-24  
-            text-3 border-4 border-black">
+         <form action="{{path('offer',{offerId:offer.id})}}">
+          <button style="font-family:PT Sans;"class="hover:bg-gray-200 rounded-full  text-md truncate overflow-hidden py-2 w-72 h-14  border-4 border-black"type="submit">
              {{offer.name}}
-            </a>
-          </div>
-      </div>  
+          </button>
+          </form>
+        </div>
+     </div>  
 {% endfor %}
-
   </div>
 </div> 
 <div class="mb-8">
@@ -47,3 +47,4 @@
    </div> 
 </div> 
 {% endblock %}
+
