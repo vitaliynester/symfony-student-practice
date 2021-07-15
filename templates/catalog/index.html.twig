@@ -8,8 +8,9 @@
 <div class="container mb-7 bg-black border-t-2">
         <div class="h-16 flex items-center">
             <ul class="flex flex-row justify-between ml-96 mr-96 w-full text-white">
-              <% for  subSection in subSections %>
+              {% for  subSection in subSections %}
                 <li class="text-2xl">subSection.name</li>
+                {% endfor %}
             </ul>
         </div>
 </div>
