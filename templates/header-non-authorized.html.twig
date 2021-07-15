@@ -33,9 +33,9 @@
             <ul class="flex flex-row justify-between ml-56 mr-56 w-full text-white">
                 {% for category in categories %}
                     <div class="dropdown">
-                        <button class="dropbtn text-2xl"><a href="{{ path('catalog', {parId : category[0].id, page: 1}) }}">{{ category[0].name }}</a></button>
+                        <button class="dropbtn text-2xl"><a href="{{ path('catalog', {parId : category.id, page: 1}) }}">{{ category.name }}</a></button>
                         <div class="dropdown-content -mx-4">
-                            {% for subCategory in category[1] %}
+                            {% for subCategory in category %}
                                 <a class="text-2xl" href="{{ path('catalog', {parId : subCategory.id, page: 1}) }}">{{ subCategory.name }}</a>
                             {% endfor %}
                         </div>
