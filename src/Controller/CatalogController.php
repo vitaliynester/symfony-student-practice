@@ -71,7 +71,7 @@ class CatalogController extends AbstractController
     /**
      * @Route("/offer/{offerId}", name="offer", methods={"GET","POST"})
      */
-    public function offer(OfferRepository $offerRep,Security $security, SectionRepository $sectRep, $offerId, Request $request): Response
+    public function offer(OfferRepository $offerRep,Security $security, PaginatorInterface $paginator, SectionRepository $sectRep, $offerId, Request $request): Response
     {
         $items = [];
         $categories = $sectRep->findBy(['parent' => null]);
