@@ -90,7 +90,7 @@ class CatalogController extends AbstractController
         $form->handleRequest($request);
         $product = $offerData->getProduct();
         $offers = $product->getOffers();
-        $pagination = $paginator->paginate($offers, $pageRequest, 9);
+        $pagination = $paginator->paginate($offers, $pageRequest, 5);
         if ($form->isSubmitted() && $form->isValid() ) 
         {
             if(($form->get('quantity')->getData()<=0) or ($security->getUser() == null))
