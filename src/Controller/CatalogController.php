@@ -16,6 +16,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Mapping\Id;
 use Knp\Component\Pager\PaginatorInterface;
 use App\Form\CartItemType;
+use Symfony\Component\Security\Core\Security;
 
 class CatalogController extends AbstractController
 {
@@ -70,7 +71,7 @@ class CatalogController extends AbstractController
     /**
      * @Route("/offer/{offerId}", name="offer", methods={"GET","POST"})
      */
-    public function offer(OfferRepository $offerRep, SectionRepository $sectRep, $offerId, Request $request): Response
+    public function offer(OfferRepository $offerRep,Security $security, SectionRepository $sectRep, $offerId, Request $request): Response
     {
         $items = [];
         $categories = $sectRep->findBy(['parent' => null]);
@@ -87,7 +88,16 @@ class CatalogController extends AbstractController
         $offerData = $offerRep->findOneBy(['id' => $offerId]);
         $form = $this->createForm(CartItemType::class, null);
         $form->handleRequest($request);
-        if ($form->isSubmitted() && $form->isValid()) {
+        $product = $offerData->getProduct();
+        $offers = $product->getOffers();
+        if ($form->isSubmitted() && $form->isValid() ) 
+        {
+            if(($form->get('quantity')->getData()<=0) and ($security->getUser()!= 0))
+            {
+                return $this->render('catalog/offer.html.twig', ['mainOffer' => $offerData, 'similarOffers' => $offers,
+                    'categories' => $items, 'form' => $form->createView(),
+                    ]);
+            }
             $response = $this->forward('App\Controller\CartController::new',
                 [
                     'quantity' => $form->get('quantity')->getData(),
@@ -95,8 +105,6 @@ class CatalogController extends AbstractController
                 ]);
             return $response;
         }
-        $product = $offerData->getProduct();
-        $offers = $product->getOffers();
         return $this->render('catalog/offer.html.twig', ['mainOffer' => $offerData, 'similarOffers' => $offers,
         'categories' => $items, 'form' => $form->createView(),
         ]);
