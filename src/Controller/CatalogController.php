@@ -95,7 +95,7 @@ class CatalogController extends AbstractController
             if(($form->get('quantity')->getData()<=0) or ($security->getUser() == null))
             {
                 return $this->render('catalog/offer.html.twig', ['mainOffer' => $offerData, 'similarOffers' => $offers,
-                    'categories' => $items, 'form' => $form->createView(),
+                    'categories' => $items,'product' => $product, 'form' => $form->createView(),
                     ]);
             }
             else
@@ -109,7 +109,7 @@ class CatalogController extends AbstractController
             }
         }
         return $this->render('catalog/offer.html.twig', ['mainOffer' => $offerData, 'similarOffers' => $offers,
-        'categories' => $items, 'form' => $form->createView(),
+        'categories' => $items,'product' => $product, 'form' => $form->createView(),
         ]);
     }
 }
