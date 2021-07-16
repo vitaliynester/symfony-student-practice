@@ -12,7 +12,7 @@ class CartItemType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('quantity', , ['label' => 'Create Task'])
+            ->add('quantity')
         ;
     }
 
