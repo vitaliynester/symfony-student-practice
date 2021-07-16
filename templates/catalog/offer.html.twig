@@ -39,7 +39,7 @@
 </div>
 <center>
   <div class = "mt-10 mb-10 text-3xl" style="font-family:PT Sans;">
-    name
+    See also
   <div>
 </center>
 <div class="flex flex-row justify-between mx-16">
@@ -51,7 +51,7 @@
     <div style="font-family:PT Sans;"class="h rounded-full  truncate overflow-hidden text-3xl px-2   border-4 border-black">
       {{paginator.price}}
     </div>
-    <a class ="transform transition duration-300 hover:scale-110 text-xl"href="">{{paginator.name}}</a>
+    <a class ="transform transition duration-300 hover:scale-110 text-xl"href="{{path('offer',{offerId:paginator.id})}}">{{paginator.name}}</a>
   </div>
 {% endfor %}
 </div>
