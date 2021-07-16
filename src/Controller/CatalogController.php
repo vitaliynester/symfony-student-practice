@@ -92,7 +92,7 @@ class CatalogController extends AbstractController
         $offers = $product->getOffers();
         if ($form->isSubmitted() && $form->isValid() ) 
         {
-            if(($form->get('quantity')->getData()<=0) and ($security->getUser()!= NULL))
+            if(($form->get('quantity')->getData()<=0) and ($security->getUser() == NULL))
             {
                 return $this->render('catalog/offer.html.twig', ['mainOffer' => $offerData, 'similarOffers' => $offers,
                     'categories' => $items, 'form' => $form->createView(),
@@ -100,9 +100,6 @@ class CatalogController extends AbstractController
             }
             else
             {
-                var_dump(($security->getUser()!= NULL));
-                var_dump(($form->get('quantity')->getData()<=0));
-                var_dump((($form->get('quantity')->getData()<=0) and ($security->getUser()!= NULL)));
                 $response = $this->forward('App\Controller\CartController::new',
                 [
                     'quantity' => $form->get('quantity')->getData(),
