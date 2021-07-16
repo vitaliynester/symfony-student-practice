@@ -100,6 +100,7 @@ class CatalogController extends AbstractController
             }
             else
             {
+                var_dump(($form->get('quantity')->getData()<=0) and ($security->getUser()!= NULL));
                 $response = $this->forward('App\Controller\CartController::new',
                 [
                     'quantity' => $form->get('quantity')->getData(),
