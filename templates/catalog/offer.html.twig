@@ -4,8 +4,41 @@
 {% block body %}
 
 <body bgcolor="white">
-<div class = "mt-10 text-3xl", style="font-family:PT Sans;">
-    {{mainOffer.name}}
+<div class = "mt-10 mb-10 text-3xl" style="font-family:PT Sans;">
+<center>
+    name
+</center>
 </div>
-{{ include('catalog/_form.html.twig') }}
+<div class="container">
+  <div class="flex ">
+  <!-- изображение апродукта -->
+    <div class=" mx-14  flex rounded-3xl w-5/12 h-auto border-solid border-4 border-black">
+      <img class="object-contain  object-center rounded-3xl" src="">
+    </div>
+  <!-- описание пролукта -->
+    <div class="container">
+      <div class="flex flex-col mr-14">
+
+        <div class ="  container h-56   mb-4 overflow-y-auto text-lg" style="font-family:PT Sans;">
+            Lorem ipsum d sit amet, consectetur adipiscing elit. Maecena, vestibulum rutrum bibendum. Integer facilisis libero quis enim pellentesque, vitae sodales massa vestibulum. Duis vel nisl et justo rutrum bibendum et ut diam. Phasellus sit amet lectus lorem. Duis vitae sem eget eros fringilla imperdiet. Cras varius et quam nec laoreet. Vivamus vel semper ex. Suspendisse lacinia eros sodales dolor dapibus mollis.
+        </div>
+
+        <div class="w-40 px-2 mb-4  border-4 text-3xl border-black rounded-3xl" style="font-family:PT Sans;">
+          1000руб
+        </div>
+
+        <<div class="flex justify-between">
+         <<!-- вставить форму -->
+          {{ form_start(form) }}
+          {{ form_widget(form, {'attr' : {'class':'border-4 rounded-md border-black mb-9'}}) }}
+                <button type="submit" class="transition duration-500 ease-in-out bg-black rounded-md m-6 transform hover:scale-110">
+                    <a class="text-white px-8 py-2 rounded text-2xl w-auto float-right text-center align-middle" href="{{ path('personal_account_orders_history', {'page': 1} ) }}">История заказов</a>
+                </button>
+          {{ form_end(form) }}
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
