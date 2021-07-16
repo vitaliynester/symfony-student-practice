@@ -37,4 +37,22 @@
     </div>
   </div>
 </div>
+<center>
+  <div class = "mt-10 mb-10 text-3xl" style="font-family:PT Sans;">
+    name
+  <div>
+</center>
+<div class="flex flex-row justify-between mx-16">
+{% for paginator in paginationSimOffers %}
+  <div class="flex flex-col items-center mb-7">
+    <div class="relative flex rounded-3xl mb-2 w-40 h-40 border-solid border-4 border-black">  
+      <img class="object-contain  object-center rounded-3xl" src=/upload/pictures/{{paginator.picture}}>
+    </div>
+    <div style="font-family:PT Sans;"class="h rounded-full  truncate overflow-hidden text-3xl px-2   border-4 border-black">
+      {{paginator.price}}
+    </div>
+    <a class ="transform transition duration-300 hover:scale-110 text-xl"href="">{{paginator.name</a>
+  </div>
+{% endfor %}
+</div>
 {% endblock %}
