@@ -90,11 +90,12 @@ class CatalogController extends AbstractController
         $form->handleRequest($request);
         $product = $offerData->getProduct();
         $offers = $product->getOffers();
+        $pagination = $paginator->paginate($offers, $pageRequest, 9);
         if ($form->isSubmitted() && $form->isValid() ) 
         {
             if(($form->get('quantity')->getData()<=0) or ($security->getUser() == null))
             {
-                return $this->render('catalog/offer.html.twig', ['mainOffer' => $offerData, 'similarOffers' => $offers,
+                return $this->render('catalog/offer.html.twig', ['mainOffer' => $offerData, 'paginationSimOffers' => $pagination,
                     'categories' => $items,'product' => $product, 'form' => $form->createView(),
                     ]);
             }
@@ -108,7 +109,7 @@ class CatalogController extends AbstractController
                 return $response;
             }
         }
-        return $this->render('catalog/offer.html.twig', ['mainOffer' => $offerData, 'similarOffers' => $offers,
+        return $this->render('catalog/offer.html.twig', ['mainOffer' => $offerData, 'paginationSimOffers' => $pagination,
         'categories' => $items,'product' => $product, 'form' => $form->createView(),
         ]);
     }
