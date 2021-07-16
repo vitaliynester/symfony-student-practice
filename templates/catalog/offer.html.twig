@@ -11,11 +11,9 @@
 </div>
 <div class="container">
   <div class="flex ">
-  <!-- изображение апродукта -->
     <div class=" mx-14  flex rounded-3xl w-5/12 h-auto border-solid border-4 border-black">
       <img class="object-contain  object-center rounded-3xl" src="">
     </div>
-  <!-- описание пролукта -->
     <div class="container">
       <div class="flex flex-col mr-14">
 
@@ -27,16 +25,14 @@
           1000руб
         </div>
 
-        <<div class="flex justify-between">
-         <<!-- вставить форму -->
+        <div class="flex justify-between">
           {{ form_start(form) }}
           {{ form_widget(form, {'attr' : {'class':'border-4 rounded-md border-black mb-9'}}) }}
                 <button type="submit" class="transition duration-500 ease-in-out bg-black rounded-md m-6 transform hover:scale-110">
-                    <a class="text-white px-8 py-2 rounded text-2xl w-auto float-right text-center align-middle" href="{{ path('personal_account_orders_history', {'page': 1} ) }}">История заказов</a>
+                    <a class="text-white px-8 py-2 rounded text-2xl w-auto float-right text-center align-middle" ">Add to cart</a>
                 </button>
           {{ form_end(form) }}
         </div>
-
       </div>
     </div>
   </div>
