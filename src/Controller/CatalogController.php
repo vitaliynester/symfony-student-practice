@@ -98,16 +98,12 @@ class CatalogController extends AbstractController
                     'categories' => $items, 'form' => $form->createView(),
                     ]);
             }
-            else
-            {
-                var_dump(($form->get('quantity')->getData()<=0) and ($security->getUser()!= NULL));
                 $response = $this->forward('App\Controller\CartController::new',
                 [
                     'quantity' => $form->get('quantity')->getData(),
                     'offer' => $offerId,
                 ]);
             return $response;
-            }
         }
         return $this->render('catalog/offer.html.twig', ['mainOffer' => $offerData, 'similarOffers' => $offers,
         'categories' => $items, 'form' => $form->createView(),
