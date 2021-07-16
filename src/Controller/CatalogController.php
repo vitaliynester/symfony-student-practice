@@ -92,8 +92,7 @@ class CatalogController extends AbstractController
         $offers = $product->getOffers();
         if ($form->isSubmitted() && $form->isValid() ) 
         {
-            var_dump($security->getUser());
-            if(($form->get('quantity')->getData()<=0) and ($security->getUser() == NULL))
+            if(($form->get('quantity')->getData()<=0) or ($security->getUser() == null))
             {
                 return $this->render('catalog/offer.html.twig', ['mainOffer' => $offerData, 'similarOffers' => $offers,
                     'categories' => $items, 'form' => $form->createView(),
