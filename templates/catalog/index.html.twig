@@ -34,11 +34,12 @@
           </button>
           </form>
         </div>
+        
+<div class="navigation">
+    {{ knp_pagination_render(pagination) }}
+</div>
      </div>  
 {% endfor %}
 {% endblock %}
 
-<div class="navigation">
-    {{ knp_pagination_render(pagination) }}
-</div>
 
