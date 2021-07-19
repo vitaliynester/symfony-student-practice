@@ -15,6 +15,7 @@
 </div>
 <center class = "text-3xl mb-7", style="font-family:PT Sans;">
 {{parentSection.name}}
+{{ knp_pagination_render(pagination) }}
 </center>
 <div class="flex flex-col items-center">
   <div class="container">
@@ -35,9 +36,6 @@
           </form>
         </div>
      </div>  
-<div class="flex flex-col items-center">
-    {{ knp_pagination_render(pagination) }}
-</div>
 {% endfor %}
 {% endblock %}
 
